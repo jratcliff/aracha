@@ -1,3 +1,12 @@
+/* line 2023, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-top-tl,
+.x-tab-over .x-tab-navigation-top-bl,
+.x-tab-over .x-tab-navigation-top-tr,
+.x-tab-over .x-tab-navigation-top-br,
+.x-tab-over .x-tab-navigation-top-tc,
+.x-tab-over .x-tab-navigation-top-bc {
+  background-image: url(images/tab/tab-navigation-top-over-corners.gif); }
+/* line 2028, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
 .x-tab-over .x-tab-navigation-top-ml,
 .x-tab-over .x-tab-navigation-top-mr {
   background-image: url(images/tab/tab-navigation-top-over-sides.gif); }

@@ -1,3 +1,28 @@
+    .x-tab-navigation-right.x-tab-rotate-right.x-rtl {
+      margin: 0 0 0 0; }
+  /* line 1229, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+  .x-tab-navigation-right.x-tab-focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  /* line 1258, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+  .x-tab-navigation-right.x-tab-focus.x-tab-over {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  /* line 1287, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+  .x-tab-navigation-right.x-tab-focus.x-tab-active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+/* line 1313, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-bottom {
+  margin: 0 0 0 0; }
+  /* line 1317, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+  .x-tab-navigation-bottom.x-rtl {
+    margin: 0 0 0 0; }
+  /* line 1322, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
   .x-tab-navigation-bottom.x-tab-rotate-left {
     margin: 0 0 0 0; }
     /* line 1326, ../../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */

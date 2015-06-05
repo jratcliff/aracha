@@ -12040,18 +12040,32 @@ input:-ms-input-placeholder {
 .x-grid-item-selected .x-grid-row-checker:before {
   color: black; }
 
-/* line 1, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
-.x-slider-horz .x-slider-thumb {
+/* line 3, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+.x-slider-horz,
+.x-slider-horz .x-slider-end,
+.x-slider-horz .x-slider-inner {
   background-image: none; }
-  /* line 4, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+
+/* line 9, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+.x-slider-vert,
+.x-slider-vert .x-slider-end,
+.x-slider-vert .x-slider-inner {
+  background-image: nonde; }
+
+/* line 13, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+.x-slider-horz .x-slider-thumb {
+  background-image: none;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1; }
+  /* line 19, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
   .x-slider-horz .x-slider-thumb:before {
     display: inline-block;
-    width: 1.286em;
     font-family: FontAwesome;
     content: "\f192";
     color: black;
     opacity: 0.7;
-    line-height: 1px; }
+    line-height: 1; }
 
 /* line 1, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
 .x-breadcrumb-icon-folder-default {
