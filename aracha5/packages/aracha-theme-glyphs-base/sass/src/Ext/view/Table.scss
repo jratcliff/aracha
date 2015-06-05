@@ -1,0 +1,16 @@
+
+// custom rules to center the emptyText both horizontally and vertically
+.#{$prefix}grid-empty {
+    text-align  : center;
+    display     : table;
+
+    // 100% sometimes causes a scroll bar to appear
+    height      : 99%;
+    width       : 99%;
+
+    &:before {
+        content         : attr(data-content);
+        display         : table-cell;
+        vertical-align  : middle;
+    }
+}

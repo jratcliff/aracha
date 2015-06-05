@@ -1,0 +1,14 @@
+.#{$prefix}form-date-trigger {
+    background-image: none;
+
+    &:before {
+        content: $form-date-trigger-glyph;
+    }
+
+    // hide the framework's rtl image
+    @if $include-rtl {
+        &.#{$prefix}rtl {
+            background-image: none;
+        }
+    }
+}

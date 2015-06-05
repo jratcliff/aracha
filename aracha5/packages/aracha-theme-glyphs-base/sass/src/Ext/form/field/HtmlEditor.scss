@@ -1,0 +1,114 @@
+.#{$prefix}html-editor-tb .#{$prefix}btn-text {
+    background-image: none;
+}
+
+.#{$prefix}html-editor-tb {
+    .#{$prefix}btn-icon-el {
+        color: black;
+    }
+    .#{$prefix}btn-over .#{$prefix}btn-icon-el {
+        color: white;
+    }
+}
+
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-bold,
+.#{$prefix}menu-item div.#{$prefix}edit-bold {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-bold);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-italic,
+.#{$prefix}menu-item div.#{$prefix}edit-italic {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-italic);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-underline,
+.#{$prefix}menu-item div.#{$prefix}edit-underline {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-underline);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-forecolor,
+.#{$prefix}menu-item div.#{$prefix}edit-forecolor {
+    background-position: (-$html-editor-toolbar-icon-size * 10) 0;
+    background-image: theme-background-image('editor/tb-sprite');
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-backcolor,
+.#{$prefix}menu-item div.#{$prefix}edit-backcolor {
+    background-position: (-$html-editor-toolbar-icon-size * 11) 0;
+    background-image: theme-background-image('editor/tb-sprite');
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-justifyleft,
+.#{$prefix}menu-item div.#{$prefix}edit-justifyleft {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-align-left);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-justifycenter,
+.#{$prefix}menu-item div.#{$prefix}edit-justifycenter {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-align-center);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-justifyright,
+.#{$prefix}menu-item div.#{$prefix}edit-justifyright {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-align-right);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-insertorderedlist,
+.#{$prefix}menu-item div.#{$prefix}edit-insertorderedlist {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-list-ol);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-insertunorderedlist,
+.#{$prefix}menu-item div.#{$prefix}edit-insertunorderedlist {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-list-ul);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-increasefontsize,
+.#{$prefix}menu-item div.#{$prefix}edit-increasefontsize {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-text-height);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-decreasefontsize,
+.#{$prefix}menu-item div.#{$prefix}edit-decreasefontsize {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-text-height);
+    font-size: 0.7em !important;
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-sourceedit,
+.#{$prefix}menu-item div.#{$prefix}edit-sourceedit {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-code);
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}edit-createlink,
+.#{$prefix}menu-item div.#{$prefix}edit-createlink {
+    background-image: none;
+    @include extjs-add-glyph($fa-var-link);
+}
+
+.#{$prefix}html-editor-tip .#{$prefix}tip-bd .#{$prefix}tip-bd-inner {
+    padding: 5px;
+    padding-bottom: 1px;
+}
+
+.#{$prefix}html-editor-tb .#{$prefix}font-select {
+    font-size: $html-editor-font-select-font-size;
+    font-family: $html-editor-font-select-font-family;
+}
+
+.#{$prefix}html-editor-wrap textarea {
+    font: $form-field-font-weight $form-field-font-size $form-field-font-family;
+    background-color: $html-editor-background-color;
+    resize: none;
+}

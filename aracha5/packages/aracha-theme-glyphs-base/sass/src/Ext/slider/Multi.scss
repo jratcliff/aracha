@@ -1,0 +1,27 @@
+.x-slider-horz,
+.x-slider-horz .x-slider-end,
+.x-slider-horz .x-slider-inner {
+    background-image: none;
+}
+
+.x-slider-vert,
+.x-slider-vert .x-slider-end,
+.x-slider-vert .x-slider-inner {
+    background-image: nonde;
+}
+
+.#{$prefix}slider-horz .#{$prefix}slider-thumb {
+    background-image: none;
+    text-align: center;
+    font-size: $horizontal-slider-thumb-height;
+    line-height: 1;
+
+    &:before {
+        display     : inline-block;
+        font-family : FontAwesome;
+        content     : $fa-var-dot-circle-o;
+        color       : $form-text-field-color;
+        opacity     : 0.7;
+        line-height : 1;
+    }
+}

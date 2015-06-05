@@ -1,0 +1,26 @@
+/**
+ * Primary Button vars (use these in the call to the extjs-button-ui)
+ */
+$button-primary-color                       : $trinet-white !default;
+$button-primary-color-over                  : $trinet-white !default;
+$button-primary-color-focus                 : $trinet-white !default;
+$button-primary-color-pressed               : $trinet-white !default;
+$button-primary-color-disabled              : $trinet-white !default;
+
+$button-primary-background-color            : $trinet-orange !default;
+$button-primary-background-color-over       : $trinet-light-orange !default;
+$button-primary-background-color-focus      : $trinet-light-orange !default;
+$button-primary-background-color-pressed    : $trinet-dark-orange !default;
+$button-primary-background-color-disabled   : $trinet-orange !default;
+
+$button-primary-background-gradient         : null !default;
+$button-primary-background-gradient-over    : null !default;
+$button-primary-background-gradient-focus   : null !default;
+$button-primary-background-gradient-pressed : null !default;
+$button-primary-background-gradient-disabled: null !default;
+
+$button-primary-border-color                : $button-primary-background-color !default;
+$button-primary-border-color-over           : $button-primary-background-color-over !default;
+$button-primary-border-color-focus          : $button-primary-background-color-focus !default;
+$button-primary-border-color-pressed        : $button-primary-background-color-pressed !default;
+$button-primary-border-color-disabled       : $button-primary-background-color-disabled !default;

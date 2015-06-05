@@ -1,0 +1,97 @@
+
+// custom tabbar padding
+.#{$prefix}tab-bar-horizontal.#{$prefix}tab-bar-default {
+    //padding: $tabbar-body-padding;
+
+    // remove the custom padding if in a panel header
+    .#{$prefix}panel-header & {
+        padding: 0;
+    }
+}
+
+// customizations for tabbar scroller
+.#{$prefix}box-scroller-tab-bar-default {
+
+    // since we are using a glyph, the scroller needs a font-size/line-height
+    &.#{$prefix}box-scroller {
+        font-size   : 22px;
+        line-height : 22px;
+        text-align  : center;
+    }
+
+    // left arrow
+    &.#{$prefix}box-scroller-left {
+        background-image: none;
+        &:before {
+            font-family: FontAwesome;
+            content: '\f104';
+        }
+    }
+
+    // right arrow
+    &.#{$prefix}box-scroller-right{
+        background-image: none;
+        &:before {
+            font-family: FontAwesome;
+            content: '\f105';
+        }
+    }
+}
+
+@if $tabbar-scroller-symmetrical-icons {
+    @if $tabbar-scroller-include-plain-icon {
+        .#{$prefix}box-scroller-plain.#{$prefix}box-scroller-tab-bar-default {
+            &.#{$prefix}box-scroller-left {
+                background-image: none;
+            }
+
+            &.#{$prefix}box-scroller-right {
+                background-image: none;
+            }
+
+            &.#{$prefix}box-scroller-top {
+                background-image: none;
+            }
+
+            &.#{$prefix}box-scroller-bottom {
+                background-image: none;
+            }
+        }
+    }
+} @else {
+    .#{$prefix}tab-bar-default-top {
+        .#{$prefix}box-scroller-left {
+            background-image: none;
+        }
+        .#{$prefix}box-scroller-right {
+            background-image: none;
+        }
+    }
+
+    .#{$prefix}tab-bar-default-bottom {
+        .#{$prefix}box-scroller-left {
+            background-image: none;
+        }
+        .#{$prefix}box-scroller-right {
+            background-image: none;
+        }
+    }
+
+    .#{$prefix}tab-bar-default-left {
+        .#{$prefix}box-scroller-top {
+            background-image: none;
+        }
+        .#{$prefix}box-scroller-bottom {
+            background-image: none;
+        }
+    }
+
+    .#{$prefix}tab-bar-default-right {
+        .#{$prefix}box-scroller-top {
+            background-image: none;
+        }
+        .#{$prefix}box-scroller-bottom {
+            background-image: none;
+        }
+    }
+}

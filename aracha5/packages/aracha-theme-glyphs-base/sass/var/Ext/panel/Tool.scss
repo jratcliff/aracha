@@ -1,0 +1,58 @@
+
+$tool-glyph-font-family : $glyph-font-family !default;
+$tool-opacity           : 0.9 !default;
+$tool-opacity-over      : 0.7 !default;
+$tool-opacity-disabled  : 0.3 !default;
+
+$tool-close             : $fa-var-times-circle !default;
+
+$tool-minimize          : $fa-var-minus-circle !default;
+$tool-maximize          : $fa-var-expand !default;
+$tool-restore           : $fa-var-compress !default;
+
+$tool-toggle            : $fa-var-caret-down !default;
+$tool-toggle-collapsed  : $fa-var-caret-up !default;
+
+$tool-gear              : $fa-var-cog !default;
+
+$tool-prev              : $fa-var-caret-left !default;
+$tool-next              : $fa-var-caret-right !default;
+
+$tool-pin               : $fa-var-map-marker !default;
+$tool-unpin             : $fa-var-map-marker, null, 'fa-rotate-90' !default;
+
+
+$tool-up                : $fa-var-chevron-circle-up !default;
+$tool-expand-top        : $fa-var-chevron-circle-up !default;
+$tool-collapse-top      : $fa-var-chevron-circle-up !default;
+
+$tool-down              : $fa-var-chevron-circle-down !default;
+$tool-expand-bottom     : $fa-var-chevron-circle-down !default;
+$tool-collapse-bottom   : $fa-var-chevron-circle-down !default;
+
+$tool-right             : $fa-var-chevron-right !default;
+$tool-expand-right      : $fa-var-chevron-circle-right !default;
+$tool-collapse-right    : $fa-var-chevron-circle-right !default;
+
+$tool-left              : $fa-var-chevron-left !default;
+$tool-expand-left       : $fa-var-chevron-circle-left !default;
+$tool-collapse-left     : $fa-var-chevron-circle-left !default;
+
+
+$tool-refresh           : $fa-var-rotate-right !default;
+
+$tool-plus              : $fa-var-plus !default;
+
+$tool-minus             : $fa-var-minus !default;
+$tool-search            : $fa-var-search !default;
+//$tool-save              : $fa-var-save !default;
+$tool-save              : $fa-var-check !default;
+$tool-help              : $fa-var-question-circle !default;
+
+$tool-print             : $fa-var-print !default;
+
+$tool-expand            : $fa-var-level-down !default;
+$tool-collapse          : $fa-var-level-up !default;
+
+$tool-resize            : $fa-var-arrows-alt !default;
+$tool-move              : $fa-var-arrows !default;

@@ -36,7 +36,9 @@
         "ext-ux",
         "sencha-amf",
         "sencha-soap",
-        "sencha-charts"
+        "sencha-charts",
+
+        "aracha-theme-glyphs-base"
     ],
 
     /**

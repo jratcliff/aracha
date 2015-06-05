@@ -1,0 +1,30 @@
+/**
+ * Secondary Button vars (use these in the call to the extjs-button-ui)
+ *
+ * NOTE: currently, the 'secondary' button vars use the 'default' vars
+ * since the current style guide says that the secondary button styling should
+ * be used as the default button styling
+ */
+$button-secondary-color                         : $button-default-color !default;
+$button-secondary-color-over                    : $button-default-color-over !default;
+$button-secondary-color-focus                   : $button-default-color-focus !default;
+$button-secondary-color-pressed                 : $button-default-color-pressed !default;
+$button-secondary-color-disabled                : $button-default-color-disabled !default;
+
+$button-secondary-background-color              : $button-default-background-color !default;
+$button-secondary-background-color-over         : $button-default-background-color-over !default;
+$button-secondary-background-color-focus        : $button-default-background-color-focus !default;
+$button-secondary-background-color-pressed      : $button-default-background-color-pressed !default;
+$button-secondary-background-color-disabled     : $button-default-background-color-disabled !default;
+
+$button-secondary-background-gradient           : null !default;
+$button-secondary-background-gradient-over      : null !default;
+$button-secondary-background-gradient-focus     : null !default;
+$button-secondary-background-gradient-pressed   : null !default;
+$button-secondary-background-gradient-disabled  : null !default;
+
+$button-secondary-border-color                  : $button-default-border-color !default;
+$button-secondary-border-color-over             : $button-default-border-color-over !default;
+$button-secondary-border-color-focus            : $button-default-border-color-focus !default;
+$button-secondary-border-color-pressed          : $button-default-border-color-pressed !default;
+$button-secondary-border-color-disabled         : $button-default-border-color-disabled !default;

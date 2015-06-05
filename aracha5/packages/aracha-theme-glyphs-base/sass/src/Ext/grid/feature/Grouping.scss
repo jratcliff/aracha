@@ -1,0 +1,41 @@
+
+.#{$prefix}grid-group-hd-collapsible {
+    .#{$prefix}grid-group-title {
+        background-image: none;
+        padding: 0;
+        &:before {
+            font-family : FontAwesome;
+            content     : $fa-var-minus;
+            margin-right: 5px;
+        }
+    }
+}
+
+
+.#{$prefix}grid-group-hd-collapsed {
+    .#{$prefix}grid-group-title {
+        background-image: none;
+        &:before {
+            font-family : FontAwesome;
+            content     : $fa-var-plus;
+            margin-right: 5px;
+        }
+    }
+}
+
+.#{$prefix}grid-group-collapsed .#{$prefix}grid-group-title {
+    background-image: theme-background-image('grid/group-expand');
+    //background-image: none;
+}
+
+.#{$prefix}group-by-icon {
+    background-image: theme-background-image('grid/group-by');
+    //background-image: none;
+}
+
+.#{$prefix}show-groups-icon {
+    background-image: theme-background-image('grid/group-by');
+    //background-image: none;
+}
+
+

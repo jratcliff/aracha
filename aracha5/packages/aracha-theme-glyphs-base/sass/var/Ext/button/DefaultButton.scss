@@ -1,0 +1,157 @@
+/**
+ * Default Button vars
+ *
+ * These are the vars that are used for buttons without a 'ui' config
+ */
+
+// color normal
+$button-default-color                               : white !default;
+$button-default-color-over                          : white !default;
+$button-default-color-pressed                       : white !default;
+$button-default-color-disabled                      : white !default;
+
+// color focused
+$button-default-color-focus                         : white !default;
+$button-default-color-focus-over                    : white !default;
+$button-default-color-focus-pressed                 : white !default;
+
+
+// background-color normal
+$button-default-background-color                    : gray !default;
+$button-default-background-color-over               : #666666 !default;
+$button-default-background-color-pressed            : dark-gray !default;
+$button-default-background-color-disabled           : gray !default;
+
+// background-color focused
+$button-default-background-color-focus              : #666666 !default;
+$button-default-background-color-focus-over         : #666666 !default;
+$button-default-background-color-focus-pressed      : dark-gray !default;
+
+
+// background-gradient normal (make same as background-color)
+$button-default-background-gradient                 : $button-default-background-color !default;
+$button-default-background-gradient-over            : $button-default-background-color-over !default;
+$button-default-background-gradient-pressed         : $button-default-background-color-pressed !default;
+$button-default-background-gradient-disabled        : $button-default-background-color-disabled !default;
+
+// background-gradient focused (make same as background-color-focus)
+$button-default-background-gradient-focus           : $button-default-background-color-focus !default;
+$button-default-background-gradient-focus-over      : $button-default-background-color-focus-over !default;
+$button-default-background-gradient-focus-pressed   : $button-default-background-color-focus-pressed !default;
+
+
+// border-color normal
+$button-default-border-color                        : #D7D7D7 !default;
+$button-default-border-color-over                   : #D7D7D7 !default;
+$button-default-border-color-pressed                : #D7D7D7 !default;
+$button-default-border-color-disabled               : #D7D7D7 !default;
+
+// border-color focused
+$button-default-border-color-focus                  : #D7D7D7 !default;
+$button-default-border-color-focus-over             : #D7D7D7 !default;
+$button-default-border-color-focus-pressed          : #D7D7D7 !default;
+
+
+// inner-border widths
+$button-default-inner-border-width                  : 0 !default;
+$button-default-inner-border-width-over             : 0 !default;
+$button-default-inner-border-width-pressed          : 0 !default;
+
+// inner-border focused widths
+$button-default-inner-border-width-focus            : 0 !default;
+$button-default-inner-border-width-focus-over       : 0 !default;
+$button-default-inner-border-width-focus-pressed    : 0 !default;
+
+
+$button-default-border-width                        : 1px !default;
+$button-default-border-radius                       : 0 !default;
+$button-default-icon-spacing                        : 3px !default;
+
+// spec calls for 10px text padding but buttons have a text-padding AND a padding for the container
+// we need the padding for the container to be 3px so we will set text-padding to 7 so the combined is 10px
+$button-default-text-padding                        : 7px !default;
+$button-default-padding                             : 3px !default;
+
+
+/**
+ * Default Button vars when placed in toolbars
+ *
+ * These are the vars that are used for buttons without a 'ui' config when placed in a toolbar
+ */
+
+// toolbar-color normal
+$button-toolbar-color                               : $button-default-color !default;
+$button-toolbar-color-over                          : $button-default-color-over !default;
+$button-toolbar-color-pressed                       : $button-default-color-pressed !default;
+$button-toolbar-color-disabled                      : $button-default-color-disabled !default;
+
+// toolbar-color focused
+$button-toolbar-color-focus                         : $button-default-color-focus !default;
+$button-toolbar-color-focus-over                    : $button-default-color-focus-over !default;
+$button-toolbar-color-focus-pressed                 : $button-default-color-focus-pressed !default;
+
+
+// toolbar-background-color normal
+$button-toolbar-background-color                    : $button-default-background-color !default;
+$button-toolbar-background-color-over               : $button-default-background-color-over !default;
+$button-toolbar-background-color-pressed            : $button-default-background-color-pressed !default;
+$button-toolbar-background-color-disabled           : $button-default-background-color-disabled !default;
+
+// toolbar-background-color focused
+$button-toolbar-background-color-focus              : $button-default-background-color-focus !default;
+$button-toolbar-background-color-focus-over         : $button-default-background-color-focus-over !default;
+$button-toolbar-background-color-focus-pressed      : $button-default-background-color-focus-pressed !default;
+
+
+// toolbar-background-gradient normal
+$button-toolbar-background-gradient                 : $button-default-background-gradient !default;
+$button-toolbar-background-gradient-over            : $button-default-background-gradient-over !default;
+$button-toolbar-background-gradient-pressed         : $button-default-background-gradient-pressed !default;
+$button-toolbar-background-gradient-disabled        : $button-default-background-gradient-disabled !default;
+
+// toolbar-background-gradient focused
+$button-toolbar-background-gradient-focus           : $button-default-background-gradient-focus !default;
+$button-toolbar-background-gradient-focus-over      : $button-default-background-gradient-focus-over !default;
+$button-toolbar-background-gradient-focus-pressed   : $button-default-background-gradient-focus-pressed !default;
+
+
+// toolbar-border-color normal
+$button-toolbar-border-color                        : $button-default-border-color !default;
+$button-toolbar-border-color-over                   : $button-default-border-color-over !default;
+$button-toolbar-border-color-pressed                : $button-default-border-color-pressed !default;
+$button-toolbar-border-color-disabled               : $button-default-border-color-disabled !default;
+
+// toolbar-border-color focused
+$button-toolbar-border-color-focus                  : $button-default-border-color-focus !default;
+$button-toolbar-border-color-focus-over             : $button-default-border-color-focus-over !default;
+$button-toolbar-border-color-focus-pressed          : $button-default-border-color-focus-pressed !default;
+
+
+// toolbar-inner-border widths
+$button-toolbar-inner-border-width                  : 0 !default;
+$button-toolbar-inner-border-width-over             : 0 !default;
+$button-toolbar-inner-border-width-pressed          : 0 !default;
+
+// toolbar-inner-border focused widths
+$button-toolbar-inner-border-width-focus            : 0 !default;
+$button-toolbar-inner-border-width-focus-over       : 0 !default;
+$button-toolbar-inner-border-width-focus-pressed    : 0 !default;
+
+
+$button-toolbar-border-width                        : $button-default-border-width !default;
+$button-toolbar-border-radius                       : $button-default-border-radius !default;
+$button-toolbar-icon-spacing                        : $button-default-icon-spacing !default;
+
+// spec calls for 10px text padding but buttons have a text-padding AND a padding for the container
+// we need the padding for the container to be 3px so we will set text-padding to 7 so the combined is 10px
+$button-toolbar-text-padding                        : $button-default-text-padding !default;
+$button-toolbar-padding                             : $button-default-padding !default;
+
+$button-opacity-disabled                            : 0.2 !default;
+
+
+$button-include-ui-menu-arrows                      : false !default;
+$button-include-ui-split-arrows                     : false !default;
+$button-include-split-noline-arrows                 : false !default;
+$button-include-split-over-arrows                   : false !default;
+

@@ -1,0 +1,141 @@
+
+// the framework calculates a line-height but in many cases this results
+// in text that is not middled aligned and so we override this and use a
+// unitless line-height
+
+.#{$prefix}form-text,
+.#{$prefix}form-text-default {
+    line-height: 1;
+}
+
+
+.#{$prefix}form-trigger,
+.#{$prefix}form-trigger-default {
+    background-image: none; // to hide the image added by the framework
+
+    height          : $font-size;
+    font-size       : $font-size;
+    line-height     : 1;
+
+    font-family     : $form-trigger-font-family;
+    color           : $form-trigger-color;
+    text-align      : center;
+    vertical-align  : middle;
+
+
+    // arrow trigger
+    &.#{$prefix}form-arrow-trigger,
+    &.#{$prefix}form-arrow-trigger-default {
+        background-image: none;
+
+        &:before {
+            content: $form-trigger-glyph;
+        }
+
+        // hide the framework's rtl image
+        @if $include-rtl {
+            &.#{$prefix}rtl {
+                background-image: none;
+            }
+        }
+    }
+
+    // clear trigger
+    &.#{$prefix}form-clear-trigger,
+    &.#{$prefix}form-clear-trigger-default {
+        background-image: none;
+
+        &:before {
+            content: $form-clear-trigger-glyph;
+        }
+
+        // hide the framework's rtl image
+        @if $include-rtl {
+            &.#{$prefix}rtl {
+                background-image: none;
+            }
+        }
+    }
+
+    // search trigger
+    &.#{$prefix}form-search-trigger,
+    &.#{$prefix}form-search-trigger-default {
+        background-image: none;
+
+        &:before {
+            content: $form-search-trigger-glyph;
+        }
+
+        // hide the framework's rtl image
+        @if $include-rtl {
+            &.#{$prefix}rtl {
+                background-image: none;
+            }
+        }
+    }
+
+    // time trigger
+    &.#{$prefix}form-time-trigger,
+    &.#{$prefix}form-time-trigger-default {
+        background-image: none;
+
+        &:before {
+            content: $form-time-trigger-glyph;
+        }
+
+        // hide the framework's rtl image
+        @if $include-rtl {
+            &.#{$prefix}rtl {
+                background-image: none;
+            }
+        }
+    }
+
+    // spinner triggers
+    &.#{$prefix}form-trigger-spinner,
+    &.#{$prefix}form-trigger-spinner-default {
+        background-image: none;
+        background-color: transparent;
+
+        .#{$prefix}form-spinner-default {
+            background-image: none;
+            height          : auto;
+            line-height     : $font-size/2;
+        }
+
+        .#{$prefix}form-spinner-over {
+            opacity: 0.7;
+        }
+
+        // up spinner
+        .#{$prefix}form-spinner-up,
+        .#{$prefix}form-spinner-up-default {
+            &:before {
+                content: $form-spinner-up-trigger-glyph;
+            }
+
+            // hide the framework's rtl image
+            @if $include-rtl {
+                &.#{$prefix}rtl {
+                    background-image: none;
+                }
+            }
+        }
+
+        // down spinner
+        .#{$prefix}form-spinner-down,
+        .#{$prefix}form-spinner-down-default {
+            &:before {
+                content: $form-spinner-down-trigger-glyph;
+            }
+
+            // hide the framework's rtl image
+            @if $include-rtl {
+                &.#{$prefix}rtl {
+                    background-image: none;
+                }
+            }
+        }
+    }
+}
+

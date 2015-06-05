@@ -1,0 +1,208 @@
+/**
+ *
+ * Custom Button themes.
+ *
+ * Note: that as of Ext JS 4.2, the extjs-button-ui mixin is NOT scale aware.
+ * Therefore we need to have three calls to extjs-button-ui for each scale (small, medium, large)
+ * for each new ui.
+ *
+ * Button theming tutorials:
+ *
+ *   http://vimeo.com/album/2541003/video/75258562  (24:19 - 36:00)
+ *
+ *   For IE 8 and below support (border radius and gradients)
+ *   http://vimeo.com/album/2541003/video/75258562  (36:10 - 48:28)
+ *
+ */
+
+
+/**
+ * custom mixin that adds an icon font (glyph) for showing an arrow and
+ * hides the framework's image that is included
+ */
+@mixin extjs-button-glyph-arrow-ui (
+    $ui,
+    $scale                      : 'small',
+    $ui-arrow-glyph             : $button-arrow-glyph,
+    $ui-arrow-font-family       : $button-arrow-font-family,
+    $ui-arrow-font-size         : null,
+    $ui-arrow-line-height       : null,
+    $ui-arrow-color             : $button-arrow-glyph-color,
+    $include-split-over-arrows  : true
+) {
+
+    $scale-index: index($button-scales-list, $scale);
+
+    // make sure we have a font-family
+    @if $ui-arrow-font-family == null {
+        $ui-arrow-font-family: $glyph-font-family;
+    }
+
+    // make sure we have a font-size
+    @if $ui-arrow-font-size == null {
+        $button-font-size-list: false !default;
+
+        @if $button-font-size-list {
+            $ui-arrow-font-size: nth($button-font-size-list, $scale-index);
+        }
+        // no map or list so individual vars
+        @else {
+            @if $scale == 'small' {
+                $ui-arrow-font-size: $button-small-font-size;
+            } @else if $scale == 'medium' {
+                $ui-arrow-font-size: $button-medium-font-size;
+            } @else if $scale == 'large' {
+                $ui-arrow-font-size: $button-large-font-size;
+            }
+        }
+    }
+
+    // make sure we have a line-height
+    @if $ui-arrow-line-height == null {
+        @if $scale == 'small' {
+            $ui-arrow-line-height: $button-small-arrow-height;
+        } @else if $scale == 'medium' {
+            $ui-arrow-line-height: $button-medium-arrow-height;
+        } @else if $scale == 'large' {
+            $ui-arrow-line-height: $button-large-arrow-height;
+        }
+    }
+
+    // for arrows
+    .#{$prefix}btn-wrap-#{$ui}-#{$scale},
+    .#{$prefix}btn-wrap-#{$ui}-toolbar-#{$scale} {
+
+        // right arrow
+        &.#{$prefix}btn-arrow-right:after {
+            background-image: none;
+            padding-right   : 0;
+            font-family     : $ui-arrow-font-family;
+            font-size       : $ui-arrow-font-size;
+            line-height     : $ui-arrow-line-height;
+            color           : $ui-arrow-color;
+            text-align      : center;
+            vertical-align  : middle;
+            content         : $ui-arrow-glyph;
+        }
+
+        // rtl
+        @if $include-rtl {
+            &.#{$prefix}rtl.#{$prefix}btn-arrow-right:after {
+                background-image: none;
+                padding-right   : 0;
+                font-family     : $ui-arrow-font-family;
+                font-size       : $ui-arrow-font-size;
+                line-height     : $ui-arrow-line-height;
+                color           : $ui-arrow-color;
+                text-align      : center;
+                vertical-align  : middle;
+                content         : $ui-arrow-glyph;
+            }
+        }
+
+        // bottom arrow
+        &.#{$prefix}btn-arrow-bottom:after {
+            background-image: none;
+            padding-right   : 0;
+            font-family     : $ui-arrow-font-family;
+            font-size       : $ui-arrow-font-size;
+            line-height     : $ui-arrow-line-height;
+            color           : $ui-arrow-color;
+            text-align      : center;
+            vertical-align  : middle;
+            content         : $ui-arrow-glyph;
+        }
+    }
+
+
+    // split button arrows
+    .#{$prefix}btn-wrap-#{$ui}-#{$scale},
+    .#{$prefix}btn-wrap-#{$ui}-toolbar-#{$scale} {
+
+        // right arrow
+        &.#{$prefix}btn-split-right {
+
+            .#{$prefix}btn-text,
+            .#{$prefix}btn-icon {
+                border-width    : 0 1px 0 0;
+                border-style    : solid;
+            }
+
+            &:after {
+                @extend .#{$prefix}btn-arrow-right:after;
+            }
+        }
+
+        // rtl
+        @if $include-rtl {
+            &.#{$prefix}rtl.#{$prefix}btn-split-right:after {
+                background-image: none;
+            }
+        }
+
+        // bottom arrow
+        &.#{$prefix}btn-split-bottom {
+
+            .#{$prefix}btn-text,
+            .#{$prefix}btn-icon {
+                border-width    : 0 0 1px 0;
+                border-style    : solid;
+            }
+
+            &:after {
+                @extend .#{$prefix}btn-arrow-right:after;
+                @extend .#{$prefix}btn-arrow-bottom:after;
+                background-image: none;
+            }
+        }
+    }
+
+    // split button 'over' arrow
+    @if $include-split-over-arrows {
+        .#{$prefix}btn-over > {
+            .#{$prefix}btn-wrap-#{$ui}-#{$scale},
+            .#{$prefix}btn-wrap-#{$ui}-toolbar-#{$scale} {
+
+                // right arrow
+                &.#{$prefix}btn-split-right:after {
+                    background-image: none;
+                    padding-right   : 0;
+                    opacity: 0.7;
+                }
+
+                // rtl
+                @if $include-rtl {
+                    &.#{$prefix}rtl.#{$prefix}btn-split-right:after {
+                        background-image: none;
+                        padding-right   : 0;
+                        opacity: 0.7;
+                    }
+                }
+
+                // bottom arrow
+                &.#{$prefix}btn-split-bottom:after {
+                    background-image: none;
+                    padding-right   : 0;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+
+}
+
+
+@import 'DefaultButton';
+
+
+// add the x-btn-glyph styling to the before pseudo element
+.#{$prefix}btn-glyph:before {
+    @extend .#{$prefix}btn-glyph;
+}
+
+// since we reference glyphs in our iconCls we need to have the x-btn-icon-el
+// include the x-btn-glyph styling
+// todo - ask sencha to allow a glyphCls config like they do with the iconCls config for button
+.#{$prefix}btn-icon-el {
+    @extend .#{$prefix}btn-glyph;
+}

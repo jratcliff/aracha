@@ -1,0 +1,96 @@
+/**
+ * Icon Button vars
+ */
+
+$button-icon-glyph-color                     : $trinet-gray !default;
+$button-icon-glyph-opacity                   : 1 !default;
+
+$button-icon-color                           : $trinet-gray !default;
+$button-icon-color-over                      : $trinet-gray !default;
+$button-icon-color-focus                     : $trinet-gray !default;
+$button-icon-color-pressed                   : $trinet-gray !default;
+$button-icon-color-disabled                  : $trinet-gray !default;
+
+$button-icon-background-color                : transparent !default;
+$button-icon-background-color-over           : transparent !default;
+$button-icon-background-color-focus          : transparent !default;
+$button-icon-background-color-pressed        : transparent !default;
+$button-icon-background-color-disabled       : transparent !default;
+
+$button-icon-border-color                    : transparent !default; // same as background so it can not be seen
+$button-icon-border-color-over               : transparent !default;
+$button-icon-border-color-focus              : transparent !default;
+$button-icon-border-color-pressed            : transparent !default;
+$button-icon-border-color-disabled           : transparent !default;
+
+
+// ================================================
+//
+// special scale rules for icon buttons
+//
+// ================================================
+$button-icon-small-border-radius            : 0 !default;
+$button-icon-medium-border-radius           : 0 !default;
+$button-icon-large-border-radius            : 0 !default;
+
+$button-icon-small-border-width             : 0 !default;
+$button-icon-medium-border-width            : 0 !default;
+$button-icon-large-border-width             : 0 !default;
+
+$button-icon-small-text-padding             : 13px !default;
+$button-icon-medium-text-padding            : 13px !default;
+$button-icon-large-text-padding             : 13px !default;
+
+$button-icon-small-padding                  : 0 !default;
+$button-icon-medium-padding                 : 0 !default;
+$button-icon-large-padding                  : 0 !default;
+
+/**
+ * Button sizing SMALL
+ * this will produce 26px height (icon-size + top/bottom(padding) + top/bottom(border-width)) (Neptune ~24px)
+ */
+$button-icon-small-icon-size        : 26px !default;
+$button-icon-small-font-size        : 26px !default;
+$button-icon-small-font-weight      : $button-font-weight !default;
+
+/**
+ * Button sizing MEDIUM
+ * this will produce 34px height (Neptune ~32px)
+ */
+$button-icon-medium-icon-size       : 34px !default;
+$button-icon-medium-font-size       : 34px !default;
+$button-icon-medium-font-weight     : $button-font-weight !default;
+
+/**
+ * Button sizing LARGE
+ * this will produce 42px height (Neptune ~40px)
+ */
+$button-icon-large-icon-size        : 42px !default;
+$button-icon-large-font-size        : 42px !default;
+$button-icon-large-font-weight      : $button-font-weight !default;
+
+
+
+// for now, we are just using the same 'small' image for all scales
+$button-icon-small-split-width               : 8px !default;
+$button-icon-medium-split-width              : 8px !default;
+$button-icon-large-split-width               : 8px !default;
+
+$button-icon-small-font-weight               : $regular-font-weight !default;
+$button-icon-small-font-weight-over          : $regular-font-weight !default;
+$button-icon-small-font-weight-focus         : $regular-font-weight !default;
+$button-icon-small-font-weight-pressed       : $regular-font-weight !default;
+$button-icon-small-font-weight-disabled      : $regular-font-weight !default;
+
+$button-icon-medium-font-weight              : $regular-font-weight !default;
+$button-icon-medium-font-weight-over         : $regular-font-weight !default;
+$button-icon-medium-font-weight-focus        : $regular-font-weight !default;
+$button-icon-medium-font-weight-pressed      : $regular-font-weight !default;
+$button-icon-medium-font-weight-disabled     : $regular-font-weight !default;
+
+$button-icon-large-font-weight               : $regular-font-weight !default;
+$button-icon-large-font-weight-over          : $regular-font-weight !default;
+$button-icon-large-font-weight-focus         : $regular-font-weight !default;
+$button-icon-large-font-weight-pressed       : $regular-font-weight !default;
+$button-icon-large-font-weight-disabled      : $regular-font-weight !default;
+

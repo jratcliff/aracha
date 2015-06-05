@@ -1,0 +1,15 @@
+
+
+@import 'DefaultButton';
+
+$button-arrow-glyph        : $fa-var-caret-down !default;
+$button-arrow-font-family  : $glyph-font-family !default;
+$button-arrow-glyph-color  : $button-default-color !default;
+
+$button-small-font-size     : 1px !default;
+$button-medium-font-size    : 2px !default;
+$button-large-font-size     : 3px !default;
+
+// define some useful lists
+$button-scales-list     : small, medium, large;
+$button-font-size-list  : $button-small-font-size, $button-medium-font-size, $button-large-font-size;

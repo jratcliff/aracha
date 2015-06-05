@@ -1,0 +1,137 @@
+.#{$prefix}form-cb-wrap {
+    vertical-align: middle;
+    line-height: 1;
+}
+
+// turn off the framework's top margin on the input checkbox and the label
+// we do this so that our glyphs will line up with the label and when clicked,
+// will trigger the click on the hidden input checkbox field
+.#{$prefix}form-cb-default,
+.#{$prefix}form-cb-label-default {
+    margin-top: 0px;
+}
+
+.#{$prefix}form-checkbox-default {
+    background-image: none;
+}
+
+.#{$prefix}form-type-checkbox {
+    .#{$prefix}form-cb-wrap-inner {
+
+        // not checked
+        @include extjs-add-glyph($x-glyph-checkbox-unchecked);
+        &:before {
+            display: inline-block;
+            width: (18em/14);
+            color: top($form-text-field-border-color);
+            padding: 1px;
+            vertical-align: middle;
+            }
+
+        // turn off the images the framework adds to the input elements
+        .#{$prefix}form-checkbox-default {
+            background-image: none;
+
+            .#{$prefix}form-cb-checked & {
+                background-image: none;
+            }
+        }
+
+        // set a smaller padding since we use glyph fonts
+        .#{$prefix}form-cb-label-default {
+            vertical-align: middle;
+            &.#{$prefix}form-cb-label-after {
+                padding-left: 3px;
+            }
+            &.#{$prefix}form-cb-label-after {
+                padding-right: 3px;
+            }
+        }
+    }
+
+    // checked
+    &.#{$prefix}form-cb-checked {
+        .#{$prefix}form-cb-wrap-inner {
+            @include extjs-add-glyph($x-glyph-checkbox-checked);
+            &:before {
+                display: inline-block;
+                width: (18em/14);
+                color: $form-text-field-color;
+                padding: 1px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    // focused
+    &.form-checkbox-focus {
+        .#{$prefix}form-cb-wrap-inner {
+            &:before {
+                color: $form-text-field-focus-border-color;
+            }
+        }
+    }
+}
+
+.#{$prefix}form-type-radio {
+    .#{$prefix}form-cb-wrap-inner {
+
+        // not selected
+        @include extjs-add-glyph($x-glyph-radio-unselected);
+        &:before {
+            display: inline-block;
+            width: (18em/14);
+            color: top($form-text-field-border-color);
+            padding: 1px;
+        }
+
+        // turn off the images the framework adds to the input elements
+        .#{$prefix}form-radio-default {
+            background-image: none;
+
+            .#{$prefix}form-cb-checked & {
+                background-image: none;
+            }
+        }
+
+        // set a smaller padding since we use glyph fonts
+        .#{$prefix}form-cb-label-default {
+            &.#{$prefix}form-cb-label-after {
+                padding-left: 3px;
+            }
+            &.#{$prefix}form-cb-label-after {
+                padding-right: 3px;
+            }
+        }
+    }
+
+    // selected
+    &.#{$prefix}form-cb-checked {
+        .#{$prefix}form-cb-wrap-inner {
+            @include extjs-add-glyph($x-glyph-radio-selected);
+            &:before {
+                display: inline-block;
+                width: (18em/14);
+                color: $form-text-field-color;
+                padding: 1px;
+            }
+        }
+    }
+
+    // focused
+    &.form-checkbox-focus {
+        .#{$prefix}form-cb-wrap-inner {
+            &:before {
+                color: $form-text-field-focus-border-color;
+            }
+        }
+    }
+}
+
+// the framework sets "position: static" and that doesn't work when
+// using the :before pseudo element to show the checkbox
+.x-form-cb-wrap-inner-no-box-label > .x-form-cb {
+    position: absolute;
+    top     : 0;
+    left    : 0; 
+}

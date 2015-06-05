@@ -1,0 +1,61 @@
+/**
+ * Transparent Button vars
+ */
+
+$button-transparent-glyph-color                     : $trinet-gray !default;
+$button-transparent-glyph-opacity                   : 1 !default;
+
+$button-transparent-color                           : $trinet-gray !default;
+$button-transparent-color-over                      : $trinet-gray !default;
+$button-transparent-color-focus                     : $trinet-gray !default;
+$button-transparent-color-pressed                   : $trinet-gray !default;
+$button-transparent-color-disabled                  : $trinet-gray !default;
+
+$button-transparent-background-color                : transparent !default;
+$button-transparent-background-color-over           : transparent !default;
+$button-transparent-background-color-focus          : transparent !default;
+$button-transparent-background-color-pressed        : transparent !default;
+$button-transparent-background-color-disabled       : transparent !default;
+
+$button-transparent-border-color                    : transparent !default; // same as background so it can not be seen
+$button-transparent-border-color-over               : transparent !default;
+$button-transparent-border-color-focus              : transparent !default;
+$button-transparent-border-color-pressed            : transparent !default;
+$button-transparent-border-color-disabled           : transparent !default;
+
+// special scale rules for tab buttons
+$button-transparent-small-border-radius             : 0px !default;
+$button-transparent-medium-border-radius            : 0px !default;
+$button-transparent-large-border-radius             : 0px !default;
+
+$button-transparent-small-border-width              : 0 !default;
+$button-transparent-medium-border-width             : 0 !default;
+$button-transparent-large-border-width              : 0 !default;
+
+$button-transparent-small-text-padding              : 13px !default;
+$button-transparent-medium-text-padding             : 13px !default;
+$button-transparent-large-text-padding              : 13px !default;
+
+// for now, we are just using the same 'small' image for all scales
+$button-transparent-small-split-width               : 8px !default;
+$button-transparent-medium-split-width              : 8px !default;
+$button-transparent-large-split-width               : 8px !default;
+
+$button-transparent-small-font-weight               : $regular-font-weight !default;
+$button-transparent-small-font-weight-over          : $regular-font-weight !default;
+$button-transparent-small-font-weight-focus         : $regular-font-weight !default;
+$button-transparent-small-font-weight-pressed       : $regular-font-weight !default;
+$button-transparent-small-font-weight-disabled      : $regular-font-weight !default;
+
+$button-transparent-medium-font-weight              : $regular-font-weight !default;
+$button-transparent-medium-font-weight-over         : $regular-font-weight !default;
+$button-transparent-medium-font-weight-focus        : $regular-font-weight !default;
+$button-transparent-medium-font-weight-pressed      : $regular-font-weight !default;
+$button-transparent-medium-font-weight-disabled     : $regular-font-weight !default;
+
+$button-transparent-large-font-weight               : $regular-font-weight !default;
+$button-transparent-large-font-weight-over          : $regular-font-weight !default;
+$button-transparent-large-font-weight-focus         : $regular-font-weight !default;
+$button-transparent-large-font-weight-pressed       : $regular-font-weight !default;
+$button-transparent-large-font-weight-disabled      : $regular-font-weight !default;
+

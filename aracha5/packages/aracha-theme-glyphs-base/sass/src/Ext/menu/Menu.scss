@@ -1,0 +1,58 @@
+// adding support to show an icon font (glyph) for menu icons
+.#{$prefix}menu-item-icon {
+    top         : 0;
+    font-size   : $menu-item-font-size;
+    color       : $menu-text-color;
+    line-height : $menu-item-height - vertical($menu-item-border-width) - abs($menu-item-text-vertical-offset);
+    height      : auto;
+}
+
+// showing the arrow glyph
+.#{$prefix}menu-item-arrow {
+    background-image: none;
+    top             : 0;
+    font-size       : $menu-item-arrow-font-size;
+    color           : $menu-item-arrow-text-color;
+    line-height     : $menu-item-height - vertical($menu-item-border-width) - abs($menu-item-text-vertical-offset);
+    height          : auto;
+
+    @include extjs-add-glyph($menu-item-arrow $menu-item-arrow-font-family);
+
+    .#{$prefix}menu-item-active & {
+        top: 0;
+    }
+
+    @if $include-rtl {
+        &.#{$prefix}rtl {
+            background-image: none;
+            @include extjs-add-glyph($menu-item-arrow $menu-item-arrow-font-family);
+        }
+    }
+}
+
+.#{$prefix}menu-item-icon {
+    &.#{$prefix}menu-item-checkbox {
+        // checked
+        .#{$prefix}menu-item-checked & {
+            background-image: none;
+            @include extjs-add-glyph($x-glyph-checkbox-checked);
+            }
+        // unchecked
+        .#{$prefix}menu-item-unchecked & {
+            background-image: none;
+            @include extjs-add-glyph($x-glyph-checkbox-unchecked);
+            }
+        }
+
+    &.#{$prefix}menu-group-icon {
+        // checked
+        .#{$prefix}menu-item-checked & {
+            background-image: none;
+            @include extjs-add-glyph($x-glyph-checkbox-checked);
+            }
+
+        .#{$prefix}menu-item-unchecked & {
+            background-image: none;
+        }
+    }
+}

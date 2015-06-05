@@ -1,0 +1,21 @@
+// since this theme uses glyphs instead of images 
+// we need to set the color for the expand/collapse glyphs
+
+.#{$prefix}panel-header.#{$prefix}accordion-hd {
+    .#{$prefix}tool-glyph {
+        color: $accordion-tool-color;
+
+        &:before {
+            font-size: $accordion-tool-font-size;
+    }
+    }
+
+    // also set the opacity for hovering
+    @if $tool-include-hover-icons {
+        .#{$prefix}tool-over {
+            .#{$prefix}tool-glyph {
+                @include opacity($accordion-tool-opacity-over);
+            }
+        }
+    }
+}
