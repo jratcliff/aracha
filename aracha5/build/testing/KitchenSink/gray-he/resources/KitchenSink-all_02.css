@@ -9358,14 +9358,15 @@ input:-ms-input-placeholder {
     .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-default,
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-default {
       background-image: none;
+      background-color: transparent;
       height: auto;
       line-height: 6px; }
-    /* line 106, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 107, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-over,
     .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-over,
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-over {
       opacity: 0.7; }
-    /* line 113, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 114, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up:before,
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default:before,
     .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up:before,
@@ -9373,7 +9374,7 @@ input:-ms-input-placeholder {
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up:before,
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default:before {
       content: "\f106"; }
-    /* line 119, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 120, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up.x-rtl,
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default.x-rtl, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up.x-rtl, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default.x-rtl,
     .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up.x-rtl,
@@ -9381,7 +9382,7 @@ input:-ms-input-placeholder {
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up.x-rtl,
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default.x-rtl {
       background-image: none; }
-    /* line 128, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 129, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down:before,
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default:before,
     .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down:before,
@@ -9389,7 +9390,7 @@ input:-ms-input-placeholder {
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down:before,
     .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default:before {
       content: "\f107"; }
-    /* line 134, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 135, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down.x-rtl,
     .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default.x-rtl, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down.x-rtl, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default.x-rtl,
     .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down.x-rtl,
