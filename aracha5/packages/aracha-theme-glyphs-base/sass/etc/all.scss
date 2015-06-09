@@ -1,9 +1,4 @@
 
-// import the FontAwesome sass
-$fa-font-path: 'aracha-glyphs/fonts' !default;
-@import '../var/font-awesome/font-awesome.scss';
-
-
 @mixin extjs-add-glyph ($content) {
     $font-fam: $glyph-font-family;
     $extra-css: null;

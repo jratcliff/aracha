@@ -99,6 +99,7 @@
 
         .#{$prefix}form-spinner-default {
             background-image: none;
+            background-color: transparent;
             height          : auto;
             line-height     : $font-size/2;
         }

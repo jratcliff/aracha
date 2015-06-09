@@ -36,9 +36,7 @@
         "ext-ux",
         "sencha-amf",
         "sencha-soap",
-        "sencha-charts",
-
-        "aracha-theme-glyphs-base"
+        "sencha-charts"
     ],
 
     /**
@@ -298,20 +296,61 @@
         "classic": {
             "theme": "ext-theme-classic"
         },
+        "classic-glyphs": {
+            "theme": "aracha-theme-glyphs-classic",
+            "requires": [
+                "aracha-theme-glyphs-base"
+            ]
+        },
+
         "gray": {
             "theme": "ext-theme-gray"
         },
+        "gray-glyphs": {
+            "theme": "aracha-theme-glyphs-gray",
+            "requires": [
+                "aracha-theme-glyphs-base"
+            ]
+        },
+
         "crisp": {
             "theme": "ext-theme-crisp"
         },
+        "crisp-glyphs": {
+            "theme": "aracha-theme-glyphs-crisp",
+            "requires": [
+                "aracha-theme-glyphs-base"
+            ]
+        },
+
         "crisp-touch": {
             "theme": "ext-theme-crisp-touch"
         },
+        "crisp-touch-glyphs": {
+            "theme": "aracha-theme-glyphs-crisp-touch",
+            "requires": [
+                "aracha-theme-glyphs-base"
+            ]
+        },
+
         "neptune": {
             "theme": "ext-theme-neptune"
         },
+        "neptune-glyphs": {
+            "theme": "aracha-theme-glyphs-neptune",
+            "requires": [
+                "aracha-theme-glyphs-base"
+            ]
+        },
+
         "neptune-touch": {
             "theme": "ext-theme-neptune-touch"
+        },
+        "neptune-touch-glyphs": {
+            "theme": "aracha-theme-glyphs-neptune-touch",
+            "requires": [
+                "aracha-theme-glyphs-base"
+            ]
         }
     }
 }

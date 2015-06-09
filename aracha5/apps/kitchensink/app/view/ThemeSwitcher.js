@@ -47,12 +47,18 @@ Ext.define('KitchenSink.view.ThemeSwitcher', function() {
 
             var menu = new Ext.menu.Menu({
                     items: [
-                        makeItem('neptune',       'Neptune'),
-                        makeItem('neptune-touch', 'Neptune Touch'),
-                        makeItem('crisp',         'Crisp'),
-                        makeItem('crisp-touch',   'Crisp Touch'),
-                        makeItem('classic',       'Classic'),
-                        makeItem('gray',          'Gray'),
+                        makeItem('neptune',                 'Neptune'),
+                        makeItem('neptune-glyphs',          'Neptune w/Glyphs'),
+                        makeItem('neptune-touch',           'Neptune Touch'),
+                        makeItem('neptune-touch-glyphs',    'Neptune Touch w/Glyphs'),
+                        makeItem('crisp',                   'Crisp'),
+                        makeItem('crisp-glyphs',            'Crisp w/Glyphs'),
+                        makeItem('crisp-touch',             'Crisp Touch'),
+                        makeItem('crisp-touch-glyphs',      'Crisp Touch w/Glyphs'),
+                        makeItem('classic',                 'Classic'),
+                        makeItem('classic-glyphs',          'Classic w/Glyphs'),
+                        makeItem('gray',                    'Gray'),
+                        makeItem('gray-glyphs',             'Gray w/Glyphs'),
                         '-',
                         makeItem('en',            'English',    'locale'),
                         makeItem('he',            'Hebrew',     'locale')

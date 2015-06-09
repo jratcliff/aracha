@@ -1,6 +1,6 @@
 {
     "name": "aracha-theme-glyphs-base",
-    "type": "code",
+    "type": "code", // code works but theme does not.  in ExtJS/Cmd 4, theme and code both worked
     "creator": "anonymous",
     "summary": "Short summary",
     "detailedDescription": "Long description of package",

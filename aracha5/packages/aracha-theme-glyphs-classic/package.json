@@ -1,0 +1,33 @@
+{
+    "name": "aracha-theme-glyphs-classic",
+    "type": "theme",
+    "creator": "anonymous",
+    "summary": "Short summary",
+    "detailedDescription": "Long description of package",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "slicer": {
+        "js": [
+            {
+                "path": "${package.dir}/sass/example/custom.js",
+                "isWidgetManifest": true
+            }
+        ]
+    },
+    "output": "${package.dir}/build",
+    "local": true,
+    "requires": [
+
+        // with ExtJS/Cmd 4 we can just add "aracha-theme-glyphs-base"
+        // but this does not work with ExtJS/Cmd 5, why???
+        // for 5, we have to add this in app.json
+        //"aracha-theme-glyphs-base"
+
+        // since adding the "aracha-theme-glyphs-base" causes errors
+        // we need to add aracha-glyphs here
+        //"aracha-glyphs"
+
+    ],
+    "extend": "ext-theme-classic"
+}

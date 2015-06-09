@@ -1,0 +1,33 @@
+
+.#{$prefix}grid-filters-lt {
+    background-image: none;
+
+    &:before {
+        display: block;
+        content: $fa-var-less-than;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+.#{$prefix}grid-filters-gt {
+    background-image: none;
+
+    &:before {
+        display: block;
+        content: $fa-var-greater-than;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+.#{$prefix}grid-filters-eq {
+    background-image: none;
+
+    &:before {
+        display: block;
+        content: $fa-var-equal;
+        text-align: center;
+        -webkit-font-smoothing: antialiased;
+    }
+}
