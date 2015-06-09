@@ -1,0 +1,32 @@
+@mixin extjs-add-glyph ($content) {
+    $font-fam: $glyph-font-family;
+    $extra-css: null;
+
+    @if type-of($content) == 'list' {
+        $len: length($content);
+        @if ($len == 1) {
+            $content: nth($content, 1);
+        } @else if ($len == 2) {
+            $font-fam: nth($content, 2);
+            $content: nth($content, 1);
+        } @else if ($len > 2) {
+            $font-fam: nth($content, 2);
+            $extra-css: nth($content, 3);
+            $content: nth($content, 1);
+        }
+    }
+
+    @if $font-fam != null {
+        &:before {
+            font-family: $font-fam;
+        }
+    }
+
+    @if $extra-css != null {
+        @extend .#{$extra-css};
+    }
+
+    &:before {
+        content: '#{$content}';
+    }
+}

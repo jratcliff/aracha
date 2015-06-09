@@ -1,0 +1,22 @@
+.#{$prefix}fieldset-header-tool-default {
+
+    > .#{$prefix}tool-toggle {
+        background-image: none;
+        display: inline;
+        width: (18em/14);
+        position: relative;
+        top: -2px;
+    }
+}
+
+.#{$prefix}fieldset-default {
+    &.#{$prefix}fieldset-collapsed {
+
+        .#{$prefix}tool-toggle {
+            background-image: none;
+            &:before {
+                content: $tool-toggle-collapsed;
+            }
+        }
+    }
+}

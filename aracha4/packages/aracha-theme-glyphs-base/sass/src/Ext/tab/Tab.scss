@@ -1,0 +1,24 @@
+
+// custom text styling for tabs
+.#{$prefix}tab-inner-default {
+    //text-decoration: $tab-text-decoration;
+    //text-transform: $tab-text-transform;
+}
+
+// custom styling for close button on tabs
+.#{$prefix}tab-default {
+    .#{$prefix}tab-close-btn {
+        background  : none; // remove the image the framework adds
+        text-align  : center;
+        font-size   : $tab-closable-glyph-font-size;
+        line-height : $tab-closable-glyph-font-size;
+        width       : $tab-closable-glyph-font-size;
+        height      : $tab-closable-glyph-font-size;
+
+        &:before {
+            font-family : $tab-closable-glyph-font-family;
+            content     : $tab-closable-glyph;
+            color       : $tab-closable-glyph-color;
+        }
+    }
+}

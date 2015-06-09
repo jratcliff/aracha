@@ -1,0 +1,18 @@
+
+.#{$prefix}column-header-trigger {
+
+    background-image: none; // to hide the image added by the framework
+
+    font-size       : $grid-column-header-font-size;
+    line-height     : (top($grid-header-padding) + bottom($grid-header-padding) + $grid-column-header-line-height);
+
+    text-align      : center;
+    vertical-align  : middle;
+
+    color           : $grid-column-header-color;
+
+    &:before {
+        font-family : $grid-column-header-menu-arrow-glyph-font-family;
+        content     : $grid-column-header-menu-arrow-glyph;
+    }
+}

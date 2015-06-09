@@ -1,0 +1,129 @@
+.#{$prefix}tbar-page-number {
+    width: 30px;
+}
+
+.#{$prefix}tbar-page-first {
+    background-image: none;
+    &:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: $fa-var-angle-double-left;
+        color: $form-text-field-color;
+        opacity: 0.7;
+        line-height: 1px;
+    }
+}
+
+.#{$prefix}tbar-page-prev {
+    background-image: none;
+    &:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: $fa-var-angle-left;
+        color: $form-text-field-color;
+        opacity: 0.7;
+        line-height: 1px;
+    }
+}
+
+.#{$prefix}tbar-page-next {
+    background-image: none;
+    &:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: $fa-var-angle-right;
+        color: $form-text-field-color;
+        opacity: 0.7;
+        line-height: 1px;
+    }
+}
+
+.#{$prefix}tbar-page-last {
+    background-image: none;
+    &:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: $fa-var-angle-double-right;
+        color: $form-text-field-color;
+        opacity: 0.7;
+        line-height: 1px;
+    }
+}
+
+.#{$prefix}tbar-loading {
+    background-image: none;
+    &:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        content: $fa-var-rotate-right;
+        color: $form-text-field-color;
+        opacity: 0.7;
+        line-height: 1px;
+    }
+}
+
+@if $grid-paging-toolbar-include-disabled-icons {
+    .#{$prefix}item-disabled {
+        .#{$prefix}tbar-page-first {
+            background-image: none;
+        }
+
+        .#{$prefix}tbar-page-prev {
+            background-image: none;
+        }
+
+        .#{$prefix}tbar-page-next {
+            background-image: none;
+        }
+
+        .#{$prefix}tbar-page-last {
+            background-image: none;
+        }
+
+        .#{$prefix}tbar-loading {
+            background-image: none;
+        }
+    }
+}
+
+@if $include-rtl {
+    .#{$prefix}rtl {
+        &.#{$prefix}tbar-page-first {
+            background-image: none;
+        }
+
+        &.#{$prefix}tbar-page-prev {
+            background-image: none;
+        }
+
+        &.#{$prefix}tbar-page-next {
+            background-image: none;
+        }
+
+        &.#{$prefix}tbar-page-last {
+            background-image: none;
+        }
+    }
+
+    @if $grid-paging-toolbar-include-disabled-icons {
+        .#{$prefix}item-disabled {
+            .#{$prefix}rtl {
+                &.#{$prefix}tbar-page-first {
+                    background-image: none;
+                }
+
+                &.#{$prefix}tbar-page-prev {
+                    background-image: none;
+                }
+
+                &.#{$prefix}tbar-page-next {
+                    background-image: none;
+                }
+
+                &.#{$prefix}tbar-page-last {
+                    background-image: none;
+                }
+            }
+        }
+    }
+}

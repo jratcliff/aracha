@@ -1,0 +1,35 @@
+
+// framework sets display to inline-block but that prevents the horiztontal padding from working
+.#{$prefix}form-item-label-inner {
+    display: inline;
+}
+
+@mixin extjs-label-glyph-ui(
+    $ui: null
+) {
+    .#{$prefix}form-invalid-icon-#{$ui} {
+        background: none;
+        color: $form-invalid-glyph-color;
+        width: auto;
+        height: auto;
+        @include extjs-add-glyph($fa-var-exclamation-circle);
+    }
+
+    .#{$prefix}form-invalid-under-#{$ui} {
+        background: none;
+        color: $form-invalid-glyph-color;
+        width: auto;
+        height: auto;
+        @include extjs-add-glyph($fa-var-exclamation-circle);
+    }
+}
+
+// ExtJS 5 only???
+// TODO - what is needed to get this to work in 4.x?
+/*
+@if $include-label-default-ui {
+    @include extjs-label-glyph-ui(
+        $ui: 'default'
+    );
+}
+*/

@@ -1,0 +1,43 @@
+
+
+// import the FontAwesome sass
+$fa-font-path: 'aracha-glyphs/fonts' !default;
+@import './font-awesome/font-awesome.scss';
+
+
+// https://github.com/FortAwesome/Font-Awesome/issues/1133
+// http://jsfiddle.net/tagliala/77re29ct/
+
+.fa-divide,
+.fa-less-than,
+.fa-greater-than,
+.fa-less-than-equal,
+.fa-greater-than-equal,
+.fa-equal {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.fa-divide:before {
+    content: "\2236";
+}
+
+.fa-less-than:before {
+    content: "<";
+}
+
+.fa-greater-than:before {
+    content: ">";
+}
+
+.fa-less-than-equal:before {
+    content: "\2264";
+}
+
+.fa-greater-than-equal:before {
+    content: "\2265";
+}
+
+.fa-equal:before {
+    content: "=";
+}

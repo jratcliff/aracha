@@ -1,0 +1,28 @@
+// unchecked glyph in header and row
+.#{$prefix}grid-row-checker,
+.#{$prefix}column-header-checkbox .#{$prefix}column-header-text {
+    background-image: none;
+    font: $grid-row-cell-font;
+    @include extjs-add-glyph($x-glyph-checkbox-unchecked);
+}
+
+// unchecked glyph color in row
+.#{$prefix}grid-row-checker {
+    &:before {
+        color: top($form-text-field-border-color);
+    }
+}
+
+// checked glyph in header and row
+.#{$prefix}grid-hd-checker-on .#{$prefix}column-header-text,
+.#{$prefix}grid-item-selected .#{$prefix}grid-row-checker {
+    @include extjs-add-glyph($x-glyph-checkbox-checked);
+}
+
+// checked glyph color in row
+.#{$prefix}grid-item-selected .#{$prefix}grid-row-checker {
+    @include extjs-add-glyph($x-glyph-checkbox-checked);
+    &:before {
+        color: $form-text-field-color;
+    }
+}

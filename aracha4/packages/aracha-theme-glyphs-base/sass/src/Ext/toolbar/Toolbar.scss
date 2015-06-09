@@ -1,0 +1,14 @@
+
+
+@if $include-ext-layout-container-boxoverflow-menu {
+    .#{$prefix}toolbar-more-icon {
+        background-image: none;
+        @include extjs-add-glyph($fa-var-navicon);
+        @if $include-rtl {
+            &.#{$prefix}rtl {
+                background-image: none;
+                @include extjs-add-glyph($fa-var-navicon);
+            }
+        }
+    }
+}

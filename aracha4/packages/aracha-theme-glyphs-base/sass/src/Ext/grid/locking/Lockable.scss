@@ -1,0 +1,7 @@
+
+// framework doesn't include a way to set the right border color of the locked grid so we need to
+.#{$prefix}grid-locked .#{$prefix}grid-inner-locked {
+    //border-width: 0 $grid-lockable-separator-border-width 0 0;
+    //border-style: $grid-lockable-separator-border-style;
+    //border-color: $grid-row-divider-color;
+}

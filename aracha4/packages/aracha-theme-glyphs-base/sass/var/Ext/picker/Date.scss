@@ -1,0 +1,120 @@
+/**
+ * @var {color}
+ * The border color for today's date when shown in the previous month.
+ */
+$datepicker-item-prevday-today-border-color: transparent !default;
+
+/**
+ * @var {string}
+ * The border style for today's date when shown in the previous month.
+ */
+$datepicker-item-prevday-today-border-style: none !default;
+
+/**
+ * @var {color}
+ * The border color for today's date when shown in the next month.
+ */
+$datepicker-item-nextday-today-border-color: transparent !default;
+
+/**
+ * @var {string}
+ * The border style for today's date when shown in the previous month.
+ */
+$datepicker-item-nextday-today-border-style: none !default;
+
+/**
+ * @var {number}
+ * The font-size of Date Picker Month button
+ */
+$datepicker-month-button-font-size: $font-size !default;
+
+/**
+ * @var {string}
+ * The font-weight of Date Picker Month button
+ */
+$datepicker-month-button-font-weight: 700 !default;
+
+/**
+ * @var {string}
+ * The arrow glyph font family
+ */
+ $datepicker-arrow-glyph-font-family: $glyph-font-family !default;
+
+/**
+ * @var {string}
+ * The previous arrow glyph context string
+ */
+ $datepicker-arrow-glyph-prev: '\f104' !default;
+
+/**
+ * @var {string}
+ * The next arrow glyph context string
+ */
+ $datepicker-arrow-glyph-next: '\f105' !default;
+
+/**
+ * @var {number}
+ * The font-size of the arrow glyph
+ */
+$datepicker-arrow-glyph-font-size: 22px !default;
+
+/**
+ * @var {string}
+ * The font-weight of the arrow glyph
+ */
+ $datepicker-arrow-glyph-font-weight: bold !default;
+
+ /**
+ * @var {string}
+ * The color of of the arrow glyph
+ */
+ $datepicker-arrow-glyph-color: white !default;
+
+
+
+// overrides to inherited theme
+$datepicker-item-today-border-color         : orange !default;
+
+// date picker container
+$datepicker-background-color                : white !default;
+$datepicker-border-color                    : grey !default;
+$datepicker-border-width                    : 1px !default;
+
+// header
+$datepicker-arrow-glyph-font-size           : 22px !default;
+$datepicker-arrow-glyph-font-weight         : 700 !default;
+$datepicker-arrow-opacity                   : 1.0 !default;
+$datepicker-arrow-opacity-over              : 0.7 !default;
+$datepicker-arrow-opacity-disabled          : 0.3 !default;
+
+// header month button
+$datepicker-month-button-color              : white !default;
+$datepicker-month-button-line-height        : $datepicker-month-button-font-size + 2 !default;
+$datepicker-month-button-font-weight        : bold !default;
+
+// day header
+$datepicker-column-header-font-weight       : bold !default;
+
+// days
+$datepicker-item-width                      : 30px !default;
+$datepicker-item-height                     : 25px !default;
+$datepicker-item-color                      : $color !default;
+$datepicker-item-border-width               : 1px !default;
+$datepicker-item-border-color               : white !default;
+$datepicker-item-font-weight                : normal !default;
+
+
+// days selected (note, we use our own 'selected class' since the framework's definition of selected is not normal)
+$datepicker-item-selected-color             : $datepicker-item-color !default;
+$datepicker-item-selected-background-color  : $datepicker-background-color !default;
+$datepicker-item-selected-border-color      : $datepicker-item-border-color !default;
+$datepicker-item-selected-font-weight       : $datepicker-item-font-weight !default;
+
+// item selected month
+$datepicker-monthpicker-item-selected-color : white !default;
+
+
+$datepicker-item-today-border-color         : orange !default;
+
+// for days in previous and next month
+$datepicker-item-prev-next-color            : grey !default;

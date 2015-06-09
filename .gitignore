@@ -1,0 +1,7 @@
+aracha4/build
+aracha4/ext
+aracha4/**/bootstrap.css
+aracha4/**/bootstrap.js
+aracha4/packages/aracha-glyphs/build
+aracha4/packages/aracha-theme-glyphs-base/build
+aracha4/packages/aracha-theme-glyphs-classic/build

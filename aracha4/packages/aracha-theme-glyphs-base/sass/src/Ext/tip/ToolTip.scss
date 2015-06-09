@@ -1,0 +1,27 @@
+.#{$prefix}tip-anchor {
+    border-width: 10px;
+}
+
+.#{$prefix}tip-anchor-inner {
+    @extend .#{$prefix}tip-anchor;
+
+    &.#{$prefix}tip-anchor-top {
+        @extend .#{$prefix}tip-anchor-top;
+        border-bottom-color: $tip-background-color;
+    }
+    
+    &.#{$prefix}tip-anchor-bottom {
+        @extend .#{$prefix}tip-anchor-bottom;
+        border-top-color: $tip-background-color;
+    }
+
+    &.#{$prefix}tip-anchor-left {
+        @extend .#{$prefix}tip-anchor-left;
+        border-right-color: $tip-background-color;
+    }
+
+    &.#{$prefix}tip-anchor-right {
+        @extend .#{$prefix}tip-anchor-right;
+        border-left-color: $tip-background-color;
+    }
+}

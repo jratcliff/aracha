@@ -1,0 +1,45 @@
+/**
+ * Action Button vars (use these in the call to the extjs-button-ui)
+ */
+$button-action-color                                : $trinet-white !default;
+$button-action-color-over                           : $trinet-white !default;
+$button-action-color-pressed                        : $trinet-white !default;
+$button-action-color-disabled                       : $trinet-white !default;
+
+$button-action-color-focus                          : $trinet-white !default;
+$button-action-color-focus-over                     : $trinet-white !default;
+$button-action-color-focus-pressed                  : $trinet-white !default;
+
+$button-action-background-color                     : $trinet-orange !default;
+$button-action-background-color-over                : $trinet-dark-orange !default;
+$button-action-background-color-pressed             : $trinet-darker-orange !default;
+
+$button-action-background-color-focus               : $trinet-dark-orange !default;
+$button-action-background-color-focus-over          : $trinet-dark-orange !default;
+$button-action-background-color-focus-pressed       : $trinet-darker-orange !default;
+$button-action-background-color-disabled            : $trinet-orange !default;
+
+// make same as background-color
+$button-action-background-gradient                  : $button-action-background-color !default;
+$button-action-background-gradient-over             : $button-action-background-color-over !default;
+$button-action-background-gradient-pressed          : $button-action-background-color-pressed !default;
+$button-action-background-gradient-disabled         : $button-action-background-color-disabled !default;
+
+$button-action-background-gradient-focus            : $button-action-background-color-focus !default;
+$button-action-background-gradient-focus-over       : $button-action-background-color-focus-over !default;
+$button-action-background-gradient-focus-pressed    : $button-action-background-color-focus-pressed !default;
+
+
+// border colors are set to use the border colors of a default button
+$button-action-border-color                         : $button-default-border-color !default;
+$button-action-border-color-over                    : $button-default-border-color-over !default;
+$button-action-border-color-pressed                 : $button-default-border-color-pressed !default;
+$button-action-border-color-disabled                : $button-default-border-color-disabled !default;
+
+$button-action-border-color-focus                   : $button-default-border-color-focus !default;
+$button-action-border-color-focus-over              : $button-default-border-color-focus-over !default;
+$button-action-border-color-focus-pressed           : $button-default-border-color-focus-pressed !default;
+
+
+
+$button-action-menu-arrow-glyph-color               : $trinet-white !default;

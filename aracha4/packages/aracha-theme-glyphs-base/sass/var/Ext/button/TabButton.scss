@@ -1,0 +1,56 @@
+/**
+ * Tab Button vars
+ */
+$button-tab-color                           : $trinet-gray !default;
+$button-tab-color-over                      : $trinet-blue !default;
+$button-tab-color-focus                     : $trinet-blue !default;
+$button-tab-color-pressed                   : $trinet-blue !default;
+$button-tab-color-disabled                  : $trinet-gray !default;
+
+$button-tab-background-color                : $trinet-white !default;
+$button-tab-background-color-over           : $trinet-white !default;
+$button-tab-background-color-focus          : $trinet-white !default;
+$button-tab-background-color-pressed        : $trinet-white !default;
+$button-tab-background-color-disabled       : $trinet-white !default;
+
+$button-tab-border-color                    : $trinet-white !default; // same as background so it can not be seen
+$button-tab-border-color-over               : rgba($trinet-blue, 0.5) !default;
+$button-tab-border-color-focus              : $trinet-blue !default;
+$button-tab-border-color-pressed            : $trinet-blue !default;
+$button-tab-border-color-disabled           : $trinet-white !default;
+
+// special scale rules for tab buttons
+$button-tab-small-border-radius             : 0px !default;
+$button-tab-medium-border-radius            : 0px !default;
+$button-tab-large-border-radius             : 0px !default;
+
+$button-tab-small-border-width              : 0 0 4px 0 !default;
+$button-tab-medium-border-width             : 0 0 4px 0 !default;
+$button-tab-large-border-width              : 0 0 4px 0 !default;
+
+$button-tab-small-text-padding              : 3px !default;
+$button-tab-medium-text-padding             : 3px !default;
+$button-tab-large-text-padding              : 3px !default;
+
+// for now, we are just using the same width for all scales since we use the same 8x8 image
+$button-tab-small-split-width               : 18px !default;
+$button-tab-medium-split-width              : 18px !default;
+$button-tab-large-split-width               : 18px !default;
+
+$button-tab-small-font-weight               : $regular-font-weight !default;
+$button-tab-small-font-weight-over          : $regular-font-weight !default;
+$button-tab-small-font-weight-focus         : $regular-font-weight !default;
+$button-tab-small-font-weight-pressed       : $semibold-font-weight !default;
+$button-tab-small-font-weight-disabled      : $regular-font-weight !default;
+
+$button-tab-medium-font-weight              : $regular-font-weight !default;
+$button-tab-medium-font-weight-over         : $regular-font-weight !default;
+$button-tab-medium-font-weight-focus        : $regular-font-weight !default;
+$button-tab-medium-font-weight-pressed      : $semibold-font-weight !default;
+$button-tab-medium-font-weight-disabled     : $regular-font-weight !default;
+
+$button-tab-large-font-weight               : $regular-font-weight !default;
+$button-tab-large-font-weight-over          : $regular-font-weight !default;
+$button-tab-large-font-weight-focus         : $regular-font-weight !default;
+$button-tab-large-font-weight-pressed       : $semibold-font-weight !default;
+$button-tab-large-font-weight-disabled      : $regular-font-weight !default;

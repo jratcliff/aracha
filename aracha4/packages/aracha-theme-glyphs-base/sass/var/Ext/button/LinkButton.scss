@@ -1,0 +1,34 @@
+/**
+ * Link Button vars
+ */
+$button-link-glyph-color            : $trinet-dark-gray !default;
+$button-link-glyph-opacity          : 1 !default;
+$button-link-arrow-color            : $trinet-dark-gray !default;
+
+// todo - should the link text color look like a normal trinet colored link?
+// todo - and should we also set the other colors to handle mouseover, focusing, etc?
+$button-link-color                  : $trinet-content-link-color !default;
+$button-link-color-over             : $trinet-content-link-hover-color !default;
+$button-link-color-pressed          : $trinet-content-link-active-color !default;
+$button-link-color-disabled         : $trinet-content-link-disabled-color !default;
+
+$button-link-color-focus            : $trinet-content-link-color !default;
+$button-link-color-focus-over       : $trinet-content-link-hover-color !default;
+$button-link-color-focus-pressed    : $trinet-content-link-active-color !default;
+
+
+$button-link-background-color       : transparent !default;
+$button-link-border-color           : transparent !default;
+$button-link-background-gradient    : $trinet-white !default;
+$button-link-border-width           : 0 !default;
+$button-link-border-radius          : 0 !default;
+$button-link-text-padding           : 7px !default;
+$button-link-padding                : 0 !default;
+$button-link-icon-spacing           : 0 !default;
+
+
+// set icon size to the font size
+$button-link-small-icon-size        : $button-small-font-size !default;
+$button-link-medium-icon-size       : $button-medium-font-size !default;
+$button-link-large-icon-size        : $button-large-font-size !default;
+

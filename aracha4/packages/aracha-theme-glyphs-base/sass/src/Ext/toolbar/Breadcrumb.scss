@@ -1,0 +1,29 @@
+.#{$prefix}breadcrumb-icon-folder-default {
+    background-image: none;
+    &:before {
+        font-family : $breadcrumb-glyph-font-family;
+        content     : $breadcrumb-folder-glyph;
+        color       : $breadcrumb-glyph-color;
+    }
+}
+
+.#{$prefix}breadcrumb-icon-leaf-default {
+    background-image: none;
+    &:before {
+        font-family : FontAwesome;
+        content     : $breadcrumb-leaf-glyph;
+        color       : $breadcrumb-glyph-color;
+    }
+}
+
+// breadcrumb text
+.#{$prefix}breadcrumb-btn {
+    .#{$prefix}btn-inner {
+        color: $breadcrumb-text-color;
+    }
+    &.#{$prefix}btn-over {
+        .#{$prefix}btn-inner {
+            color: $breadcrumb-text-over-color;
+}
+    }
+}

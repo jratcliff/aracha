@@ -1,0 +1,17 @@
+
+.#{$prefix}grid-checkcolumn {
+    background: none;
+    width: auto;
+    font: $grid-row-cell-font;
+    &:before {
+        font-family: FontAwesome;
+        content: $fa-var-square-o;
+    }
+}
+
+.#{$prefix}grid-checkcolumn-checked {
+    &:before {
+        font-family: FontAwesome;
+        content: $fa-var-check-square-o;
+    }
+}

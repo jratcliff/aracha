@@ -1,0 +1,20 @@
+
+// add the glyph arrows for each scale of the 'default' buttons
+
+@include extjs-button-glyph-arrow-ui (
+    $ui             : 'default',
+    $scale          : 'small',
+    $ui-arrow-color : $button-default-color
+);
+
+@include extjs-button-glyph-arrow-ui (
+    $ui             : 'default',
+    $scale          : 'medium',
+    $ui-arrow-color : $button-default-color
+);
+
+@include extjs-button-glyph-arrow-ui (
+    $ui             : 'default',
+    $scale          : 'large',
+    $ui-arrow-color : $button-default-color
+);

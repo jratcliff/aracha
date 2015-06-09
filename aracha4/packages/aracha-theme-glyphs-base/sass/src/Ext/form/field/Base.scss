@@ -1,0 +1,45 @@
+/**
+* To fix an issue with FF on Windows we adjust the top and bottom padding.
+*
+* NOTE: The Sencha JIRA ticket for this is EXTJS-11883
+* http://www.sencha.com/forum/showthread.php?278487
+*/
+
+.#{$prefix}gecko:not(.#{$prefix}mac) {
+    .#{$prefix}form-text {
+        padding: (top($form-field-padding) - 2) right($form-field-padding) (bottom($form-field-padding) - 1) left($form-field-padding);
+    }
+}
+
+
+// setting the placeholder text properties
+
+input {
+    &::-webkit-input-placeholder {
+       color: $color;
+       @include opacity($form-field-disabled-opacity);
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       color: $color;
+       @include opacity($form-field-disabled-opacity);
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: $color;
+       @include opacity($form-field-disabled-opacity);
+    }
+
+    &:-ms-input-placeholder { /* IE 10+ */
+       color: $color;
+       @include opacity($form-field-disabled-opacity);
+    }
+}
+
+.#{$prefix}form-required-field {
+    &.required-field-asterisk {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: bold;
+    }
+}

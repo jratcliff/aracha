@@ -1,0 +1,18 @@
+.#{$prefix}grid-row-expander {
+    background-image: none;
+    font: $grid-row-cell-font;
+    &:before {
+        font-family : FontAwesome;
+        content     : $fa-var-minus;
+        margin-right: 5px;
+    }
+
+    .#{$prefix}grid-row-collapsed & {
+        background-image: none;
+        &:before {
+            font-family : FontAwesome;
+            content     : $fa-var-plus;
+            margin-right: 5px;
+        }
+    }
+}

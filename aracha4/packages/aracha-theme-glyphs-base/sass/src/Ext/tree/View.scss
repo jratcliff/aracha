@@ -1,0 +1,202 @@
+
+.#{$prefix}tree-icon,
+.#{$prefix}tree-elbow-glyph {
+    @extend .#{$prefix}tree-elbow-img;
+    display: inline-block;
+
+    color           : $color;
+    line-height     : $grid-row-height;
+    text-align      : center;
+
+    &.#{$prefix}tree-icon-leaf {
+        background-image: none;
+        @include extjs-add-glyph($tree-leaf-glyph);
+    }
+}
+
+
+// expander
+.#{$prefix}tree-expander {
+
+    // hide the plus image
+    &.#{$prefix}tree-elbow-plus,
+    &.#{$prefix}tree-elbow-end-plus {
+        background-image: none;
+
+        // hide the no-lines plus image
+        .#{$prefix}tree-no-lines & {
+            background-image: none;
+        }
+    }
+
+    // expander glyph (plus)
+    @include extjs-add-glyph($tree-plus-glyph);
+
+
+    // expander glyph (arrow)
+    .#{$prefix}tree-arrows & {
+        @include extjs-add-glyph($tree-arrow-glyph);
+        }
+
+    // expander over
+    .#{$prefix}tree-expander-over & {
+        &:before {
+            opacity: 0.7;
+        }
+    }
+
+    // expanded node
+    .#{$prefix}grid-tree-node-expanded & {
+
+        // hide the minus image
+        &.#{$prefix}tree-elbow-plus,
+        &.#{$prefix}tree-elbow-end-plus {
+            background-image: none;
+
+            // hide the no-lines plus image
+            .#{$prefix}tree-no-lines & {
+                background-image: none;
+            }
+        }
+
+        // expanded glyph (minus)
+        @include extjs-add-glyph($tree-minus-glyph);
+
+        // expanded glyph (arrow)
+        .#{$prefix}tree-arrows & {
+            @include extjs-add-glyph($tree-arrow-expanded-glyph);
+        }
+
+        // expanded node over
+        .#{$prefix}tree-expander-over {
+            &:before {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// elbows when lines config is set (TODO - how do we handle this with glyphs?)
+.#{$prefix}tree-lines {
+    // elbow
+    .#{$prefix}tree-elbow {
+        background-image: none;
+        &:before {
+            //content: $tree-elbow-glyph;
+        }
+    }
+
+    // elbow line
+    .#{$prefix}tree-elbow-line {
+        background-image: none;
+        &:before {
+            //content: $tree-elbow-line-glyph;
+        }
+    }
+
+    // elbow end
+    .#{$prefix}tree-elbow-end {
+        background-image: none;
+        &:before {
+            //content: $tree-elbow-end-glyph;
+        }
+    }
+}
+
+@if $include-rtl {
+    // expander
+    .#{$prefix}rtl.#{$prefix}tree-expander {
+        background: none;
+
+        // expanded glyph (minus)
+        @include extjs-add-glyph($tree-minus-glyph);
+
+        // expanded glyph (arrow)
+        .#{$prefix}tree-arrows & {
+            @include extjs-add-glyph($tree-arrow-expanded-glyph);
+        }
+    }
+
+    // expander over
+    .#{$prefix}tree-expander-over .#{$prefix}rtl.#{$prefix}tree-expander {
+        &:before {
+            opacity: 0.7;
+        }
+    }
+
+    // expanded node
+    .#{$prefix}grid-tree-node-expanded .#{$prefix}rtl.#{$prefix}tree-expander {
+
+        // expanded glyph (minus)
+        @include extjs-add-glyph($tree-minus-glyph);
+
+        // expanded glyph (arrow)
+        .#{$prefix}tree-arrows & {
+            @include extjs-add-glyph($tree-arrow-expanded-glyph);
+        }
+    }
+
+    // expanded node over
+    .#{$prefix}grid-tree-node-expanded .#{$prefix}tree-expander-over .#{$prefix}rtl.#{$prefix}tree-expander {
+        &:before {
+            opacity: 0.7;
+        }
+    }
+}
+
+.#{$prefix}tree-icon-parent {
+    background-image: none;
+    @include extjs-add-glyph($tree-folder-glyph);
+}
+
+@if $include-rtl {
+    .#{$prefix}rtl.#{$prefix}tree-icon-parent {
+        background-image: none;
+        @include extjs-add-glyph($tree-folder-glyph);
+    }
+}
+
+.#{$prefix}grid-tree-node-expanded .#{$prefix}tree-icon-parent {
+    background-image: none;
+    @include extjs-add-glyph($tree-folder-expanded-glyph);
+}
+
+@if $include-rtl {
+    .#{$prefix}grid-tree-node-expanded .#{$prefix}rtl.#{$prefix}tree-icon-parent {
+        background-image: none;
+        @include extjs-add-glyph($tree-folder-expanded-glyph);
+    }
+}
+
+
+.#{$prefix}tree-checkbox-wrap {
+    display     : inline-block;
+    font        : $grid-row-cell-font;
+    position    : relative;
+    width       : (18em/14);
+
+    // hide the image the framework adds
+    // and position the input element under the :before pseudo
+    .#{$prefix}tree-checkbox {
+        background-image: none;
+        position: absolute;
+        left: 0;
+    }
+
+    // empty checkbox
+    @include extjs-add-glyph($x-glyph-checkbox-unchecked);
+    &:before {
+        color       : top($form-text-field-border-color);
+        padding     : 1px;
+    }
+
+    // checked checkbox
+    &.#{$prefix}tree-checkbox-checked {
+        @include extjs-add-glyph($x-glyph-checkbox-checked);
+        &:before {
+            color       : $form-text-field-color;
+            padding     : 1px;
+        }
+    }
+}
+

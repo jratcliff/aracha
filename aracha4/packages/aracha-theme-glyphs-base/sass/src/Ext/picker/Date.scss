@@ -1,0 +1,115 @@
+
+/**
+ * Customization for this theme that adds the ability to style the border
+ * around today's date when shown in the previous and next month.  This is
+ * needed since some of our components will show 2 or more date pickers
+ * beside each other.  An enhancement request will be made with Sencha to
+ * provide this feature in future releases of the framework.
+ */
+
+ // style today's date for the previous month
+.#{$prefix}datepicker-prevday {
+    &.#{$prefix}datepicker-today {
+        border-color: $datepicker-item-prevday-today-border-color;
+        border-style: $datepicker-item-prevday-today-border-style;
+    }
+}
+
+// style today's date for the next month
+.#{$prefix}datepicker-nextday {
+    &.#{$prefix}datepicker-today {
+        border-color: $datepicker-item-nextday-today-border-color;
+        border-style: $datepicker-item-nextday-today-border-style;
+    }
+}
+
+
+
+/**
+ * Custom rules to add the ability to adjust the font-size and font-weight of
+ * the date picker's month button.
+ */
+
+.#{$prefix}datepicker-month {
+    @if $datepicker-month-button-color {
+        .#{$prefix}btn-inner {
+            font-size   : $datepicker-month-button-font-size;
+            line-height : $datepicker-month-button-line-height;
+            font-weight : $datepicker-month-button-font-weight;
+        }
+    }
+}
+
+
+// customizations for the prev/next arrows in date picker
+.#{$prefix}datepicker-arrow {
+    background-image: none; // to hide the image added by the framework
+
+    height          : $datepicker-arrow-glyph-font-size;
+    font-size       : $datepicker-arrow-glyph-font-size;
+    line-height     : $datepicker-arrow-glyph-font-size;
+
+    text-align      : center;
+    vertical-align  : middle;
+
+    color           : $datepicker-arrow-glyph-color;
+
+    // TODO - there is a bug in Chrome and the hover styling is not being applied when you hover but only after you click
+    // https://code.google.com/p/chromium/issues/detail?id=357347 so maybe need to add an override to the datepicker class
+    // that will track the mouseover and add a custom '*-over' class like other extjs components do
+    // hover styling 
+    &:hover {
+        opacity: $datepicker-arrow-opacity-over;
+    }
+
+    // disabled arrow
+    &.#{$prefix}datepicker-arrow-disabled {
+        opacity: $datepicker-arrow-opacity-disabled;
+    }
+
+    // next arrow
+    &.#{$prefix}datepicker-next {   
+        &:before {
+            font-family :  $datepicker-arrow-glyph-font-family;
+            content     :  $datepicker-arrow-glyph-next;
+        }
+    }
+
+    // prev arrow
+    &.#{$prefix}datepicker-prev {
+        &:before {
+            font-family : $datepicker-arrow-glyph-font-family;
+            content     : $datepicker-arrow-glyph-prev;
+        }
+    }
+}
+
+// datepicker uses a split button but we don't want to show the left border
+.#{$prefix}datepicker-month {
+    .#{$prefix}btn-split-right:after {
+        border-left: 0px;
+    }
+}
+
+// adding ability to change the text color of the selected date in the datepicker
+.#{$prefix}datepicker-selected {
+    .#{$prefix}datepicker-date {
+        color: $datepicker-item-selected-color;
+    }
+}
+
+// adding ability to change the text color of the selected month in the monthpicker
+.#{$prefix}monthpicker-selected {
+    color: $datepicker-monthpicker-item-selected-color
+}
+
+
+// bug fix - this is fixed in 5.1
+.#{$prefix}datepicker-disabled {
+    // include the element name to increase the specificity over the :hover rule
+    .#{$prefix}datepicker-date {
+        background-color: $datepicker-item-disabled-background-color;
+        cursor: $datepicker-item-disabled-cursor;
+        color: $datepicker-item-disabled-color;
+    }
+}

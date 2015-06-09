@@ -1,0 +1,8 @@
+@if $include-ext-form-field-base {
+    @if $include-tip-form-invalid-ui {
+        .#{$prefix}tip-body-form-invalid {
+            background: none;
+            @include extjs-add-glyph($fa-var-exclamation-circle);
+        }
+    }
+}

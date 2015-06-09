@@ -1,0 +1,302 @@
+
+// for tools in a window header
+.#{$prefix}window-header {
+
+    // extned the title styling based on which header we are in
+    &.#{$prefix}window-header-default,
+    &.#{$prefix}window-header-default-framed {
+        @extend .#{$prefix}window-header-title-default;
+    }
+    &.#{$prefix}window-header-light,
+    &.#{$prefix}window-header-light-framed {
+        @extend .#{$prefix}window-header-title-light;
+    }
+
+    .#{$prefix}tool-glyph {
+        width  : $tool-size;
+        height : $tool-size;
+
+        &:before {
+            // change font-size/line-height
+            font-size   : $tool-size;
+            line-height : 1;
+        }
+    }
+}
+
+// for tools in a panel header
+.#{$prefix}panel-header {
+
+    // extend the title styling based on which header we are in
+    &.#{$prefix}panel-header-default,
+    &.#{$prefix}panel-header-default-framed {
+        .#{$prefix}tool-glyph {
+            @extend .#{$prefix}panel-header-title-default;
+        }
+    }
+    &.#{$prefix}panel-header-light,
+    &.#{$prefix}panel-header-light-framed {
+        .#{$prefix}tool-glyph {
+            @extend .#{$prefix}panel-header-title-light;
+        }
+    }
+
+    .#{$prefix}tool-glyph {
+        width  : $tool-size;
+        height : $tool-size;
+
+        &:before {
+            // change font-size/line-height
+            font-size   : $tool-size;
+            line-height : 1;
+        }
+    }
+}
+
+// rules for ALL tools
+.#{$prefix}tool {
+    // set a default font-size and line-height
+    // since the framework  sets these to 0
+    font-size: $font-size;
+    line-height: 1;
+
+    // framework adds a mask div with a white background that does not look nice
+    // so replace the white background with a transparent one
+    .#{$prefix}mask {
+        background: transparent;
+    }
+}
+
+// rules for ALL tool glyphs
+.#{$prefix}tool-glyph {
+    display     : table;
+    text-align  : center;
+    width       : $tool-size;
+    height      : $tool-size;
+
+    &:before {
+        display         : table-cell;
+        font-family     : $tool-glyph-font-family;
+        font-size       : $tool-size;
+        vertical-align  : middle;
+        speak           : none;
+        font-style      : normal;
+        font-weight     : normal;
+        font-variant    : normal;
+        text-transform  : none;
+        line-height     : 1;
+
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        @if $tool-opacity != 1 {
+            @include opacity($tool-opacity);
+        }
+        @if $tool-opacity-over != 1 or $tool-opacity != 1 {
+            .#{$prefix}tool-over & {
+                @include opacity($tool-opacity-over);
+            }
+        }
+        @if $tool-opacity-pressed != 1 or $tool-opacity != 1 {
+            .#{$prefix}tool-pressed & {
+                @include opacity($tool-opacity-pressed);
+            }
+        }
+
+        // if the parent is masked, set the opacity of this to a lower value
+        .#{$prefix}masked & {
+            @include opacity($tool-opacity-disabled);
+        }
+    }
+
+
+}
+
+// close
+.#{$prefix}tool-close {
+    @include extjs-add-glyph($tool-close);
+}
+
+// minimize
+.#{$prefix}tool-minimize {
+    @include extjs-add-glyph($tool-minimize);
+}
+
+// maximize
+.#{$prefix}tool-maximize {
+    @include extjs-add-glyph($tool-maximize);
+}
+
+// restore
+.#{$prefix}tool-restore {
+    @include extjs-add-glyph($tool-restore);
+}
+
+// toggle
+.#{$prefix}tool-toggle {
+    @include extjs-add-glyph($tool-toggle);
+    .#{$prefix}panel-collapsed & {
+        @include extjs-add-glyph($tool-toggle-collapsed);
+    }
+}
+
+// gear
+.#{$prefix}tool-gear {
+    @include extjs-add-glyph($tool-gear);
+}
+
+// prev
+.#{$prefix}tool-prev {
+    @include extjs-add-glyph($tool-prev);
+}
+
+// next
+.#{$prefix}tool-next {
+    @include extjs-add-glyph($tool-next);
+}
+
+// pin
+.#{$prefix}tool-pin {
+    @include extjs-add-glyph($tool-pin);
+}
+
+// unpin
+.#{$prefix}tool-unpin {
+    @include extjs-add-glyph($tool-unpin);
+}
+
+// right
+.#{$prefix}tool-right {
+    @include extjs-add-glyph($tool-right);
+}
+
+// left
+.#{$prefix}tool-left {
+    @include extjs-add-glyph($tool-left);
+}
+
+// down
+.#{$prefix}tool-down {
+    @include extjs-add-glyph($tool-down);
+}
+
+// up
+.#{$prefix}tool-up {
+    @include extjs-add-glyph($tool-up);
+}
+
+// refresh
+.#{$prefix}tool-refresh {
+    @include extjs-add-glyph($tool-refresh);
+}
+
+// plus
+.#{$prefix}tool-plus {
+    @include extjs-add-glyph($tool-plus);
+}
+
+// minus
+.#{$prefix}tool-minus {
+    @include extjs-add-glyph($tool-minus);
+}
+
+// search
+.#{$prefix}tool-search {
+    @include extjs-add-glyph($tool-search);
+}
+
+//save
+.#{$prefix}tool-save {
+    @include extjs-add-glyph($tool-save);
+}
+
+// help
+.#{$prefix}tool-help {
+    @include extjs-add-glyph($tool-help);
+}
+
+// print
+.#{$prefix}tool-print {
+    @include extjs-add-glyph($tool-print);
+}
+
+// expand
+.#{$prefix}tool-expand {
+    @include extjs-add-glyph($tool-expand);
+}
+
+// collapse
+.#{$prefix}tool-collapse {
+    @include extjs-add-glyph($tool-collapse);
+}
+
+// resize
+.#{$prefix}tool-resize {
+    @include extjs-add-glyph($tool-resize);
+}
+
+// move
+.#{$prefix}tool-move {
+    @include extjs-add-glyph($tool-move);
+}
+
+// expand bottom
+.#{$prefix}tool-expand-bottom {
+    @include extjs-add-glyph($tool-expand-bottom);
+}
+
+// collapse bottom
+.#{$prefix}tool-collapse-bottom {
+    @include extjs-add-glyph($tool-collapse-bottom);
+}
+
+// expand top
+.#{$prefix}tool-expand-top {
+    @include extjs-add-glyph($tool-expand-top);
+}
+
+// collapse top
+.#{$prefix}tool-collapse-top {
+    @include extjs-add-glyph($tool-collapse-top);
+}
+
+// expand left
+.#{$prefix}tool-expand-left {
+    @include extjs-add-glyph($tool-expand-left);
+}
+
+// collapse left
+.#{$prefix}tool-collapse-left {
+    @include extjs-add-glyph($tool-collapse-left);
+}
+
+// expand right
+.#{$prefix}tool-expand-right {
+    @include extjs-add-glyph($tool-expand-right);
+}
+
+// collapse right
+.#{$prefix}tool-collapse-right {
+    @include extjs-add-glyph($tool-collapse-right);
+}
+
+@if $include-rtl {
+    .#{$prefix}rtl {
+        &.#{$prefix}tool-expand-left,
+        &.#{$prefix}tool-collapse-left {
+            @include extjs-add-glyph($tool-expand-right);
+        }
+
+        &.#{$prefix}tool-expand-right,
+        &.#{$prefix}tool-collapse-right {
+            @include extjs-add-glyph($tool-expand-left);
+        }
+    }
+}
+
+@if $tool-include-hover-icons {
+    .#{$prefix}tool-over {
+        @include opacity($tool-opacity-over);
+    }
+}
