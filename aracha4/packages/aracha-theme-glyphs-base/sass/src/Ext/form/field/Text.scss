@@ -13,13 +13,14 @@
 .#{$prefix}form-trigger-default {
     background-image: none; // to hide the image added by the framework
 
-    height          : $font-size;
     font-size       : $font-size;
     line-height     : 1;
 
     font-family     : $form-trigger-font-family;
     color           : $form-trigger-color;
     text-align      : center;
+
+    display         : table-cell;
     vertical-align  : middle;
 
 

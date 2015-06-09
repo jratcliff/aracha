@@ -44,6 +44,7 @@
     .#{$prefix}tool-glyph {
         width  : $tool-size;
         height : $tool-size;
+        color  : $panel-header-glyph-color;
 
         &:before {
             // change font-size/line-height
