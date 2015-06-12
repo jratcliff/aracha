@@ -7,13 +7,13 @@
 Ext.define('KitchenSink.view.form.Checkout', {
     extend: 'Ext.form.Panel',
     xtype: 'form-checkout',
-    
+
     //<example>
     requires: [
         'KitchenSink.model.State',
         'KitchenSink.store.States'
     ],
-    
+
     exampleTitle: 'Checkout Form',
     otherContent: [{
         type: 'Model',
@@ -24,7 +24,7 @@ Ext.define('KitchenSink.view.form.Checkout', {
     }],
     themes: {
         classic: {
-            formWidth: 550,
+            formWidth: 700,
             normalLabelWidth: 90,
             longLabelWidth: 90,
             phoneWidth: 200,
@@ -32,10 +32,10 @@ Ext.define('KitchenSink.view.form.Checkout', {
             stateWidth: 115,
             postalCodeLabelWidth: 80,
             expirationMonthWidth: 100,
-            expirationYearWidth: 70
+            expirationYearWidth: 110
         },
         neptune: {
-            formWidth: 550,
+            formWidth: 700,
             normalLabelWidth: 90,
             longLabelWidth: 110,
             phoneWidth: 200,
@@ -43,10 +43,10 @@ Ext.define('KitchenSink.view.form.Checkout', {
             stateWidth: 115,
             postalCodeLabelWidth: 80,
             expirationMonthWidth: 100,
-            expirationYearWidth: 70
+            expirationYearWidth: 110
         },
         'neptune-touch': {
-            formWidth: 650,
+            formWidth: 700,
             normalLabelWidth: 100,
             longLabelWidth: 130,
             phoneWidth: 230,
@@ -84,7 +84,7 @@ Ext.define('KitchenSink.view.form.Checkout', {
             },
             data: KitchenSink.data.DataSets.states
         });
-        
+
         if (!this.monthStore) {
             this.self.prototype.monthStore = new Ext.data.Store({
                 fields: ['name', 'num'],
