@@ -1,7 +1,12 @@
+/**
+ * Base Glyphs theme vars
+ * Ext.tab.Tab
+ */
+
 $tab-closable-glyph-font-size           : 8px !default;
 $tab-closable-glyph-font-family         : $glyph-font-family !default;
 $tab-closable-glyph                     : $fa-var-close !default;
-$tab-closable-glyph-color               : blue !default;
+$tab-closable-glyph-color               : $tab-color !default;
 
 $tab-closable-icon-opacity              : 0.9 !default;
 $tab-closable-icon-opacity-over         : 0.7 !default;
