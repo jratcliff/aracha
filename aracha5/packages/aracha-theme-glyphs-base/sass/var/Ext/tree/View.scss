@@ -1,15 +1,36 @@
-$tree-leaf-glyph                : $fa-var-file-o !default;
+/**
+ * Base Glyphs theme vars
+ * Ext.tree.View
+ */
 
-$tree-arrow-glyph               : $fa-var-caret-right !default;
-$tree-arrow-expanded-glyph      : $fa-var-caret-down !default;
+$tree-glyph-color                   : $color !default;
+$tree-glyph-font-size               : $grid-row-cell-font-size + top($tree-cell-inner-padding) !default;
 
-$tree-plus-glyph                : $fa-var-plus !default;
-$tree-minus-glyph               : $fa-var-minus !default;
 
-$tree-folder-glyph              : $fa-var-folder-o !default;
-$tree-folder-expanded-glyph     : $fa-var-folder-open-o !default;
+// leaf
+$tree-leaf-glyph                    : $fa-var-file-o !default;
+$tree-leaf-glyph-color              : $tree-glyph-color !default;
 
-// not supported
-$tree-elbow-glyph               : $fa-var-ellipsis-h !default;
-$tree-elbow-end-glyph           : $fa-var-ellipsis-h !default;
-$tree-elbow-line-glyph          : $fa-var-ellipsis-v !default;
+// arrow
+$tree-arrow-glyph                   : $fa-var-caret-right !default;
+$tree-arrow-glyph-color             : $tree-glyph-color !default;
+
+// arrow expanded
+$tree-arrow-expanded-glyph          : $fa-var-caret-down !default;
+$tree-arrow-expanded-glyph-color    : $tree-glyph-color !default;
+
+// plus
+$tree-plus-glyph                    : $fa-var-plus !default;
+$tree-plus-glyph-color              : $tree-glyph-color !default;
+
+// minus
+$tree-minus-glyph                   : $fa-var-minus !default;
+$tree-minus-glyph-color             : $tree-glyph-color !default;
+
+// folder
+$tree-folder-glyph                  : $fa-var-folder-o !default;
+$tree-folder-glyph-color            : $tree-glyph-color !default;
+
+// folder expanded
+$tree-folder-expanded-glyph         : $fa-var-folder-open-o !default;
+$tree-folder-expanded-glyph-color   : $tree-glyph-color !default;

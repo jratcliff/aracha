@@ -1,15 +1,21 @@
+/**
+ * Base Glyphs theme src
+ * Ext.tree.View
+ */
 
 .#{$prefix}tree-icon,
 .#{$prefix}tree-elbow-glyph {
     @extend .#{$prefix}tree-elbow-img;
     display: inline-block;
 
-    color           : $color;
+    color           : $tree-glyph-color;
+    font-size       : $tree-glyph-font-size;
     line-height     : $grid-row-height;
     text-align      : center;
 
     &.#{$prefix}tree-icon-leaf {
         background-image: none;
+        color: $tree-leaf-glyph-color;
         @include extjs-add-glyph($tree-leaf-glyph);
     }
 }
@@ -30,13 +36,15 @@
     }
 
     // expander glyph (plus)
+    color: $tree-plus-glyph-color;
     @include extjs-add-glyph($tree-plus-glyph);
 
 
     // expander glyph (arrow)
     .#{$prefix}tree-arrows & {
+        color: $tree-arrow-glyph-color;
         @include extjs-add-glyph($tree-arrow-glyph);
-        }
+    }
 
     // expander over
     .#{$prefix}tree-expander-over & {
@@ -60,10 +68,12 @@
         }
 
         // expanded glyph (minus)
+        color: $tree-minus-glyph-color;
         @include extjs-add-glyph($tree-minus-glyph);
 
         // expanded glyph (arrow)
         .#{$prefix}tree-arrows & {
+            color: $tree-arrow-expanded-glyph-color;
             @include extjs-add-glyph($tree-arrow-expanded-glyph);
         }
 
@@ -109,10 +119,12 @@
         background: none;
 
         // expanded glyph (minus)
+        color: $tree-minus-glyph-color;
         @include extjs-add-glyph($tree-minus-glyph);
 
         // expanded glyph (arrow)
         .#{$prefix}tree-arrows & {
+            color: $tree-arrow-expanded-glyph-color;
             @include extjs-add-glyph($tree-arrow-expanded-glyph);
         }
     }
@@ -128,10 +140,12 @@
     .#{$prefix}grid-tree-node-expanded .#{$prefix}rtl.#{$prefix}tree-expander {
 
         // expanded glyph (minus)
+        color: $tree-minus-glyph-color;
         @include extjs-add-glyph($tree-minus-glyph);
 
         // expanded glyph (arrow)
         .#{$prefix}tree-arrows & {
+            color: $tree-arrow-expanded-glyph-color;
             @include extjs-add-glyph($tree-arrow-expanded-glyph);
         }
     }
@@ -146,24 +160,28 @@
 
 .#{$prefix}tree-icon-parent {
     background-image: none;
+    color: $tree-folder-glyph-color;
     @include extjs-add-glyph($tree-folder-glyph);
 }
 
 @if $include-rtl {
     .#{$prefix}rtl.#{$prefix}tree-icon-parent {
         background-image: none;
+        color: $tree-folder-glyph-color;
         @include extjs-add-glyph($tree-folder-glyph);
     }
 }
 
 .#{$prefix}grid-tree-node-expanded .#{$prefix}tree-icon-parent {
     background-image: none;
+    color: $tree-folder-expanded-glyph-color;
     @include extjs-add-glyph($tree-folder-expanded-glyph);
 }
 
 @if $include-rtl {
     .#{$prefix}grid-tree-node-expanded .#{$prefix}rtl.#{$prefix}tree-icon-parent {
         background-image: none;
+        color: $tree-folder-expanded-glyph-color;
         @include extjs-add-glyph($tree-folder-expanded-glyph);
     }
 }
@@ -200,3 +218,53 @@
     }
 }
 
+
+
+.#{$prefix}tree-lines {
+    .#{$prefix}tree-elbow-glyph {
+
+        // elbow line
+        &.x-tree-elbow-line:before {
+          content: "\00a0";
+          border: dashed #464646;
+          border-width: 0 0 0 1px; // show a left border
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          opacity: 0.3;
+        }
+
+        // elbow before
+        &.x-tree-elbow:before {
+          content: "\00a0";
+          border: dashed #464646;
+          border-width: 0 0 1px 1px; // show a bottom and left border
+          position: absolute;
+          top: 0px;
+          height: 50%;
+          opacity: 0.3;
+        }
+
+        // elbow line after
+        &.x-tree-elbow:after {
+          content: "\00a0";
+          border: dashed #464646;
+          border-width: 0 0 0 1px; // show a left border
+          position: absolute;
+          bottom: 0px;
+          height: 50%;
+          opacity: 0.3;
+        }
+
+        // elbow END
+        &.x-tree-elbow-end:before {
+          content: "\00a0";
+          border: dashed #464646;
+          border-width: 0 0 1px 1px; // show a bottom and left border
+          position: absolute;
+          top: 0px;
+          height: 50%;
+          opacity: 0.3;
+        }
+    }
+}

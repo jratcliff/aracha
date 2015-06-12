@@ -1,0 +1,36 @@
+/**
+ * Classic Glyphs theme vars
+ * Ext.tree.View
+ */
+
+ $tree-glyph-color                   : #5482ee !default;
+
+// leaf
+$tree-leaf-glyph                    : $fa-var-list-alt !default;
+$tree-leaf-glyph-color              : $tree-glyph-color !default;
+
+// arrow
+$tree-arrow-glyph                   : $fa-var-caret-right !default;
+$tree-arrow-glyph-color             : #d5d5d5 !default;
+
+// arrow expanded
+$tree-arrow-expanded-glyph          : $fa-var-caret-down !default;
+$tree-arrow-expanded-glyph-color    : $tree-glyph-color !default;
+
+// plus
+$tree-plus-glyph                    : $fa-var-plus-square-o !default;
+$tree-plus-glyph-color              : $tree-glyph-color !default;
+
+// minus
+$tree-minus-glyph                   : $fa-var-minus-square-o !default;
+$tree-minus-glyph-color             : $tree-glyph-color !default;
+
+// folder
+$tree-folder-glyph                  : $fa-var-folder !default;
+$tree-folder-glyph-color            : #f2cc58 !default;
+
+// folder expanded
+$tree-folder-expanded-glyph         : $fa-var-folder-open !default;
+$tree-folder-expanded-glyph-color   : #f2cc58 !default;
+
+
