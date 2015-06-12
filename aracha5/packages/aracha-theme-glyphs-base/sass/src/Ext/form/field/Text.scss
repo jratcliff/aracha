@@ -1,3 +1,8 @@
+/**
+ * Base Glyphs theme src
+ * Ext.form.field.Text
+ */
+
 
 // the framework calculates a line-height but in many cases this results
 // in text that is not middled aligned and so we override this and use a
@@ -13,14 +18,39 @@
 .#{$prefix}form-trigger-default {
     background-image: none; // to hide the image added by the framework
 
-    height          : $font-size;
-    font-size       : $font-size;
-    line-height     : 1;
+    height          : $form-trigger-font-size; // ExtJS/Cmd 5 needs this
+    font-size       : $form-trigger-font-size;
+    //line-height     : $form-text-field-height;
 
     font-family     : $form-trigger-font-family;
     color           : $form-trigger-color;
     text-align      : center;
+
+    display         : table-cell;
     vertical-align  : middle;
+
+    // over
+    &.#{$prefix}form-trigger-over {
+        color           : $form-trigger-color-over;
+        background-color: $form-trigger-background-color-over;
+    }
+
+    // focus
+    &.#{$prefix}form-trigger-focus {
+        color           : $form-trigger-color-focus;
+        background-color: $form-trigger-background-color-focus;
+
+        // focus with over
+        &.#{$prefix}form-trigger-over {
+            background-color: $form-trigger-background-color-over;
+        }
+    }
+
+    // click
+    &.#{$prefix}form-trigger-click {
+        color           : $form-trigger-color-click;
+        background-color: $form-trigger-background-color-click;
+    }
 
 
     // arrow trigger
@@ -100,19 +130,16 @@
         .#{$prefix}form-spinner-default {
             background-image: none;
             background-color: transparent;
-            height          : auto;
-            line-height     : $font-size/2;
-        }
-
-        .#{$prefix}form-spinner-over {
-            opacity: 0.7;
+            font-size       : $form-spinner-font-size;
+            line-height     : $form-spinner-line-height;
         }
 
         // up spinner
         .#{$prefix}form-spinner-up,
         .#{$prefix}form-spinner-up-default {
             &:before {
-                content: $form-spinner-up-trigger-glyph;
+                content         : $form-spinner-up-trigger-glyph;
+                vertical-align  : middle;
             }
 
             // hide the framework's rtl image
@@ -121,19 +148,80 @@
                     background-image: none;
                 }
             }
+
+            // over
+            &.#{$prefix}form-spinner-over {
+                color           : $form-trigger-color-over;
+                background-color: $form-trigger-background-color-over;
+            }
+
+            // focus
+            &.#{$prefix}form-spinner-focus {
+                color           : $form-trigger-color-focus;
+                background-color: $form-trigger-background-color-focus;
+
+                // focus with over
+                &.#{$prefix}form-trigger-over {
+                    background-color: $form-trigger-background-color-over;
+                }
+            }
+
+            // click
+            &.#{$prefix}form-spinner-click {
+                color           : $form-trigger-color-click;
+                background-color: $form-trigger-background-color-click;
+            }
+
+            // disabled
+            @if $form-trigger-disabled-opacity != 1 {
+                &.#{$prefix}form-spinner-up-disabled {
+                    @include opacity($form-trigger-disabled-opacity);
+                }
+            }
         }
 
         // down spinner
         .#{$prefix}form-spinner-down,
         .#{$prefix}form-spinner-down-default {
             &:before {
-                content: $form-spinner-down-trigger-glyph;
+                content         : $form-spinner-down-trigger-glyph;
+                vertical-align  : middle;
             }
 
             // hide the framework's rtl image
             @if $include-rtl {
                 &.#{$prefix}rtl {
                     background-image: none;
+                }
+            }
+
+            // over
+            &.#{$prefix}form-spinner-over {
+                color           : $form-trigger-color-over;
+                background-color: $form-trigger-background-color-over;
+            }
+
+            // focus
+            &.#{$prefix}form-spinner-focus {
+                color           : $form-trigger-color-focus;
+                background-color: $form-trigger-background-color-focus;
+
+                // focus with over
+                &.#{$prefix}form-trigger-over {
+                    background-color: $form-trigger-background-color-over;
+                }
+            }
+
+            // click
+            &.#{$prefix}form-spinner-click {
+                color           : $form-trigger-color-click;
+                background-color: $form-trigger-background-color-click;
+            }
+
+            // disabled
+            @if $form-trigger-disabled-opacity != 1 {
+                &.#{$prefix}form-spinner-down-disabled {
+                    @include opacity($form-trigger-disabled-opacity);
                 }
             }
         }

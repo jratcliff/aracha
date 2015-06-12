@@ -1,0 +1,30 @@
+/**
+ * Base Glyphs theme vars
+ * Ext.form.field.Trigger
+ */
+
+$form-trigger-font-family   : $glyph-font-family !default;
+$form-trigger-font-size     : floor(($form-text-field-height - vertical($form-text-field-border-width) - vertical($form-text-field-padding)) * 0.9) !default;
+//$form-trigger-font-size     : floor($form-text-field-height * 0.8) !default;
+
+$form-clear-trigger-glyph           : $fa-var-close !default;
+$form-search-trigger-glyph          : $fa-var-search !default;
+$form-time-trigger-glyph            : $fa-var-clock-o !default;
+
+$form-spinner-up-trigger-glyph      : $fa-var-angle-up !default;
+$form-spinner-down-trigger-glyph    : $fa-var-angle-down !default;
+$form-spinner-line-height           : (($form-text-field-height - vertical($form-text-field-border-width)) / 2) !default;
+$form-spinner-font-size             : floor($form-trigger-font-size * 1.3) !default;
+
+
+
+$form-trigger-background-color          : transparent !default;
+$form-trigger-background-color-over     : $form-trigger-background-color !default;
+$form-trigger-background-color-focus    : $form-trigger-background-color !default;
+$form-trigger-background-color-click    : $form-trigger-background-color !default;
+
+$form-trigger-color             : $panel-header-color !default;
+$form-trigger-color-over        : $form-trigger-color !default;
+$form-trigger-color-focus       : $form-trigger-color !default;
+$form-trigger-color-click       : $form-trigger-color !default;
+$form-trigger-disabled-opacity  : $form-field-disabled-opacity !default;

@@ -1,3 +1,13 @@
+/**
+ * Classic Glyphs theme vars
+ * Ext.form.field.Trigger
+ */
 
-// since we are using a glyph for the trigger we need the 3 borders that classic and gray theme expects
+
 $form-trigger-border-width: 1px 1px 1px 0 !default;
+
+$form-trigger-background-color          : #f0f0f0 !default; // #d1d1d1 !default;
+$form-trigger-background-color-over     : #cadae6 !default; // #b3d0e6 !default;
+$form-trigger-background-color-focus    : #d3e1f4 !default; // #b3d0e6 !default;
+$form-trigger-background-color-click    : #d3e1f4 !default; // #b3d0e6 !default;
+
