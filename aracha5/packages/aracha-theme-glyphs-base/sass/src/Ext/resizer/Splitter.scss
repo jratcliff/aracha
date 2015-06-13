@@ -1,83 +1,79 @@
-// TODO - make vars for the background-color and add the correct glyph vars
+
+
+@mixin extjs-add-splitter-glyph ($content) {
+    background-image: none;
+    background-color: $splitter-background-color;
+    color           : $splitter-color;
+    display         : table;
+    opacity         : $splitter-opacity;
+
+    &:before {
+        font-family     : $splitter-glyph-font-family;
+        content         : $content;
+        display         : table-cell;
+        vertical-align  : middle;
+        text-align      : center;
+    }
+}
+
+.#{$prefix}splitter {
+    font-size: 12px; // TODO - make into a var or calculate this
+}
 
 .#{$prefix}layout-split-left {
-    //background-image: theme-background-image('util/splitter/mini-left');
-    background-image: none;
-    background-color: $base-color;
+    @include extjs-add-splitter-glyph($splitter-mini-left-glyph);
 }
 
 .#{$prefix}layout-split-right {
-    //background-image: theme-background-image('util/splitter/mini-right');
-    background-image: none;
-    background-color: $base-color;
+    @include extjs-add-splitter-glyph($splitter-mini-right-glyph);
 }
 
 @if $include-rtl {
     .#{$prefix}rtl {
         &.#{$prefix}layout-split-left {
-            //background-image: theme-background-image('util/splitter/mini-right');
-            background-image: none;
-            background-color: $base-color;
+            @include extjs-add-splitter-glyph($splitter-mini-right-glyph);
         }
 
         &.#{$prefix}layout-split-right {
-            //background-image: theme-background-image('util/splitter/mini-left');
-            background-image: none;
-            background-color: $base-color;
+            @include extjs-add-splitter-glyph($splitter-mini-left-glyph);
         }
     }
 }
 
 .#{$prefix}layout-split-top {
-    //background-image: theme-background-image('util/splitter/mini-top');
-    background-image: none;
-    background-color: $base-color;
+    @include extjs-add-splitter-glyph($splitter-mini-top-glyph);
 }
 
 .#{$prefix}layout-split-bottom {
-    //background-image: theme-background-image('util/splitter/mini-bottom');
-    background-image: none;
-    background-color: $base-color;
+    @include extjs-add-splitter-glyph($splitter-mini-bottom-glyph);
 }
 
 .#{$prefix}splitter-collapsed {
     .#{$prefix}layout-split-left {
-        //background-image: theme-background-image('util/splitter/mini-right');
-        background-image: none;
-        background-color: $base-color;
+        @include extjs-add-splitter-glyph($splitter-mini-right-glyph);
     }
 
     .#{$prefix}layout-split-right {
-        //background-image: theme-background-image('util/splitter/mini-left');
-        background-image: none;
-        background-color: $base-color;
+        @include extjs-add-splitter-glyph($splitter-mini-left-glyph);
     }
 
     @if $include-rtl {
         .#{$prefix}rtl {
             &.#{$prefix}layout-split-left {
-                //background-image: theme-background-image('util/splitter/mini-left');
-                background-image: none;
-                background-color: $base-color;
+                @include extjs-add-splitter-glyph($splitter-mini-left-glyph);
             }
 
             &.#{$prefix}layout-split-right {
-                //background-image: theme-background-image('util/splitter/mini-right');
-                background-image: none;
-                background-color: $base-color;
+                @include extjs-add-splitter-glyph($splitter-mini-right-glyph);
             }
         }
     }
 
     .#{$prefix}layout-split-top {
-        //background-image: theme-background-image('util/splitter/mini-bottom');
-        background-image: none;
-        background-color: $base-color;
+        @include extjs-add-splitter-glyph($splitter-mini-bottom-glyph);
     }
 
     .#{$prefix}layout-split-bottom {
-        //background-image: theme-background-image('util/splitter/mini-top');
-        background-image: none;
-        background-color: $base-color;
+        @include extjs-add-splitter-glyph($splitter-mini-top-glyph);
     }
 }
