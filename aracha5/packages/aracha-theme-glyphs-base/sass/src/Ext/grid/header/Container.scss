@@ -4,8 +4,8 @@
     background-image: none;
 
     &:before {
-        font-family: FontAwesome;
-        content: $fa-var-long-arrow-down;
+        font-family : $grid-column-header-glyph-font-family;
+        content     : $grid-column-header-menu-sort-asc-glyph;
     }
 }
 
@@ -14,8 +14,8 @@
     background-image: none;
 
     &:before {
-        font-family: FontAwesome;
-        content: $fa-var-long-arrow-up;
+        font-family : $grid-column-header-glyph-font-family;
+        content     : $grid-column-header-menu-sort-desc-glyph;
     }
 }
 
@@ -24,37 +24,7 @@
     background-image: none;
 
     &:before {
-        font-family: FontAwesome;
-        content: $fa-var-columns;
-    }
-}
-
-// sort ASC glyph in the actual column header text
-.#{$prefix}column-header-sort-ASC {
-    .#{$prefix}column-header-text {
-        // remove the image and padding that framework adds for the image
-        background-image: none;
-        padding-right: 0;
-        // now add our glyph to the :after pseudo
-        &:after {
-            font-family     : $grid-column-header-menu-arrow-glyph-font-family;
-            content         : $fa-var-long-arrow-down;
-            padding-left    : $grid-header-sort-icon-spacing;
-        }
-    }
-}
-
-// sort DESC glyph in the actual column header text
-.#{$prefix}column-header-sort-DESC {
-    .#{$prefix}column-header-text {
-        // remove the image and padding that framework adds for the image
-        background-image: none;
-        padding-right: 0;
-        // now add our glyph to the :after pseudo
-        &:after {
-            font-family     : $grid-column-header-menu-arrow-glyph-font-family;
-            content         : $fa-var-long-arrow-up;
-            padding-left    : $grid-header-sort-icon-spacing;
-        }
+        font-family : $grid-column-header-glyph-font-family;
+        content     : $grid-column-header-menu-columns-glyph;
     }
 }

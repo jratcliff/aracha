@@ -11,12 +11,12 @@
 .#{$prefix}menu-item-arrow {
     background-image: none;
     top             : 0;
-    font-size       : $menu-item-arrow-font-size;
-    color           : $menu-item-arrow-text-color;
+    font-size       : $menu-item-arrow-glyph-font-size;
+    color           : $menu-item-arrow-glyph-color;
     line-height     : $menu-item-height - vertical($menu-item-border-width) - abs($menu-item-text-vertical-offset);
     height          : auto;
 
-    @include extjs-add-glyph($menu-item-arrow $menu-item-arrow-font-family);
+    @include extjs-add-glyph($menu-item-arrow-glyph $menu-item-arrow-glyph-font-family);
 
     .#{$prefix}menu-item-active & {
         top: 0;
@@ -25,34 +25,37 @@
     @if $include-rtl {
         &.#{$prefix}rtl {
             background-image: none;
-            @include extjs-add-glyph($menu-item-arrow $menu-item-arrow-font-family);
+            @include extjs-add-glyph($menu-item-arrow-glyph $menu-item-arrow-glyph-font-family);
         }
     }
 }
 
-.#{$prefix}menu-item-icon {
+.#{$prefix}menu-item-icon,
+.#{$prefix}menu-item-icon-default {
     &.#{$prefix}menu-item-checkbox {
         // checked
         .#{$prefix}menu-item-checked & {
             background-image: none;
-            @include extjs-add-glyph($x-glyph-checkbox-checked);
-            }
+            @include extjs-add-glyph($menu-item-checked-glyph);
+        }
         // unchecked
         .#{$prefix}menu-item-unchecked & {
             background-image: none;
-            @include extjs-add-glyph($x-glyph-checkbox-unchecked);
-            }
+            @include extjs-add-glyph($menu-item-unchecked-glyph);
         }
+    }
 
+    // icon to show when menu items are grouped
     &.#{$prefix}menu-group-icon {
         // checked
         .#{$prefix}menu-item-checked & {
             background-image: none;
-            @include extjs-add-glyph($x-glyph-checkbox-checked);
-            }
+            @include extjs-add-glyph($menu-item-group-glyph);
+        }
 
         .#{$prefix}menu-item-unchecked & {
             background-image: none;
+            @include extjs-add-glyph("");
         }
     }
 }

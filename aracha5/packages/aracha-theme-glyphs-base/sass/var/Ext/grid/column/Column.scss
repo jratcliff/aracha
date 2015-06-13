@@ -1,3 +1,15 @@
 
-$grid-column-header-menu-arrow-glyph-font-family    : $glyph-font-family !default;
-$grid-column-header-menu-arrow-glyph                : $fa-var-caret-down !default;
+$grid-column-header-glyph-font-family       : $glyph-font-family !default;
+
+// sort glyph for column headers
+$grid-column-header-sort-asc-glyph          : $fa-var-long-arrow-down !default;
+$grid-column-header-sort-desc-glyph         : $fa-var-long-arrow-up !default;
+
+
+
+// glyphs in the menu in column headers
+$grid-column-header-menu-sort-asc-glyph     : $fa-var-long-arrow-down !default;
+$grid-column-header-menu-sort-desc-glyph    : $fa-var-long-arrow-up !default;
+$grid-column-header-menu-arrow-glyph        : $fa-var-caret-down !default;
+$grid-column-header-menu-columns-glyph      : $fa-var-columns !default;
+
