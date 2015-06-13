@@ -9,13 +9,19 @@ Ext.define('KitchenSink.view.thumbnails.Thumbnails', {
 
     initComponent: function() {
         var backgrounds = {
-            defaultBackground: 'border-square',
-            crisp: 'border-circle',
-            'crisp-touch': 'circle',
-            neptune: 'border-square',
-            'neptune-touch': 'square',
-            classic: 'rounded-square',
-            gray: 'rounded-square'
+            'defaultBackground'     : 'border-square',
+            'crisp'                 : 'border-circle',
+            'crisp-glyphs'          : 'border-circle',
+            'crisp-touch'           : 'circle',
+            'crisp-touch-glyphs'    : 'circle',
+            'neptune'               : 'border-square',
+            'neptune-glyphs'        : 'border-square',
+            'neptune-touch'         : 'square',
+            'neptune-touch-glyphs'  : 'square',
+            'classic'               : 'rounded-square',
+            'classic-glyphs'        : 'rounded-square',
+            'gray'                  : 'rounded-square',
+            'gray-glyphs'           : 'rounded-square'
         };
 
         this.tpl =

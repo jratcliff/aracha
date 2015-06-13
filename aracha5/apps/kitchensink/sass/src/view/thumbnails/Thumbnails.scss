@@ -1,15 +1,33 @@
 $kitchensink-thumbnail-background-color: #888;
 $kitchensink-thumbnail-color: #fff;
 
-@if $theme-name == 'ext-theme-crisp' or $theme-name == 'ext-theme-crisp-touch' {
-    $kitchensink-thumbnail-background-color: #2a3f5d;
-} @else if $theme-name == 'ext-theme-neptune' or $theme-name == 'ext-theme-neptune-touch' {
-    $kitchensink-thumbnail-background-color: #3892d3;
-    $kitchensink-thumbnail-color: #b8d8f0;
-} @else if $theme-name == 'ext-theme-classic' {
-    $kitchensink-thumbnail-background-color: #275287;
-} @else if $theme-name == 'ext-theme-classic' {
-    $kitchensink-thumbnail-background-color: #4d4d4d;
+@if $theme-name == 'ext-theme-crisp' or
+    $theme-name == 'ext-theme-crisp-touch' or
+    $theme-name == 'aracha-theme-glyphs-crisp' or
+    $theme-name == 'aracha-theme-glyphs-crisp-touch' {
+
+        $kitchensink-thumbnail-background-color: #2a3f5d;
+}
+@else if
+    $theme-name == 'ext-theme-neptune' or
+    $theme-name == 'ext-theme-neptune-touch' or
+    $theme-name == 'aracha-theme-glyphs-neptune' or
+    $theme-name == 'aracha-theme-glyphs-neptune-touch' {
+
+        $kitchensink-thumbnail-background-color: #3892d3;
+        $kitchensink-thumbnail-color: #b8d8f0;
+}
+@else if
+    $theme-name == 'ext-theme-classic' or
+    $theme-name == 'aracha-theme-glyphs-classic' {
+
+        $kitchensink-thumbnail-background-color: #275287;
+}
+@else if
+    $theme-name == 'ext-theme-gray' or
+    $theme-name == 'aracha-theme-glyphs-gray' {
+
+        $kitchensink-thumbnail-background-color: #4d4d4d;
 }
 
 $kitchensink-thumbnail-size: 96px;
