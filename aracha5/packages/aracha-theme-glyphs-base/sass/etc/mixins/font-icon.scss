@@ -1,0 +1,137 @@
+/**
+ * Borrowed and modified mixin from ExtJS 6
+ *
+ *  - changes:
+ *      - changed the default for $line-height from 1 to null
+ */
+ @mixin extjs-add-glyph($glyph, $pseudo: true, $line-height: null, $color: null, $style-pseudo: false) {
+    $char: null;
+    $font-size: null;
+    $font-family: null;
+    $angle: null;
+    $rotation: null;
+    $rotation-origin: 50% 50%;
+    $ie-rotation: null;
+
+    @if type-of($glyph) == 'list' {
+        $len: length($glyph);
+        @if ($len == 1) {
+            $char: nth($glyph, 1);
+        }
+        @else if ($len == 2) {
+            $char: nth($glyph, 1);
+            $font-size: nth($glyph, 2);
+        }
+        @else if ($len == 3) {
+            $char: nth($glyph, 1);
+            $font-size: nth($glyph, 2);
+            $font-family: nth($glyph, 3);
+        }
+        @else if ($len == 4) {
+            $char: nth($glyph, 1);
+            $font-size: nth($glyph, 2);
+            $font-family: nth($glyph, 3);
+            $angle: nth($glyph, 4);
+        }
+    } @else {
+        $char: $glyph;
+    }
+
+    @if $angle != null {
+        $rotation: rotate(#{$angle}deg);
+        @if $angle == 90 {
+            $ie-rotation: 1;
+        } @else if $angle == 180 {
+            $ie-rotation: 2;
+        } @else if $angle == 270 {
+            $ie-rotation: 3;
+        }
+    }
+
+    // make sure we have a font-family
+    @if $font-family == null {
+        $font-family: $glyph-font-family;
+    }
+
+    @if $char != null {
+        @if $pseudo == false {
+            @include font-icon-pseudo-content($char, $rotation, $rotation-origin);
+            @include font-icon-style($font-size, $line-height, $font-family, $color);
+        } @else {
+            @if not $style-pseudo {
+                @include font-icon-style($font-size, $line-height, $font-family, $color);
+            }
+
+            @if $pseudo == before or $pseudo == true {
+                &:before {
+                    @include font-icon-pseudo-content($char, $rotation, $rotation-origin);
+                    @if $style-pseudo {
+                        @include font-icon-style($font-size, $line-height, $font-family, $color);
+                    }
+                }
+            } @else if $pseudo == after {
+                &:after {
+                    @include font-icon-pseudo-content($char, $rotation, $rotation-origin);
+                    @if $style-pseudo {
+                        @include font-icon-style($font-size, $line-height, $font-family, $color);
+                    }
+                }
+            }
+        }
+
+        @if ($rotation != null) and $pseudo and $include-ie {
+            // IE8 does not support filters on pseudo elements, so we have to rotate the
+            // containing element instead of the pseudo element
+            .#{$prefix}ie8 & {
+                filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$ie-rotation});
+            }
+        }
+    }
+}
+
+/**
+ * Borrowed and modified mixin from ExtJS 6
+ *
+ *  - changes
+ *      - added an extra null check for $line-height
+ *      - added an extra null check for $color
+ */
+@mixin font-icon-style($font-size, $line-height, $font-family, $color) {
+    @if $font-size != null {
+        @if $line-height != null {
+            font: #{$font-size}/#{$line-height} $font-family;
+        } @else {
+            // use separate properties for font-size and font-family so that line-height
+            // will be preserved from prior font declarations
+            font-size: $font-size;
+            font-family: $font-family;
+        }
+    } @else {
+        font-family: $font-family;
+        @if $line-height != null {
+            line-height: $line-height;
+        }
+    }
+    @if $color != null {
+        color: $color;
+    }
+}
+
+/**
+ * Borrowed mixin from ExtJS 6
+ */
+@mixin font-icon-pseudo-content($char, $rotation, $rotation-origin) {
+    content: $char;
+
+    @if $rotation != null {
+        display: inline-block;
+        -webkit-transform: $rotation;
+        -webkit-transform-origin: $rotation-origin;
+        -moz-transform: $rotation;
+        -moz-transform-origin: $rotation-origin;
+        -ms-transform: $rotation;
+        -ms-transform-origin: $rotation-origin;
+        transform: $rotation;
+        transform-origin: $rotation-origin;
+    }
+}
