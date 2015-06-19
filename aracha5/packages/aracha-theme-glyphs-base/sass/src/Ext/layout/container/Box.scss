@@ -1,0 +1,67 @@
+/**
+ * Adds glyphs for the box scroller
+ */
+@mixin extjs-box-scroller-ui-add-glyphs(
+    $ui                 : null,
+    $type               : null,
+
+    $ui-top-glyph       : $scroller-top-glyph,
+    $ui-right-glyph     : $scroller-right-glyph,
+    $ui-bottom-glyph    : $scroller-bottom-glyph,
+    $ui-left-glyph      : $scroller-left-glyph,
+
+    $horizontal-width   : 16px,
+    $horizontal-height  : 16px,
+    $vertical-width     : 16px,
+    $vertical-height    : 16px,
+
+    $include-horizontal : true,
+    $include-vertical   : true
+) {
+
+    .#{$prefix}box-scroller-#{$type}-#{$ui} {
+
+        @if $include-horizontal {
+            &.#{$prefix}box-scroller-left,
+            &.#{$prefix}box-scroller-right {
+                background-image: none;
+                text-align: center;
+                font-size: $horizontal-height;
+
+                // in order to vertically align the glyph in the middle
+                // we need to know the correct line-height but since
+                // we can't we can just set top to 50% and line-height
+                // to 0 and that appears to also work
+                top: 50%;
+                line-height: 0;
+                margin-top: 0; // reset what the framework does
+            }
+
+            // left scroller
+            &.#{$prefix}box-scroller-left {
+                @include extjs-add-glyph($ui-left-glyph);
+            }
+            // right scroller
+            &.#{$prefix}box-scroller-right {
+                @include extjs-add-glyph($ui-right-glyph);
+            }
+        }
+
+        @if $include-vertical {
+            &.#{$prefix}box-scroller-top,
+            &.#{$prefix}box-scroller-bottom {
+                background-image: none;
+                font-size: $vertical-height;
+            }
+
+            // top scroller
+            &.#{$prefix}box-scroller-top {
+                @include extjs-add-glyph($ui-top-glyph);
+            }
+            // bottom scroller
+            &.#{$prefix}box-scroller-bottom {
+                @include extjs-add-glyph($ui-bottom-glyph);
+            }
+        }
+    }
+}
