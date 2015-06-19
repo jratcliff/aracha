@@ -1,29 +1,151 @@
-.#{$prefix}breadcrumb-icon-folder-default {
-    background-image: none;
-    &:before {
-        font-family : $breadcrumb-glyph-font-family;
-        content     : $breadcrumb-folder-glyph;
-        color       : $breadcrumb-glyph-color;
+/**
+ * adds the glyph icons for the breadcrumb ui
+ */
+@mixin extjs-breadcrumb-ui-add-glyphs(
+    $ui                             : null,
+    $ui-button-ui                   : $breadcrumb-button-ui,
+    $ui-include-menu-active-arrow   : $breadcrumb-include-menu-active-arrow,
+    $ui-include-split-over-arrow    : $breadcrumb-include-split-over-arrow,
+
+    $ui-glyph-font-family           : $breadcrumb-glyph-font-family,
+
+    $ui-folder-glyph                : $breadcrumb-folder-glyph,
+    $ui-folder-glyph-color          : $breadcrumb-folder-glyph-color,
+
+    $ui-leaf-glyph                  : $breadcrumb-leaf-glyph,
+    $ui-leaf-glyph-color            : $breadcrumb-leaf-glyph-color,
+
+    $ui-arrow-glyph                 : $breadcrumb-arrow-glyph,
+    $ui-arrow-rtl-glyph             : $breadcrumb-arrow-rtl-glyph,
+    $ui-arrow-glyph-color           : $breadcrumb-arrow-glyph-color,
+
+    $ui-arrow-open-glyph            : $breadcrumb-arrow-glyph,
+    $ui-arrow-open-rtl-glyph        : $breadcrumb-arrow-rtl-glyph,
+    $ui-arrow-open-glyph-color      : $breadcrumb-arrow-glyph-color
+
+) {
+
+    .#{$prefix}breadcrumb-icon-folder-#{$ui} {
+        background-image: none;
+        font-family     : $ui-glyph-font-family;
+        color           : $ui-folder-glyph-color;
+        @include extjs-add-glyph($ui-folder-glyph);
+    }
+
+    .#{$prefix}breadcrumb-icon-leaf-#{$ui} {
+        background-image: none;
+        font-family     : $ui-glyph-font-family;
+        color           : $ui-leaf-glyph-color;
+        @include extjs-add-glyph($ui-leaf-glyph);
+    }
+
+    .#{$prefix}btn-wrap-#{$ui-button-ui}-small.#{$prefix}btn-arrow:after {
+        .#{$prefix}breadcrumb-btn > & {
+            background-image: none;
+            font-family     : $ui-glyph-font-family;
+            color           : $ui-arrow-glyph-color;
+            @include extjs-add-glyph($ui-arrow-glyph, $pseudo: false);
+        }
+
+        @if $include-rtl {
+            .#{$prefix}rtl.#{$prefix}breadcrumb-btn > & {
+                background-image: none;
+                font-family     : $ui-glyph-font-family;
+                color           : $ui-arrow-glyph-color;
+                @include extjs-add-glyph($ui-arrow-rtl-glyph, $pseudo: false);
+            }
+        }
+
+        @if $ui-include-menu-active-arrow {
+            .#{$prefix}btn-menu-active.#{$prefix}breadcrumb-btn > & {
+                background-image: none;
+                font-family     : $ui-glyph-font-family;
+                color           : $ui-arrow-open-glyph-color;
+                @include extjs-add-glyph($ui-arrow-open-glyph, $pseudo: false);
+            }
+
+            @if $include-rtl {
+                .#{$prefix}rtl.#{$prefix}btn-menu-active.#{$prefix}breadcrumb-btn > & {
+                    background-image: none;
+                    font-family     : $ui-glyph-font-family;
+                    color           : $ui-arrow-open-glyph-color;
+                    @include extjs-add-glyph($ui-arrow-open-rtl-glyph, $pseudo: false);
+                }
+            }
+        }
+    }
+
+    .#{$prefix}btn-wrap-#{$ui-button-ui}-small.#{$prefix}btn-split:after {
+        .#{$prefix}breadcrumb-btn > & {
+            // TODO - need to add 'split' styling
+            background-image: none;
+            font-family     : $ui-glyph-font-family;
+            color           : $ui-arrow-glyph-color;
+            @include extjs-add-glyph($ui-arrow-glyph, $pseudo: false);
+        }
+
+        @if $include-rtl {
+            .#{$prefix}rtl.#{$prefix}breadcrumb-btn > & {
+                // TODO - need to add 'split' styling
+                background-image: none;
+                font-family     : $ui-glyph-font-family;
+                color           : $ui-arrow-glyph-color;
+                @include extjs-add-glyph($ui-arrow-rtl-glyph, $pseudo: false);
+            }
+        }
+
+        @if $ui-include-split-over-arrow {
+            .#{$prefix}btn-over.#{$prefix}breadcrumb-btn > & {
+                // TODO - need to add 'split over' styling
+                background-image: none;
+                font-family     : $ui-glyph-font-family;
+                color           : $ui-arrow-glyph-color;
+                @include extjs-add-glyph($ui-arrow-glyph, $pseudo: false);
+            }
+
+            @if $include-rtl {
+                .#{$prefix}rtl.#{$prefix}btn-over.#{$prefix}breadcrumb-btn > & {
+                    // TODO - need to add 'split rtl over' styling
+                    background-image: none;
+                    font-family     : $ui-glyph-font-family;
+                    color           : $ui-arrow-glyph-color;
+                    @include extjs-add-glyph($ui-arrow-rtl-glyph, $pseudo: false);
+                }
+            }
+        }
+
+        @if $ui-include-menu-active-arrow {
+            .#{$prefix}btn-menu-active.#{$prefix}breadcrumb-btn > & {
+                background-image: none;
+                font-family     : $ui-glyph-font-family;
+                color           : $ui-arrow-glyph-color;
+                @include extjs-add-glyph($ui-arrow-open-glyph, $pseudo: false);
+            }
+
+            @if $include-rtl {
+                .#{$prefix}rtl.#{$prefix}btn-menu-active.#{$prefix}breadcrumb-btn > & {
+                    background-image: none;
+                    font-family     : $ui-glyph-font-family;
+                    color           : $ui-arrow-glyph-color;
+                    @include extjs-add-glyph($ui-arrow-open-rtl-glyph, $pseudo: false);
+                }
+            }
+        }
+    }
+
+    @if $include-ext-layout-container-boxoverflow-scroller {
+        @include extjs-box-scroller-ui-add-glyphs(
+            $ui: $ui,
+            $type: 'breadcrumb',
+            $include-vertical: false
+        );
     }
 }
 
-.#{$prefix}breadcrumb-icon-leaf-default {
-    background-image: none;
-    &:before {
-        font-family : FontAwesome;
-        content     : $breadcrumb-leaf-glyph;
-        color       : $breadcrumb-glyph-color;
-    }
+
+@if $include-breadcrumb-default-ui {
+    @include extjs-breadcrumb-ui-add-glyphs(
+        $ui: 'default'
+    );
 }
 
-// breadcrumb text
-.#{$prefix}breadcrumb-btn {
-    .#{$prefix}btn-inner {
-        color: $breadcrumb-text-color;
-    }
-    &.#{$prefix}btn-over {
-        .#{$prefix}btn-inner {
-            color: $breadcrumb-text-over-color;
-}
-    }
-}

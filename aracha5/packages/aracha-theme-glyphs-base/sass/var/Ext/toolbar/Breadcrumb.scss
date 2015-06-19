@@ -1,8 +1,16 @@
-$breadcrumb-glyph-font-family   : $glyph-font-family !default;
-$breadcrumb-glyph-color         : grey !default;
+$breadcrumb-glyph-font-family       : $glyph-font-family !default;
+$breadcrumb-glyph-color             : grey !default;
 
-$breadcrumb-folder-glyph    : $fa-var-folder-o !default;
-$breadcrumb-leaf-glyph      : $fa-var-file-o !default;
+$breadcrumb-folder-glyph            : $fa-var-folder-o !default;
+$breadcrumb-folder-glyph-color      : $breadcrumb-glyph-color !default;
 
-$breadcrumb-text-color      : grey !default;
-$breadcrumb-text-over-color : white !default;
+$breadcrumb-leaf-glyph              : $fa-var-file-o !default;
+$breadcrumb-leaf-glyph-color        : $breadcrumb-glyph-color !default;
+
+$breadcrumb-arrow-glyph             : $fa-var-angle-right !default;
+$breadcrumb-arrow-rtl-glyph         : $fa-var-angle-left !default;
+$breadcrumb-arrow-glyph-color       : $breadcrumb-glyph-color !default;
+
+$breadcrumb-arrow-open-glyph        : $fa-var-angle-down !default;
+$breadcrumb-arrow-open-rtl-glyph    : $fa-var-angle-down !default;
+$breadcrumb-arrow-open-glyph-color  : $breadcrumb-glyph-color !default;
