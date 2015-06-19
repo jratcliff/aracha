@@ -1,24 +1,46 @@
 
-// custom text styling for tabs
-.#{$prefix}tab-inner-default {
-    //text-decoration: $tab-text-decoration;
-    //text-transform: $tab-text-transform;
-}
+@mixin extjs-tab-ui-add-glyphs(
+    $ui,
 
-// custom styling for close button on tabs
-.#{$prefix}tab-default {
-    .#{$prefix}tab-close-btn {
-        background  : none; // remove the image the framework adds
-        text-align  : center;
-        font-size   : $tab-closable-glyph-font-size;
-        line-height : $tab-closable-glyph-font-size;
-        width       : $tab-closable-glyph-font-size;
-        height      : $tab-closable-glyph-font-size;
+    $ui-closable-glyph              : $tab-closable-glyph,
+    $ui-closable-glyph-font-size    : $tab-closable-glyph-font-size,
+    $ui-closable-glyph-font-family  : $tab-closable-glyph-font-family,
 
-        &:before {
-            font-family : $tab-closable-glyph-font-family;
-            content     : $tab-closable-glyph;
-            color       : $tab-closable-glyph-color;
+    $ui-closable-glyph-color        : $tab-closable-glyph-color
+
+) {
+
+    // custom text styling for tabs
+    .#{$prefix}tab-inner-#{$ui} {
+        //text-decoration: $tab-text-decoration;
+        //text-transform: $tab-text-transform;
+    }
+
+    // custom styling for close button on tabs
+    .#{$prefix}tab-#{$ui} {
+        .#{$prefix}tab-close-btn {
+            background  : none;
+            text-align  : center;
+            font-size   : $ui-closable-glyph-font-size;
+            line-height : $ui-closable-glyph-font-size;
+            width       : $ui-closable-glyph-font-size;
+            height      : $ui-closable-glyph-font-size;
+
+            @include extjs-add-glyph(
+                $ui-closable-glyph $ui-closable-glyph-font-size $ui-closable-glyph-font-family,
+                $color: $ui-closable-glyph-color
+            );
+
+            &:before {
+                color: $ui-closable-glyph-color;
+            }
         }
     }
+}
+
+
+@if $include-tab-default-ui {
+    @include extjs-tab-ui-add-glyphs (
+        $ui: 'default'
+    )
 }
