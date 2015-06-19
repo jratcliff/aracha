@@ -9212,75 +9212,72 @@ input:-ms-input-placeholder {
 .x-show-groups-icon {
   background-image: url(aracha-theme-glyphs-base/images/grid/group-by.png); }
 
-/* line 2, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-.x-menu-item-icon {
+/* line 20, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+.x-menu-item-icon-default {
   top: 0;
-  font-size: 15px;
-  color: black;
-  line-height: 31px;
-  height: auto; }
-
-/* line 11, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-.x-menu-item-arrow {
-  background-image: none;
-  top: 0;
-  font-size: 15px;
-  color: black;
-  line-height: 31px;
   height: auto;
-  font-size: FontAwesome;
-  font-family: FontAwesome; }
-  /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
-  .x-menu-item-arrow:before {
-    content: "\f0da"; }
-  /* line 21, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-  .x-menu-item-active .x-menu-item-arrow {
-    top: 0; }
-  /* line 26, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-  .x-menu-item-arrow.x-rtl {
+  font-size: 20px;
+  line-height: 31px;
+  padding-top: 1px;
+  color: gray; }
+  /* line 33, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+  .x-menu-item-icon-default.x-menu-item-glyph {
+    text-align: center;
+    font-size: 20px;
+    line-height: 31px;
+    color: gray; }
+  /* line 42, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+  .x-menu-item-checked .x-menu-item-icon-default.x-menu-item-checkbox {
     background-image: none;
-    font-size: FontAwesome;
     font-family: FontAwesome; }
     /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
-    .x-menu-item-arrow.x-rtl:before {
-      content: "\f0da"; }
+    .x-menu-item-checked .x-menu-item-icon-default.x-menu-item-checkbox:before {
+      content: "\f046"; }
+  /* line 47, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+  .x-menu-item-unchecked .x-menu-item-icon-default.x-menu-item-checkbox {
+    background-image: none;
+    font-family: FontAwesome; }
+    /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
+    .x-menu-item-unchecked .x-menu-item-icon-default.x-menu-item-checkbox:before {
+      content: "\f096"; }
+  /* line 56, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+  .x-menu-item-checked .x-menu-item-icon-default.x-menu-group-icon {
+    background-image: none;
+    font-family: FontAwesome; }
+    /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
+    .x-menu-item-checked .x-menu-item-icon-default.x-menu-group-icon:before {
+      content: "\f00c"; }
+  /* line 61, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+  .x-menu-item-unchecked .x-menu-item-icon-default.x-menu-group-icon {
+    background-image: none;
+    font-family: FontAwesome; }
+    /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
+    .x-menu-item-unchecked .x-menu-item-icon-default.x-menu-group-icon:before {
+      content: ""; }
 
-/* line 37, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-.x-menu-item-checked .x-menu-item-icon.x-menu-item-checkbox, .x-menu-item-checked
-.x-menu-item-icon-default.x-menu-item-checkbox {
+/* line 69, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+.x-menu-item-arrow-default {
   background-image: none;
+  top: 0;
+  height: auto;
+  font-size: 20px;
+  line-height: 31px;
+  padding-top: 1px;
+  color: gray;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
-  .x-menu-item-checked .x-menu-item-icon.x-menu-item-checkbox:before, .x-menu-item-checked
-  .x-menu-item-icon-default.x-menu-item-checkbox:before {
-    content: "\f046"; }
-/* line 42, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-.x-menu-item-unchecked .x-menu-item-icon.x-menu-item-checkbox, .x-menu-item-unchecked
-.x-menu-item-icon-default.x-menu-item-checkbox {
-  background-image: none;
-  font-family: FontAwesome; }
-  /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
-  .x-menu-item-unchecked .x-menu-item-icon.x-menu-item-checkbox:before, .x-menu-item-unchecked
-  .x-menu-item-icon-default.x-menu-item-checkbox:before {
-    content: "\f096"; }
-/* line 51, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-.x-menu-item-checked .x-menu-item-icon.x-menu-group-icon, .x-menu-item-checked
-.x-menu-item-icon-default.x-menu-group-icon {
-  background-image: none;
-  font-family: FontAwesome; }
-  /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
-  .x-menu-item-checked .x-menu-item-icon.x-menu-group-icon:before, .x-menu-item-checked
-  .x-menu-item-icon-default.x-menu-group-icon:before {
-    content: "\f00c"; }
-/* line 56, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
-.x-menu-item-unchecked .x-menu-item-icon.x-menu-group-icon, .x-menu-item-unchecked
-.x-menu-item-icon-default.x-menu-group-icon {
-  background-image: none;
-  font-family: FontAwesome; }
-  /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
-  .x-menu-item-unchecked .x-menu-item-icon.x-menu-group-icon:before, .x-menu-item-unchecked
-  .x-menu-item-icon-default.x-menu-group-icon:before {
-    content: ""; }
+  .x-menu-item-arrow-default:before {
+    content: "\f0da"; }
+  /* line 85, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+  .x-menu-item-active .x-menu-item-arrow-default {
+    top: 0; }
+  /* line 90, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/menu/Menu.scss */
+  .x-menu-item-arrow-default.x-rtl {
+    background-image: none;
+    font-family: FontAwesome; }
+    /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
+    .x-menu-item-arrow-default.x-rtl:before {
+      content: "\f0da"; }
 
 /* line 2, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/grid/filters/Filters.scss */
 .x-grid-filters-lt {
@@ -9482,37 +9479,41 @@ input:-ms-input-placeholder {
   background-image: none;
   font-family: FontAwesome;
   color: grey;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 0px;
+  line-height: 1;
   content: "\f105";
   font-family: FontAwesome; }
-/* line 88, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
+/* line 92, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
 .x-rtl.x-breadcrumb-btn > .x-btn-wrap-plain-toolbar-small.x-btn-split:after {
   background-image: none;
   font-family: FontAwesome;
   color: grey;
   content: "\f104";
   font-family: FontAwesome; }
-/* line 98, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
+/* line 102, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
 .x-btn-over.x-breadcrumb-btn > .x-btn-wrap-plain-toolbar-small.x-btn-split:after {
   background-image: none;
   font-family: FontAwesome;
   color: grey;
   content: "\f105";
   font-family: FontAwesome; }
-/* line 107, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
+/* line 111, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
 .x-rtl.x-btn-over.x-breadcrumb-btn > .x-btn-wrap-plain-toolbar-small.x-btn-split:after {
   background-image: none;
   font-family: FontAwesome;
   color: grey;
   content: "\f104";
   font-family: FontAwesome; }
-/* line 118, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
+/* line 122, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
 .x-btn-menu-active.x-breadcrumb-btn > .x-btn-wrap-plain-toolbar-small.x-btn-split:after {
   background-image: none;
   font-family: FontAwesome;
   color: grey;
   content: "\f105";
   font-family: FontAwesome; }
-/* line 126, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
+/* line 130, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Breadcrumb.scss */
 .x-rtl.x-btn-menu-active.x-breadcrumb-btn > .x-btn-wrap-plain-toolbar-small.x-btn-split:after {
   background-image: none;
   font-family: FontAwesome;
