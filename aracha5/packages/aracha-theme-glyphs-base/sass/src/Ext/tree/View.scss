@@ -86,32 +86,6 @@
     }
 }
 
-// elbows when lines config is set (TODO - how do we handle this with glyphs?)
-.#{$prefix}tree-lines {
-    // elbow
-    .#{$prefix}tree-elbow {
-        background-image: none;
-        &:before {
-            //content: $tree-elbow-glyph;
-        }
-    }
-
-    // elbow line
-    .#{$prefix}tree-elbow-line {
-        background-image: none;
-        &:before {
-            //content: $tree-elbow-line-glyph;
-        }
-    }
-
-    // elbow end
-    .#{$prefix}tree-elbow-end {
-        background-image: none;
-        &:before {
-            //content: $tree-elbow-end-glyph;
-        }
-    }
-}
 
 @if $include-rtl {
     // expander
@@ -219,52 +193,61 @@
 }
 
 
-
 .#{$prefix}tree-lines {
+
     .#{$prefix}tree-elbow-glyph {
 
         // elbow line
-        &.x-tree-elbow-line:before {
-          content: "\00a0";
-          border: dashed #464646;
-          border-width: 0 0 0 1px; // show a left border
-          position: absolute;
-          top: 0px;
-          bottom: 0px;
-          opacity: 0.3;
+        &.x-tree-elbow-line {
+            background-image: none;
+            &:before {
+              content       : "\00a0";
+              border        : dotted #464646;
+              border-width  : 0 0 0 1px; // show a left border
+              position      : absolute;
+              top           : 0px;
+              bottom        : 0px;
+              opacity       : 0.3;
+            }
         }
 
-        // elbow before
-        &.x-tree-elbow:before {
-          content: "\00a0";
-          border: dashed #464646;
-          border-width: 0 0 1px 1px; // show a bottom and left border
-          position: absolute;
-          top: 0px;
-          height: 50%;
-          opacity: 0.3;
-        }
+        // elbow
+        &.x-tree-elbow {
+            background-image: none;
+            &:before {
+              content       : "\00a0";
+              border        : dotted #464646;
+              border-width  : 0 0 1px 1px; // show a bottom and left border
+              position      : absolute;
+              top           : 0px;
+              height        : 50%;
+              opacity       : 0.3;
+            }
 
-        // elbow line after
-        &.x-tree-elbow:after {
-          content: "\00a0";
-          border: dashed #464646;
-          border-width: 0 0 0 1px; // show a left border
-          position: absolute;
-          bottom: 0px;
-          height: 50%;
-          opacity: 0.3;
+            // elbow after
+            &:after {
+              content       : "\00a0";
+              border        : dotted #464646;
+              border-width  : 0 0 0 1px; // show a left border
+              position      : absolute;
+              bottom        : 0px;
+              height        : 50%;
+              opacity       : 0.3;
+            }
         }
 
         // elbow END
-        &.x-tree-elbow-end:before {
-          content: "\00a0";
-          border: dashed #464646;
-          border-width: 0 0 1px 1px; // show a bottom and left border
-          position: absolute;
-          top: 0px;
-          height: 50%;
-          opacity: 0.3;
+        &.x-tree-elbow-end {
+            background-image: none;
+            &:before {
+              content       : "\00a0";
+              border        : dotted #464646;
+              border-width  : 0 0 1px 1px; // show a bottom and left border
+              position      : absolute;
+              top           : 0px;
+              height        : 50%;
+              opacity       : 0.3;
+            }
         }
     }
 }
