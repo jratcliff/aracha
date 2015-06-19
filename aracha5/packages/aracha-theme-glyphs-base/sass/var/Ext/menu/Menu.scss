@@ -1,5 +1,11 @@
 
-$menu-item-group-glyph              : $fa-var-check !default;
-$menu-item-checked-glyph            : $fa-var-check-square-o !default;
-$menu-item-unchecked-glyph          : $fa-var-square-o !default;
-$menu-item-arrow-glyph              : $fa-var-caret-right !default;
+// can NOT use $menu-item-icon-size since that is NOT the same as a font-size
+// so we will calculate a default that can be overridden in derived themes if desired
+
+$menu-item-glyph-font-size: max($menu-item-font-size, round($menu-item-icon-size * 0.85)) !default;
+
+
+$menu-item-group-glyph      : $fa-var-check !default;
+$menu-item-checked-glyph    : $fa-var-check-square-o !default;
+$menu-item-unchecked-glyph  : $fa-var-square-o !default;
+$menu-item-arrow-glyph      : $fa-var-caret-right !default;

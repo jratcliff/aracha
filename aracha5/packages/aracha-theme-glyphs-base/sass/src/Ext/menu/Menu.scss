@@ -1,14 +1,12 @@
 
 @mixin extjs-menu-ui-add-glyphs(
     $ui,
-    $ui-text-color                  : $menu-text-color,
-    $ui-item-font-size              : $menu-item-font-size,
     $ui-item-border-width           : $menu-item-border-width,
     $ui-item-height                 : $menu-item-height,
     $ui-item-text-vertical-offset   : $menu-item-text-vertical-offset,
 
     $ui-glyph-color                 : $menu-glyph-color,
-    $ui-item-icon-size              : $menu-item-icon-size,
+    $ui-item-glyph-font-size        : $menu-item-glyph-font-size,
 
     $ui-item-checked-glyph          : $menu-item-checked-glyph,
     $ui-item-unchecked-glyph        : $menu-item-unchecked-glyph,
@@ -23,7 +21,7 @@
         top         : 0;
         height      : auto;
 
-        font-size   : $ui-item-font-size;
+        font-size   : $ui-item-glyph-font-size;
         line-height : $ui-item-glyph-line-height;
         @if $ui-item-text-vertical-offset > 0 {
             padding-top: $ui-item-text-vertical-offset;
@@ -33,11 +31,8 @@
         color       : $ui-glyph-color;
 
         &.#{$prefix}menu-item-glyph {
-            // framework adds 'left' to icon class 
-            // which the glyph class inherits but we do not want this
-            left        : 0; 
-            text-align  : center; // center glyph instead of using 'left'
-            font-size   : $ui-item-icon-size;
+            text-align  : center;
+            font-size   : $ui-item-glyph-font-size;
             line-height : $ui-item-glyph-line-height;
             color       : $ui-glyph-color;
         }
@@ -76,7 +71,7 @@
         top             : 0;
         height          : auto;
 
-        font-size       : $ui-item-font-size;
+        font-size       : $ui-item-glyph-font-size;
         line-height     : $ui-item-glyph-line-height;
         @if $ui-item-text-vertical-offset > 0 {
             padding-top: $ui-item-text-vertical-offset;
