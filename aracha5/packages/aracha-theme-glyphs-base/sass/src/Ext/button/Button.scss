@@ -122,12 +122,15 @@
         // right arrow
         &.#{$prefix}btn-split-right {
 
+            // the 'split' line
             .#{$prefix}btn-text,
             .#{$prefix}btn-icon {
                 border-width    : 0 1px 0 0;
                 border-style    : solid;
+                border-color    : darken($ui-arrow-color, 10%);
             }
 
+            // the arrow
             &:after {
                 @extend .#{$prefix}btn-arrow-right:after;
             }
@@ -143,12 +146,15 @@
         // bottom arrow
         &.#{$prefix}btn-split-bottom {
 
+            // the 'split' line
             .#{$prefix}btn-text,
             .#{$prefix}btn-icon {
                 border-width    : 0 0 1px 0;
                 border-style    : solid;
+                border-color    : darken($ui-arrow-color, 10%);
             }
 
+            // the arrow
             &:after {
                 @extend .#{$prefix}btn-arrow-right:after;
                 @extend .#{$prefix}btn-arrow-bottom:after;
