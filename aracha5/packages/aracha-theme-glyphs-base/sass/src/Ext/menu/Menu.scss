@@ -1,61 +1,107 @@
-// adding support to show an icon font (glyph) for menu icons
-.#{$prefix}menu-item-icon {
-    top         : 0;
-    font-size   : $menu-item-font-size;
-    color       : $menu-text-color;
-    line-height : $menu-item-height - vertical($menu-item-border-width) - abs($menu-item-text-vertical-offset);
-    height      : auto;
+
+@mixin extjs-menu-ui-add-glyphs(
+    $ui,
+    $ui-text-color                  : $menu-text-color,
+    $ui-item-font-size              : $menu-item-font-size,
+    $ui-item-border-width           : $menu-item-border-width,
+    $ui-item-height                 : $menu-item-height,
+    $ui-item-text-vertical-offset   : $menu-item-text-vertical-offset,
+
+    $ui-glyph-color                 : $menu-glyph-color,
+    $ui-item-icon-size              : $menu-item-icon-size,
+
+    $ui-item-checked-glyph          : $menu-item-checked-glyph,
+    $ui-item-unchecked-glyph        : $menu-item-unchecked-glyph,
+    $ui-item-group-glyph            : $menu-item-group-glyph,
+    $ui-item-arrow-glyph            : $menu-item-arrow-glyph
+) {
+
+    $ui-item-glyph-line-height: $ui-item-height - vertical($ui-item-border-width) - abs($ui-item-text-vertical-offset);
+
+    // adding support to show an icon font (glyph) for menu icons
+    .#{$prefix}menu-item-icon-#{$ui} {
+        top         : 0;
+        height      : auto;
+
+        font-size   : $ui-item-font-size;
+        line-height : $ui-item-glyph-line-height;
+        @if $ui-item-text-vertical-offset > 0 {
+            padding-top: $ui-item-text-vertical-offset;
+        } @else if $ui-item-text-vertical-offset < 0 {
+            padding-bottom: $ui-item-text-vertical-offset;
+        }
+        color       : $ui-glyph-color;
+
+        &.#{$prefix}menu-item-glyph {
+            // framework adds 'left' to icon class 
+            // which the glyph class inherits but we do not want this
+            left        : 0; 
+            text-align  : center; // center glyph instead of using 'left'
+            font-size   : $ui-item-icon-size;
+            line-height : $ui-item-glyph-line-height;
+            color       : $ui-glyph-color;
+        }
+
+        &.#{$prefix}menu-item-checkbox {
+            // checked
+            .#{$prefix}menu-item-checked & {
+                background-image: none;
+                @include extjs-add-glyph($ui-item-checked-glyph);
+            }
+            // unchecked
+            .#{$prefix}menu-item-unchecked & {
+                background-image: none;
+                @include extjs-add-glyph($ui-item-unchecked-glyph);
+            }
+        }
+
+        // icon to show when menu items are grouped
+        &.#{$prefix}menu-group-icon {
+            // checked
+            .#{$prefix}menu-item-checked & {
+                background-image: none;
+                @include extjs-add-glyph($ui-item-group-glyph);
+            }
+
+            .#{$prefix}menu-item-unchecked & {
+                background-image: none;
+                @include extjs-add-glyph("");
+            }
+        }
+    }
+
+    // showing the arrow glyph
+    .#{$prefix}menu-item-arrow-#{$ui}{
+        background-image: none;
+        top             : 0;
+        height          : auto;
+
+        font-size       : $ui-item-font-size;
+        line-height     : $ui-item-glyph-line-height;
+        @if $ui-item-text-vertical-offset > 0 {
+            padding-top: $ui-item-text-vertical-offset;
+        } @else if $ui-item-text-vertical-offset < 0 {
+            padding-bottom: $ui-item-text-vertical-offset;
+        }
+        color           : $ui-glyph-color;
+
+        @include extjs-add-glyph($ui-item-arrow-glyph);
+
+        .#{$prefix}menu-item-active & {
+            top: 0;
+        }
+
+        @if $include-rtl {
+            &.#{$prefix}rtl {
+                background-image: none;
+                @include extjs-add-glyph($ui-item-arrow-glyph);
+            }
+        }
+    }
 }
 
-// showing the arrow glyph
-.#{$prefix}menu-item-arrow {
-    background-image: none;
-    top             : 0;
-    font-size       : $menu-item-arrow-glyph-font-size;
-    color           : $menu-item-arrow-glyph-color;
-    line-height     : $menu-item-height - vertical($menu-item-border-width) - abs($menu-item-text-vertical-offset);
-    height          : auto;
-
-    @include extjs-add-glyph($menu-item-arrow-glyph $menu-item-arrow-glyph-font-family);
-
-    .#{$prefix}menu-item-active & {
-        top: 0;
-    }
-
-    @if $include-rtl {
-        &.#{$prefix}rtl {
-            background-image: none;
-            @include extjs-add-glyph($menu-item-arrow-glyph $menu-item-arrow-glyph-font-family);
-        }
-    }
-}
-
-.#{$prefix}menu-item-icon,
-.#{$prefix}menu-item-icon-default {
-    &.#{$prefix}menu-item-checkbox {
-        // checked
-        .#{$prefix}menu-item-checked & {
-            background-image: none;
-            @include extjs-add-glyph($menu-item-checked-glyph);
-        }
-        // unchecked
-        .#{$prefix}menu-item-unchecked & {
-            background-image: none;
-            @include extjs-add-glyph($menu-item-unchecked-glyph);
-        }
-    }
-
-    // icon to show when menu items are grouped
-    &.#{$prefix}menu-group-icon {
-        // checked
-        .#{$prefix}menu-item-checked & {
-            background-image: none;
-            @include extjs-add-glyph($menu-item-group-glyph);
-        }
-
-        .#{$prefix}menu-item-unchecked & {
-            background-image: none;
-            @include extjs-add-glyph("");
-        }
-    }
+@if $include-menu-default-ui {
+    @include extjs-menu-ui-add-glyphs(
+        $ui: 'default'
+    );
 }
