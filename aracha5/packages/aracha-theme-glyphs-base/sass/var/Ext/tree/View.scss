@@ -3,8 +3,23 @@
  * Ext.tree.View
  */
 
-$tree-glyph-color                   : $color !default;
-$tree-glyph-font-size               : $grid-row-cell-font-size + top($tree-cell-inner-padding) !default;
+$tree-glyph-color: null !default;
+@if $theme-name == 'aracha-theme-glyphs-neptune' or
+    $theme-name == 'aracha-theme-glyphs-neptune-touch' {
+
+    @if $tree-glyph-color == null {
+        $tree-glyph-color: lighten($color, 70%);
+    }
+}
+@else {
+    @if $tree-glyph-color == null {
+        $tree-glyph-color: lighten($color, 20%);
+    }
+}
+
+
+
+$tree-glyph-font-size               : round($grid-row-cell-font-size * 1.2) !default;
 
 
 // leaf
