@@ -1,0 +1,100 @@
+
+.#{$prefix}tagfield-item {
+
+    .#{$prefix}tagfield-item-text {
+        color: $tag-field-item-color;
+    }
+    &:hover {
+        .#{$prefix}tagfield-item-text {
+            color: $tag-field-item-over-color;
+        }
+    }
+}
+
+// close button glyph setup
+.#{$prefix}tagfield-item-close {
+    background-image: none;
+    text-align      : center;
+    font-size       : $tag-field-item-close-glyph-font-size;
+    line-height     : 1;
+
+    &:before {
+        font-family : $glyph-font-family;
+        content     : $tag-field-item-close-glyph;
+        color       : $tag-field-item-close-glyph-color;
+    }
+}
+
+
+// hover over non-selected tag field
+.#{$prefix}field:not(.#{$prefix}item-disabled) .#{$prefix}tagfield-item:hover {
+
+    // close button
+    .#{$prefix}tagfield-item-close {
+        background-color: $tag-field-item-close-background-color-hover;
+        &:before {
+            color: $tag-field-item-close-glyph-color-hover;
+        }
+    }
+}
+
+
+// hover over or press close button of non-selected tag field
+.#{$prefix}field:not(.#{$prefix}item-disabled) .#{$prefix}tagfield-item-close {
+
+    // hover over close button
+    &:hover {
+        background-color: $tag-field-item-close-background-color-hover;
+        &:before {
+            color: $tag-field-item-close-glyph-color-hover;
+        }
+    }
+
+    // press close button
+    &:active {
+        background-color: $tag-field-item-close-background-color-active;
+        &:before {
+            color: $tag-field-item-close-glyph-color-active;
+        }
+    }
+}
+
+
+// selected tag field
+.#{$prefix}field:not(.#{$prefix}item-disabled) .#{$prefix}tagfield-item.#{$prefix}tagfield-item-selected {
+
+    .#{$prefix}tagfield-item-text {
+        color: $tag-field-item-selected-color;
+    }
+    &:hover {
+        .#{$prefix}tagfield-item-text {
+            color: $tag-field-item-selected-over-color;
+        }
+    }
+
+    // close icon
+    .#{$prefix}tagfield-item-close {
+        background-color: $tag-field-item-selected-close-background-color;
+        &:before {
+            color: $tag-field-item-selected-close-glyph-color;
+        }
+
+        // hover state
+        &:hover {
+            background-color: $tag-field-item-selected-close-background-color-hover;
+            &:before {
+                color: $tag-field-item-selected-close-glyph-color-hover;
+            }
+        }
+
+        // active state
+        &:active {
+            background-color: $tag-field-item-selected-close-background-color-active;
+            &:before {
+                color: $tag-field-item-selected-close-glyph-color-active;
+            }
+        }
+    }
+
+}
+

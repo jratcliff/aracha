@@ -1,0 +1,33 @@
+
+$tag-field-item-color               : $color !default;
+$tag-field-item-over-color          : $tag-field-item-color !default;
+
+// already set in theme var, setting it here will do nothing since the theme is the top level
+// and this package loads after the theme package due to this package only being listed
+// in the 'requires' config array
+//$tag-field-item-selected-color          : null !default;
+
+$tag-field-item-selected-over-color     : $tag-field-item-selected-color !default;
+
+$tag-field-item-close-glyph             : $fa-var-close !default;
+$tag-field-item-close-glyph-font-size   : $tag-field-item-close-icon-height !default;
+
+
+// normal
+$tag-field-item-close-glyph-color               : $form-text-field-color !default;
+$tag-field-item-close-glyph-color-hover         : $form-text-field-color !default;
+$tag-field-item-close-glyph-color-active        : $form-text-field-color !default;
+
+$tag-field-item-close-background-color          : $tag-field-item-background-color !default;
+$tag-field-item-close-background-color-hover    : $tag-field-item-background-color !default;
+$tag-field-item-close-background-color-active   : $tag-field-item-background-color !default;
+
+
+// selected
+$tag-field-item-selected-close-glyph-color              : $tag-field-item-selected-color !default;
+$tag-field-item-selected-close-glyph-color-hover        : $tag-field-item-selected-color !default;
+$tag-field-item-selected-close-glyph-color-active       : $tag-field-item-selected-color !default;
+
+$tag-field-item-selected-close-background-color         : $tag-field-item-selected-background-color !default;
+$tag-field-item-selected-close-background-color-hover   : $tag-field-item-selected-background-color !default;
+$tag-field-item-selected-close-background-color-active  : $tag-field-item-selected-background-color !default;
