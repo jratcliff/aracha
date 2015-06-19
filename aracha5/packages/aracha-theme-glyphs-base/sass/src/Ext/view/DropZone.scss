@@ -1,0 +1,22 @@
+.#{$prefix}grid-drop-indicator {
+
+    .#{$prefix}grid-drop-indicator-left {
+        background-image    : none;
+        color               : $dropzone-insert-arrow-right-glyph-color;
+        text-align          : right;
+        top                 : 0;
+        left                : -16px;
+        width               : 16px;
+        @include extjs-add-glyph($dropzone-insert-arrow-right-glyph);
+    }
+
+    .#{$prefix}grid-drop-indicator-right {
+        background-image    : none;
+        color               : $dropzone-insert-arrow-left-glyph-color;
+        text-align          : left;
+        top                 : 0;
+        right               : -16px;
+        width               : 16px;
+        @include extjs-add-glyph($dropzone-insert-arrow-left-glyph);
+    }
+}

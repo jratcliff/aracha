@@ -1,0 +1,32 @@
+
+// change some of the framework's rules for the x-dd-drop-icon
+// so that it will better work with the glyphs
+.#{$prefix}dd-drop-icon {
+    top         : 0;
+    left        : 0;
+    padding     : 5px; // why 5px? because the framework hardcodes this value for the displayed text
+    font-size   : $drop-glyph-font-size;
+    line-height : 1;
+}
+
+
+// ok to drop icon
+.#{$prefix}dd-drop-ok .#{$prefix}dd-drop-icon {
+    background-image: none;
+    text-align: center;
+    @include extjs-add-glyph($drop-ok-glyph, $color: $drop-ok-glyph-color);
+}
+
+// ok to add icon
+.#{$prefix}dd-drop-ok-add .#{$prefix}dd-drop-icon {
+    background-image: none;
+    text-align: center;
+    @include extjs-add-glyph($drop-ok-add-glyph, $color: $drop-ok-add-glyph-color);
+}
+
+// not ok to drop
+.#{$prefix}dd-drop-nodrop div.#{$prefix}dd-drop-icon {
+    background-image: none;
+    text-align: center;
+    @include extjs-add-glyph($drop-not-ok-glyph, $color: $drop-not-ok-glyph-color);
+}
