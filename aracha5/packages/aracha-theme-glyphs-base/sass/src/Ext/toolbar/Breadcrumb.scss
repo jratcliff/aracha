@@ -81,6 +81,10 @@
             background-image: none;
             font-family     : $ui-glyph-font-family;
             color           : $ui-arrow-glyph-color;
+            vertical-align  : middle;
+            text-align      : center;
+            padding-right   : 0px; // turn off what the framework adds
+            line-height     : 1;
             @include extjs-add-glyph($ui-arrow-glyph, $pseudo: false);
         }
 
