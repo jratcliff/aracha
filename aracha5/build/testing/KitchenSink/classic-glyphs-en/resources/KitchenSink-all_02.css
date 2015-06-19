@@ -4215,7 +4215,7 @@ input:-ms-input-placeholder {
   .x-tree-icon.x-tree-icon-leaf,
   .x-tree-elbow-glyph.x-tree-icon-leaf {
     background-image: none;
-    color: #1247e6;
+    color: #5482ee;
     font-family: FontAwesome; }
     /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
     .x-tree-icon.x-tree-icon-leaf:before,
@@ -4284,7 +4284,7 @@ input:-ms-input-placeholder {
 /* line 135, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-tree-icon-parent {
   background-image: none;
-  color: #e6b112;
+  color: #eec054;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-tree-icon-parent:before {
@@ -4293,7 +4293,7 @@ input:-ms-input-placeholder {
 /* line 149, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-grid-tree-node-expanded .x-tree-icon-parent {
   background-image: none;
-  color: #e6b112;
+  color: #eec054;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-grid-tree-node-expanded .x-tree-icon-parent:before {
