@@ -7633,6 +7633,7 @@ input:-ms-input-placeholder {
 .x-dd-drop-icon {
   top: 0;
   left: 0;
+  padding: 5px;
   font-size: 13px;
   line-height: 1; }
 
@@ -8374,15 +8375,15 @@ input:-ms-input-placeholder {
 .x-tree-icon,
 .x-tree-elbow-glyph {
   display: inline-block;
-  color: black;
-  font-size: 13px;
+  color: #333333;
+  font-size: 16px;
   line-height: 24px;
   text-align: center; }
   /* line 16, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
   .x-tree-icon.x-tree-icon-leaf,
   .x-tree-elbow-glyph.x-tree-icon-leaf {
     background-image: none;
-    color: black;
+    color: #333333;
     font-family: FontAwesome; }
     /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
     .x-tree-icon.x-tree-icon-leaf:before,
@@ -8391,7 +8392,7 @@ input:-ms-input-placeholder {
 
 /* line 25, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-tree-expander {
-  color: black;
+  color: #333333;
   font-family: FontAwesome; }
   /* line 29, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
   .x-tree-expander.x-tree-elbow-plus, .x-tree-expander.x-tree-elbow-end-plus {
@@ -8404,7 +8405,7 @@ input:-ms-input-placeholder {
     content: "\f067"; }
   /* line 44, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
   .x-tree-arrows .x-tree-expander {
-    color: black;
+    color: #333333;
     font-family: FontAwesome; }
     /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
     .x-tree-arrows .x-tree-expander:before {
@@ -8414,7 +8415,7 @@ input:-ms-input-placeholder {
     opacity: 0.7; }
   /* line 57, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
   .x-grid-tree-node-expanded .x-tree-expander {
-    color: black;
+    color: #333333;
     font-family: FontAwesome; }
     /* line 61, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
     .x-grid-tree-node-expanded .x-tree-expander.x-tree-elbow-plus, .x-grid-tree-node-expanded .x-tree-expander.x-tree-elbow-end-plus {
@@ -8427,7 +8428,7 @@ input:-ms-input-placeholder {
       content: "\f068"; }
     /* line 75, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
     .x-tree-arrows .x-grid-tree-node-expanded .x-tree-expander {
-      color: black;
+      color: #333333;
       font-family: FontAwesome; }
       /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
       .x-tree-arrows .x-grid-tree-node-expanded .x-tree-expander:before {
@@ -8439,14 +8440,14 @@ input:-ms-input-placeholder {
 /* line 92, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-rtl.x-tree-expander {
   background: none;
-  color: black;
+  color: #333333;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-rtl.x-tree-expander:before {
     content: "\f068"; }
   /* line 100, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
   .x-tree-arrows .x-rtl.x-tree-expander {
-    color: black;
+    color: #333333;
     font-family: FontAwesome; }
     /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
     .x-tree-arrows .x-rtl.x-tree-expander:before {
@@ -8458,14 +8459,14 @@ input:-ms-input-placeholder {
 
 /* line 114, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-grid-tree-node-expanded .x-rtl.x-tree-expander {
-  color: black;
+  color: #333333;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-grid-tree-node-expanded .x-rtl.x-tree-expander:before {
     content: "\f068"; }
   /* line 121, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
   .x-tree-arrows .x-grid-tree-node-expanded .x-rtl.x-tree-expander {
-    color: black;
+    color: #333333;
     font-family: FontAwesome; }
     /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
     .x-tree-arrows .x-grid-tree-node-expanded .x-rtl.x-tree-expander:before {
@@ -8478,7 +8479,7 @@ input:-ms-input-placeholder {
 /* line 135, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-tree-icon-parent {
   background-image: none;
-  color: black;
+  color: #333333;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-tree-icon-parent:before {
@@ -8487,7 +8488,7 @@ input:-ms-input-placeholder {
 /* line 142, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-rtl.x-tree-icon-parent {
   background-image: none;
-  color: black;
+  color: #333333;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-rtl.x-tree-icon-parent:before {
@@ -8496,7 +8497,7 @@ input:-ms-input-placeholder {
 /* line 149, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-grid-tree-node-expanded .x-tree-icon-parent {
   background-image: none;
-  color: black;
+  color: #333333;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-grid-tree-node-expanded .x-tree-icon-parent:before {
@@ -8505,7 +8506,7 @@ input:-ms-input-placeholder {
 /* line 156, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tree/View.scss */
 .x-grid-tree-node-expanded .x-rtl.x-tree-icon-parent {
   background-image: none;
-  color: black;
+  color: #333333;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-grid-tree-node-expanded .x-rtl.x-tree-icon-parent:before {
