@@ -1,20 +1,30 @@
-// since this theme uses glyphs instead of images 
+// since this theme uses glyphs instead of images
 // we need to set the color for the expand/collapse glyphs
 
 .#{$prefix}panel-header.#{$prefix}accordion-hd {
     .#{$prefix}tool-glyph {
-        color: $accordion-tool-color;
+        color: $accordion-tool-glyph-color;
+        font-size: $accordion-tool-glyph-font-size;
 
-        &:before {
-            font-size: $accordion-tool-font-size;
+        // expand
+        &.#{$prefix}tool-expand-top,
+        &.#{$prefix}tool-expand-bottom {
+            @include extjs-add-glyph($accordion-tool-expand-glyph);
+        }
+
+        // collapse
+        &.#{$prefix}tool-collapse-top,
+        &.#{$prefix}tool-collapse-bottom {
+            @include extjs-add-glyph($accordion-tool-collapse-glyph);
+        }
     }
-    }
+
 
     // also set the opacity for hovering
     @if $tool-include-hover-icons {
         .#{$prefix}tool-over {
             .#{$prefix}tool-glyph {
-                @include opacity($accordion-tool-opacity-over);
+                @include opacity($accordion-tool-glyph-opacity-over);
             }
         }
     }

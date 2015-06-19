@@ -1,3 +1,7 @@
-$accordion-tool-color           : blue !default;
-$accordion-tool-font-size       : 20px;
-$accordion-tool-opacity-over    : 0.7 !default;
+
+$accordion-tool-expand-glyph        : $fa-var-plus-circle !default;
+$accordion-tool-collapse-glyph      : $fa-var-minus-circle !default;
+
+$accordion-tool-glyph-color         : $accordion-header-color !default;
+$accordion-tool-glyph-font-size     : $tool-size !default;
+$accordion-tool-glyph-opacity-over  : 0.7 !default;
