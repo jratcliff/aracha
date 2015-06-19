@@ -3,6 +3,7 @@
 .#{$prefix}column-header-checkbox .#{$prefix}column-header-text {
     background-image: none;
     font: $grid-row-cell-font;
+    text-align: center;
     @include extjs-add-glyph($x-glyph-checkbox-unchecked);
 }
 

@@ -5,3 +5,14 @@
     //border-style: $grid-lockable-separator-border-style;
     //border-color: $grid-row-divider-color;
 }
+
+
+.#{$prefix}hmenu-lock {
+    background-image: none;
+    @include extjs-add-glyph($grid-lockable-hmenu-lock);
+}
+
+.#{$prefix}hmenu-unlock {
+    background-image: none;
+    @include extjs-add-glyph($grid-lockable-hmenu-unlock);
+}

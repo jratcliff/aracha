@@ -3,6 +3,7 @@
     background: none;
     width: auto;
     font: $grid-row-cell-font;
+    vertical-align: middle;
     &:before {
         font-family: FontAwesome;
         content: $fa-var-square-o;
