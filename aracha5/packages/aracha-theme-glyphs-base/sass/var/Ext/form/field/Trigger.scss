@@ -4,8 +4,13 @@
  */
 
 $form-trigger-font-family   : $glyph-font-family !default;
-$form-trigger-font-size     : floor(($form-text-field-height - vertical($form-text-field-border-width) - vertical($form-text-field-padding)) * 0.9) !default;
-//$form-trigger-font-size     : floor($form-text-field-height * 0.8) !default;
+
+// only subtract the padding and not the border so that the triggers are slightly larger that the text
+$form-trigger-font-size         : round(($form-text-field-height - vertical($form-text-field-border-width)) * 0.8) !default;
+//$form-trigger-font-size     : ($form-text-field-height - vertical($form-text-field-padding)) * 0.9 !default;
+//$form-trigger-font-size     : $form-text-field-height - vertical($form-text-field-padding) !default;
+
+$form-trigger-line-height     : $form-text-field-height - vertical($form-trigger-width) !default;
 
 $form-clear-trigger-glyph           : $fa-var-close !default;
 $form-search-trigger-glyph          : $fa-var-search !default;
@@ -13,8 +18,8 @@ $form-time-trigger-glyph            : $fa-var-clock-o !default;
 
 $form-spinner-up-trigger-glyph      : $fa-var-angle-up !default;
 $form-spinner-down-trigger-glyph    : $fa-var-angle-down !default;
-$form-spinner-line-height           : (($form-text-field-height - vertical($form-text-field-border-width)) / 2) !default;
-$form-spinner-font-size             : floor($form-trigger-font-size * 1.3) !default;
+$form-spinner-line-height           : $form-trigger-width !default;
+$form-spinner-font-size             : $form-trigger-font-size !default;
 
 
 

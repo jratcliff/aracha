@@ -14,7 +14,3 @@ $form-trigger-color-click       : #666666 !default;
 // Neptune Touch uses +/- placed side by side for the spinner
 $form-spinner-up-trigger-glyph      : $fa-var-plus !default;
 $form-spinner-down-trigger-glyph    : $fa-var-minus !default;
-
-// normally, we set the line-height to 1/2 of a calculated value since the spinner icons are stacked
-// however, for the *-touch themes, we show the spinner icons next to each other and so we just use a unitless line-height of 1
-$form-spinner-line-height           : 1 !default;

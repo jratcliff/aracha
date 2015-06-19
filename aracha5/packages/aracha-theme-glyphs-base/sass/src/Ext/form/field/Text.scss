@@ -131,15 +131,19 @@
             background-image: none;
             background-color: transparent;
             font-size       : $form-spinner-font-size;
-            line-height     : $form-spinner-line-height;
+            line-height     : if($spinner-trigger-vertical, $form-spinner-line-height / 2, $form-spinner-line-height);
         }
 
-        // up spinner
+        // common rules for both up and down spinner
         .#{$prefix}form-spinner-up,
-        .#{$prefix}form-spinner-up-default {
+        .#{$prefix}form-spinner-up-default,
+        .#{$prefix}form-spinner-down,
+        .#{$prefix}form-spinner-down-default {
+
+            // the home to the glyph (set below)
             &:before {
-                content         : $form-spinner-up-trigger-glyph;
-                vertical-align  : middle;
+                display: inline-block;
+                vertical-align: middle;
             }
 
             // hide the framework's rtl image
@@ -180,49 +184,19 @@
             }
         }
 
+        // up spinner
+        .#{$prefix}form-spinner-up,
+        .#{$prefix}form-spinner-up-default {
+            &:before {
+                content: $form-spinner-up-trigger-glyph;
+            }
+        }
+
         // down spinner
         .#{$prefix}form-spinner-down,
         .#{$prefix}form-spinner-down-default {
             &:before {
-                content         : $form-spinner-down-trigger-glyph;
-                vertical-align  : middle;
-            }
-
-            // hide the framework's rtl image
-            @if $include-rtl {
-                &.#{$prefix}rtl {
-                    background-image: none;
-                }
-            }
-
-            // over
-            &.#{$prefix}form-spinner-over {
-                color           : $form-trigger-color-over;
-                background-color: $form-trigger-background-color-over;
-            }
-
-            // focus
-            &.#{$prefix}form-spinner-focus {
-                color           : $form-trigger-color-focus;
-                background-color: $form-trigger-background-color-focus;
-
-                // focus with over
-                &.#{$prefix}form-trigger-over {
-                    background-color: $form-trigger-background-color-over;
-                }
-            }
-
-            // click
-            &.#{$prefix}form-spinner-click {
-                color           : $form-trigger-color-click;
-                background-color: $form-trigger-background-color-click;
-            }
-
-            // disabled
-            @if $form-trigger-disabled-opacity != 1 {
-                &.#{$prefix}form-spinner-down-disabled {
-                    @include opacity($form-trigger-disabled-opacity);
-                }
+                content: $form-spinner-down-trigger-glyph;
             }
         }
     }
