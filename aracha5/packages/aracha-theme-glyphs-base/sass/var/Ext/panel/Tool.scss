@@ -19,7 +19,7 @@ $tool-prev              : $fa-var-caret-left !default;
 $tool-next              : $fa-var-caret-right !default;
 
 $tool-pin               : $fa-var-map-marker !default;
-$tool-unpin             : $fa-var-map-marker, null, 'fa-rotate-90' !default;
+$tool-unpin             : $fa-var-map-marker, null, null, 90 !default;
 
 
 $tool-up                : $fa-var-chevron-circle-up !default;
