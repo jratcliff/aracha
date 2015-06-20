@@ -137,7 +137,16 @@ Ext.define('KitchenSink.controller.Main', {
                 clsProto.themeInfo = clsProto.themes[themeName];
                 if (themeName === 'ext-theme-gray' || themeName === 'ext-theme-access') {
                     clsProto.themeInfo = Ext.applyIf(clsProto.themeInfo || {}, clsProto.themes.classic);
+                } else {
+                    clsProto.themeInfo = Ext.applyIf(clsProto.themeInfo || {}, clsProto.themes.neptune);
                 }
+                // <debug warn>
+                // Sometimes we forget to include allowances for other themes, so issue a warning as a reminder.
+                if (!clsProto.themeInfo) {
+                    Ext.log.warn ( 'Example \'' + className + '\' lacks a theme specification for the selected theme: \'' +
+                        themeName + '\'. Is this intentional?');
+                }
+                // </debug>
             }
 
             cmp = new ViewClass();
