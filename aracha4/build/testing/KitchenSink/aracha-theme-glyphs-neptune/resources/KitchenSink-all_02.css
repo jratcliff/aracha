@@ -3587,21 +3587,51 @@ div.x-form-spinner-down {
 .x-slider-vert,
 .x-slider-vert .x-slider-end,
 .x-slider-vert .x-slider-inner {
-  background-image: nonde;
+  background-image: none;
 }
 
-/* line 13, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+/* line 16, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+.x-slider:before {
+  border: 1px solid #d0d0d0;
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  background-color: #eee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 32, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+.x-slider-horz:before {
+  height: 10px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+}
+/* line 41, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
 .x-slider-horz .x-slider-thumb {
   background-image: none;
   text-align: center;
-  font-size: 15px;
-  line-height: 1;
+  font-size: 7.5px;
+  line-height: 13px;
+  border: 1px solid #d0d0d0;
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  background-color: #eee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
-/* line 19, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+/* line 57, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
 .x-slider-horz .x-slider-thumb:before {
   display: inline-block;
   font-family: FontAwesome;
-  content: "\f192";
+  content: "\f0c8";
   color: black;
   opacity: 0.7;
   line-height: 1;

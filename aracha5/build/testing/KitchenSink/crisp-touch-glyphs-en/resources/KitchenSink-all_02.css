@@ -5053,191 +5053,71 @@ input:-ms-input-placeholder {
 .x-form-trigger,
 .x-form-trigger-default {
   background-image: none;
-  height: 24px;
   font-size: 24px;
   font-family: FontAwesome;
   color: #9e9e9e;
   text-align: center;
   display: table-cell;
   vertical-align: middle; }
-  /* line 33, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+  /* line 30, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
   .x-form-trigger.x-form-trigger-over,
   .x-form-trigger-default.x-form-trigger-over {
     color: #888888;
     background-color: white; }
-  /* line 39, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+  /* line 36, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
   .x-form-trigger.x-form-trigger-focus,
   .x-form-trigger-default.x-form-trigger-focus {
     color: #666666;
     background-color: white; }
-    /* line 44, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 41, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-trigger-focus.x-form-trigger-over,
     .x-form-trigger-default.x-form-trigger-focus.x-form-trigger-over {
       background-color: white; }
-  /* line 50, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+  /* line 47, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
   .x-form-trigger.x-form-trigger-click,
   .x-form-trigger-default.x-form-trigger-click {
     color: #666666;
     background-color: white; }
-  /* line 58, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+  /* line 55, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
   .x-form-trigger.x-form-arrow-trigger, .x-form-trigger.x-form-arrow-trigger-default,
   .x-form-trigger-default.x-form-arrow-trigger,
   .x-form-trigger-default.x-form-arrow-trigger-default {
     background-image: none; }
-    /* line 61, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 58, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-arrow-trigger:before, .x-form-trigger.x-form-arrow-trigger-default:before,
     .x-form-trigger-default.x-form-arrow-trigger:before,
     .x-form-trigger-default.x-form-arrow-trigger-default:before {
       content: "\f107"; }
-  /* line 75, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+  /* line 72, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
   .x-form-trigger.x-form-clear-trigger, .x-form-trigger.x-form-clear-trigger-default,
   .x-form-trigger-default.x-form-clear-trigger,
   .x-form-trigger-default.x-form-clear-trigger-default {
     background-image: none; }
-    /* line 78, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 75, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-clear-trigger:before, .x-form-trigger.x-form-clear-trigger-default:before,
     .x-form-trigger-default.x-form-clear-trigger:before,
     .x-form-trigger-default.x-form-clear-trigger-default:before {
       content: "\f05c"; }
-  /* line 92, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+  /* line 89, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
   .x-form-trigger.x-form-search-trigger, .x-form-trigger.x-form-search-trigger-default,
   .x-form-trigger-default.x-form-search-trigger,
   .x-form-trigger-default.x-form-search-trigger-default {
     background-image: none; }
-    /* line 95, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 92, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-search-trigger:before, .x-form-trigger.x-form-search-trigger-default:before,
     .x-form-trigger-default.x-form-search-trigger:before,
     .x-form-trigger-default.x-form-search-trigger-default:before {
       content: "\f002"; }
-  /* line 109, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+  /* line 106, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
   .x-form-trigger.x-form-time-trigger, .x-form-trigger.x-form-time-trigger-default,
   .x-form-trigger-default.x-form-time-trigger,
   .x-form-trigger-default.x-form-time-trigger-default {
     background-image: none; }
-    /* line 112, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
+    /* line 109, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
     .x-form-trigger.x-form-time-trigger:before, .x-form-trigger.x-form-time-trigger-default:before,
     .x-form-trigger-default.x-form-time-trigger:before,
     .x-form-trigger-default.x-form-time-trigger-default:before {
       content: "\f017"; }
-  /* line 126, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-  .x-form-trigger.x-form-trigger-spinner, .x-form-trigger.x-form-trigger-spinner-default,
-  .x-form-trigger-default.x-form-trigger-spinner,
-  .x-form-trigger-default.x-form-trigger-spinner-default {
-    background-image: none;
-    background-color: transparent; }
-    /* line 130, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-default, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-default,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-default,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-default {
-      background-image: none;
-      background-color: transparent;
-      font-size: 24px;
-      line-height: 30px; }
-    /* line 144, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up:before,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default:before,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down:before,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default:before {
-      display: inline-block;
-      vertical-align: middle; }
-    /* line 157, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-over,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-over,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-over,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-over,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-over {
-      color: #888888;
-      background-color: white; }
-    /* line 163, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-focus,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-focus,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-focus,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-focus, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-focus, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-focus, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-focus, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-focus,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-focus {
-      color: #666666;
-      background-color: white; }
-      /* line 168, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-      .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-focus.x-form-trigger-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-focus.x-form-trigger-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-focus.x-form-trigger-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-focus.x-form-trigger-over, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-focus.x-form-trigger-over,
-      .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-focus.x-form-trigger-over {
-        background-color: white; }
-    /* line 174, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-click,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-click,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-click,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-click, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-click, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-click, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-click, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-click,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-click {
-      color: #666666;
-      background-color: white; }
-    /* line 181, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-up-disabled,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-up-disabled,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-up-disabled,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-up-disabled, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-up-disabled, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-up-disabled, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-up-disabled, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up-default.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down-default.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down.x-form-spinner-up-disabled,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-up-disabled {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-      opacity: 0.3; }
-    /* line 190, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up:before,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-up-default:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-up-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-up-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-up-default:before {
-      content: "\f067"; }
-    /* line 198, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/field/Text.scss */
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down:before,
-    .x-form-trigger.x-form-trigger-spinner .x-form-spinner-down-default:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down:before, .x-form-trigger.x-form-trigger-spinner-default .x-form-spinner-down-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down:before,
-    .x-form-trigger-default.x-form-trigger-spinner .x-form-spinner-down-default:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down:before,
-    .x-form-trigger-default.x-form-trigger-spinner-default .x-form-spinner-down-default:before {
-      content: "\f068"; }
 
 /* line 19, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/resizer/Splitter.scss */
 .x-splitter {
@@ -5370,6 +5250,58 @@ input:-ms-input-placeholder {
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-toolbar-more-icon:before {
     content: "\f0c9"; }
+
+/* line 16, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+.x-form-trigger-spinner-default {
+  background-image: none;
+  background-color: transparent; }
+  /* line 20, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-default {
+    background-image: none;
+    background-color: transparent;
+    font-size: 24px;
+    line-height: 30px; }
+  /* line 32, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-up-default:before,
+  .x-form-trigger-spinner-default .x-form-spinner-down-default:before {
+    display: inline-block;
+    vertical-align: middle; }
+  /* line 45, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-over,
+  .x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-over {
+    color: #888888;
+    background-color: white; }
+  /* line 51, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-focus,
+  .x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-focus {
+    color: #666666;
+    background-color: white; }
+    /* line 56, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+    .x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-focus.x-form-trigger-over,
+    .x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-focus.x-form-trigger-over {
+      background-color: white; }
+  /* line 62, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-click,
+  .x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-click {
+    color: #666666;
+    background-color: white; }
+  /* line 69, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-up-default.x-form-spinner-up-disabled,
+  .x-form-trigger-spinner-default .x-form-spinner-down-default.x-form-spinner-up-disabled {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3; }
+  /* line 76, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-up-default {
+    font-family: FontAwesome; }
+    /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
+    .x-form-trigger-spinner-default .x-form-spinner-up-default:before {
+      content: "\f067"; }
+  /* line 81, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/form/trigger/Spinner.scss */
+  .x-form-trigger-spinner-default .x-form-spinner-down-default {
+    font-family: FontAwesome; }
+    /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
+    .x-form-trigger-spinner-default .x-form-spinner-down-default:before {
+      content: "\f068"; }
 
 /* line 1, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/toolbar/Paging.scss */
 .x-tbar-page-number {
@@ -6818,22 +6750,24 @@ input:-ms-input-placeholder {
 /* line 3, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/view/DropZone.scss */
 .x-grid-drop-indicator .x-grid-drop-indicator-left {
   background-image: none;
+  font-size: 16px;
   color: green;
   text-align: right;
   top: 0;
-  left: -16px;
+  left: 11px;
   width: 16px;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-grid-drop-indicator .x-grid-drop-indicator-left:before {
     content: "\f178"; }
-/* line 13, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/view/DropZone.scss */
+/* line 14, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/view/DropZone.scss */
 .x-grid-drop-indicator .x-grid-drop-indicator-right {
   background-image: none;
+  font-size: 16px;
   color: green;
   text-align: left;
   top: 0;
-  right: -16px;
+  right: 11px;
   width: 16px;
   font-family: FontAwesome; }
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
@@ -7073,19 +7007,47 @@ input:-ms-input-placeholder {
 .x-slider-vert,
 .x-slider-vert .x-slider-end,
 .x-slider-vert .x-slider-inner {
-  background-image: nonde; }
+  background-image: none; }
 
-/* line 13, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+/* line 16, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+.x-slider:before {
+  border: 1px solid #d0d0d0;
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  background-color: #eee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/* line 32, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+.x-slider-horz:before {
+  height: 10px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -5px; }
+/* line 41, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
 .x-slider-horz .x-slider-thumb {
   background-image: none;
   text-align: center;
-  font-size: 28px;
-  line-height: 1; }
-  /* line 19, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
+  font-size: 14px;
+  line-height: 26px;
+  border: 1px solid #d0d0d0;
+  content: '';
+  position: absolute;
+  border-radius: 2px;
+  background-color: #eee;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+  /* line 57, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/slider/Multi.scss */
   .x-slider-horz .x-slider-thumb:before {
     display: inline-block;
     font-family: FontAwesome;
-    content: "\f192";
+    content: "\f0c8";
     color: black;
     opacity: 0.7;
     line-height: 1; }
@@ -7176,80 +7138,80 @@ input:-ms-input-placeholder {
     content: "\f054"; }
 
 /* including package KitchenSink */
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/CodeContent.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/CodeContent.scss */
 .code-content pre.prettyprint {
   margin: 0;
   border: 0; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/ContentPanel.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/ContentPanel.scss */
 #content-panel-body {
   background-image: url(images/square.gif); }
 
-/* line 5, ../../../../../apps/kitchensink/sass/src/view/ContentPanel.scss */
+/* line 5, ../../../../../apps/KitchenSink/sass/src/view/ContentPanel.scss */
 #content-panel-innerCt {
   padding: 20px;
   vertical-align: middle; }
-  /* line 8, ../../../../../apps/kitchensink/sass/src/view/ContentPanel.scss */
+  /* line 8, ../../../../../apps/KitchenSink/sass/src/view/ContentPanel.scss */
   #content-panel-innerCt > * {
     margin: auto; }
 
-/* line 32, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
+/* line 32, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
 #app-header {
   background-color: #2a3f5d;
   border-bottom: 1px solid #121b28; }
 
-/* line 46, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
+/* line 46, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
 #app-header-title {
   padding: 15px 0 10px 0;
   color: #fff;
   font-size: 18px;
   font-weight: bold; }
 
-/* line 57, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
+/* line 57, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
 #app-header-logo {
   width: 40px;
   height: 25px;
   background: url(images/logo.png) no-repeat center 4px; }
 
-/* line 64, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
+/* line 64, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
 #theme-switcher-combo-labelEl {
   color: white;
   font-weight: bold; }
 
-/* line 69, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
+/* line 69, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
 .ks-theme-switcher {
   background-image: url(images/options.png);
   width: 22px;
   height: 22px; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/binding/Selection.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/binding/Selection.scss */
 .binding-selection-view .customer {
   float: left;
   width: 150px;
   padding: 8px;
   margin: 8px 8px 4px 8px; }
 
-/* line 8, ../../../../../apps/kitchensink/sass/src/view/binding/Selection.scss */
+/* line 8, ../../../../../apps/KitchenSink/sass/src/view/binding/Selection.scss */
 .x-rtl .binding-selection-view .customer {
   float: right; }
 
-/* line 12, ../../../../../apps/kitchensink/sass/src/view/binding/Selection.scss */
+/* line 12, ../../../../../apps/KitchenSink/sass/src/view/binding/Selection.scss */
 .binding-selection-view h1 {
   font-size: 14px;
   font-weight: bold;
   text-align: center; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
 .dataview-multisort-item {
   float: left;
   padding: 8px;
   margin: 8px 8px 4px 8px; }
 
-/* line 7, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
+/* line 7, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
 .x-rtl .dataview-multisort-item {
   float: right; }
 
-/* line 11, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
+/* line 11, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
 .dataview-multisort-item h3 {
   font-size: 12px;
   font-weight: normal;
@@ -7257,22 +7219,22 @@ input:-ms-input-placeholder {
   padding-top: 5px;
   margin: 0; }
 
-/* line 21, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
+/* line 21, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
 .x-btn .sort-direction-asc {
   background-image: url(images/grid/sort_asc.png);
   background-position: 4px center; }
 
-/* line 26, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
+/* line 26, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
 .x-btn .sort-direction-desc {
   background-image: url(images/grid/sort_desc.png);
   background-position: 4px center; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/dd/FieldToGrid.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/dd/FieldToGrid.scss */
 .x-drop-target-active .x-grid-cell-inner {
   background-color: #D88; }
 
 /* Styling of global error indicator */
-/* line 2, ../../../../../apps/kitchensink/sass/src/view/form/CustomErrorHandling.scss */
+/* line 2, ../../../../../apps/KitchenSink/sass/src/view/form/CustomErrorHandling.scss */
 .form-error-state {
   height: 16px;
   line-height: 18px;
@@ -7283,25 +7245,25 @@ input:-ms-input-placeholder {
   font-size: 11px; }
 
 /* Error details tooltip */
-/* line 21, ../../../../../apps/kitchensink/sass/src/view/form/CustomErrorHandling.scss */
+/* line 21, ../../../../../apps/KitchenSink/sass/src/view/form/CustomErrorHandling.scss */
 .errors-tip .error {
   font-style: italic; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
 #search-results a {
   color: #385F95;
   font: bold 11px tahoma, arial, helvetica, sans-serif;
   text-decoration: none; }
 
-/* line 7, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
+/* line 7, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
 #search-results a:hover {
   text-decoration: underline; }
 
-/* line 11, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
+/* line 11, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
 #search-results p {
   margin: 3px !important; }
 
-/* line 15, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
+/* line 15, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
 .search-item {
   font: normal 11px tahoma, arial, helvetica, sans-serif;
   padding: 3px 10px 3px 10px;
@@ -7310,14 +7272,14 @@ input:-ms-input-placeholder {
   white-space: normal;
   color: #555; }
 
-/* line 23, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
+/* line 23, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
 .search-item h3 {
   display: block;
   font: inherit;
   font-weight: bold;
   color: #222; }
 
-/* line 30, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
+/* line 30, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
 .search-item h3 span {
   float: right;
   font-weight: normal;
@@ -7326,11 +7288,11 @@ input:-ms-input-placeholder {
   display: block;
   clear: none; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/form/FileUploads.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/form/FileUploads.scss */
 .upload-icon {
   background: url("images/image_add.png") no-repeat 0 0 !important; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/form/ForumSearch.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/form/ForumSearch.scss */
 .search-item {
   padding: 5px 10px;
   white-space: normal;
@@ -7339,7 +7301,7 @@ input:-ms-input-placeholder {
   display: block;
   overflow: hidden; }
 
-/* line 10, ../../../../../apps/kitchensink/sass/src/view/form/ForumSearch.scss */
+/* line 10, ../../../../../apps/KitchenSink/sass/src/view/form/ForumSearch.scss */
 .search-item h3 {
   display: block;
   font-size: 13px;
@@ -7348,7 +7310,7 @@ input:-ms-input-placeholder {
   margin: 0;
   padding: 0; }
 
-/* line 19, ../../../../../apps/kitchensink/sass/src/view/form/ForumSearch.scss */
+/* line 19, ../../../../../apps/KitchenSink/sass/src/view/form/ForumSearch.scss */
 .search-item h3 span {
   float: right;
   font-weight: normal;
@@ -7356,39 +7318,39 @@ input:-ms-input-placeholder {
   width: 100px;
   clear: none; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/grid/ArrayGrid.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/grid/ArrayGrid.scss */
 .buy-col {
   background-image: url(images/icons/fam/accept.png); }
 
-/* line 4, ../../../../../apps/kitchensink/sass/src/view/grid/ArrayGrid.scss */
+/* line 4, ../../../../../apps/KitchenSink/sass/src/view/grid/ArrayGrid.scss */
 .sell-col {
   background-image: url(images/icons/fam/delete.gif); }
 
-/* line 7, ../../../../../apps/kitchensink/sass/src/view/grid/ArrayGrid.scss */
+/* line 7, ../../../../../apps/KitchenSink/sass/src/view/grid/ArrayGrid.scss */
 .alert-col {
   background-image: url(images/icons/fam/error.png); }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
 .add {
   background-image: url(images/icons/fam/add.gif); }
 
-/* line 4, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 4, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
 .option {
   background-image: url(images/icons/fam/plugin.gif); }
 
-/* line 7, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 7, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
 .remove {
   background-image: url(images/icons/fam/delete.gif); }
 
-/* line 10, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 10, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
 .x-grid-rowbody p {
   margin: .5em 0; }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/grid/GroupedGrid.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/grid/GroupedGrid.scss */
 .icon-grid {
   background-image: url(images/icons/fam/grid.png); }
 
-/* line 4, ../../../../../apps/kitchensink/sass/src/view/grid/GroupedGrid.scss */
+/* line 4, ../../../../../apps/KitchenSink/sass/src/view/grid/GroupedGrid.scss */
 .icon-clear-group {
   background-image: url(images/icons/fam/control_rewind.png); }
 
@@ -8601,11 +8563,11 @@ input:-ms-input-placeholder {
 /* */
 /* */
 /* */
-/* line 35, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 35, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnails {
   display: table; }
 
-/* line 39, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 39, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-item {
   float: left;
   width: 116px;
@@ -8614,11 +8576,11 @@ input:-ms-input-placeholder {
   cursor: pointer;
   overflow: hidden; }
 
-/* line 48, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 48, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-text {
   text-align: center; }
 
-/* line 52, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 52, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-icon-wrap {
   width: 96px;
   height: 96px;
@@ -8631,7 +8593,7 @@ input:-ms-input-placeholder {
   overflow: hidden;
   color: #2a3f5d; }
 
-/* line 65, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 65, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-icon {
   position: absolute;
   top: 0;
@@ -8644,61 +8606,61 @@ input:-ms-input-placeholder {
   color: white;
   overflow: hidden; }
 
-/* line 79, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 79, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
 .x-rtl.thumbnails .thumbnail-item {
   direction: ltr;
   float: right;
   margin-right: 0;
   margin-left: 20px; }
-/* line 85, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 85, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
 .x-rtl.thumbnails .thumbnail-text {
   direction: rtl; }
 
-/* line 2, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 2, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .paste {
   background-image: url(images/icons/fam/paste_plain.png); }
-/* line 6, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 6, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .cut {
   background-image: url(images/icons/fam/cut.png); }
-/* line 10, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 10, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .copy {
   background-image: url(images/icons/fam/page_copy.png); }
-/* line 14, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 14, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .format {
   background-image: url(images/icons/fam/paintbrush.png); }
-/* line 18, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 18, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .list {
   background-image: url(images/icons/fam/text_list_bullets.png); }
 
-/* line 2, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 2, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .list {
   background-image: url(images/icons/fam/text_list_bullets.png); }
-/* line 6, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 6, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .close {
   background-image: url(images/icons/fam/delete.png); }
-/* line 10, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 10, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .paste {
   background-image: url(images/icons/fam/paste_plain.png); }
-/* line 14, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 14, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .edit {
   background-image: url(images/icons/fam/page_white_edit.png); }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/tree/HeterogeneousTree.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/tree/HeterogeneousTree.scss */
 .area-info-icon {
   background-image: url(images/icons/fam/information.png); }
 
-/* line 1, ../../../../../apps/kitchensink/sass/src/view/tree/TreeGrid.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/src/view/tree/TreeGrid.scss */
 .task {
   background-image: url(images/icons/fam/cog.gif); }
 
-/* line 4, ../../../../../apps/kitchensink/sass/src/view/tree/TreeGrid.scss */
+/* line 4, ../../../../../apps/KitchenSink/sass/src/view/tree/TreeGrid.scss */
 .task-folder {
   background-image: url(images/icons/fam/folder_go.gif); }
 
 /**
  * Miscellaneous rules for Kitchen Sink application
  */
-/* line 4, ../../../../../apps/kitchensink/sass/src/Application.scss */
+/* line 4, ../../../../../apps/KitchenSink/sass/src/Application.scss */
 .binding-selection-view .x-item-selected {
   color: black;
   background-color: #c1ddf1; }

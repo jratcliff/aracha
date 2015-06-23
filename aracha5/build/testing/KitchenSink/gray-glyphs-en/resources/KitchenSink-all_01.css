@@ -2335,11 +2335,11 @@
  * Borrowed mixin from ExtJS 6
  */
 /* including package KitchenSink */
-/* line 1, ../../../../../apps/kitchensink/sass/etc/all.scss */
+/* line 1, ../../../../../apps/KitchenSink/sass/etc/all.scss */
 .msg {
   font-size: 14px; }
 
-/* line 5, ../../../../../apps/kitchensink/sass/etc/all.scss */
+/* line 5, ../../../../../apps/KitchenSink/sass/etc/all.scss */
 #msg-div {
   position: absolute;
   left: 50%;
@@ -2348,7 +2348,7 @@
   margin-left: -200px;
   z-index: 20000; }
 
-/* line 14, ../../../../../apps/kitchensink/sass/etc/all.scss */
+/* line 14, ../../../../../apps/KitchenSink/sass/etc/all.scss */
 #msg-div .msg {
   border-radius: 8px;
   -moz-border-radius: 8px;
@@ -2358,13 +2358,13 @@
   padding: 10px 15px;
   color: #555; }
 
-/* line 24, ../../../../../apps/kitchensink/sass/etc/all.scss */
+/* line 24, ../../../../../apps/KitchenSink/sass/etc/all.scss */
 #msg-div .msg h3 {
   margin: 0 0 8px;
   font-weight: bold;
   font-size: 15px; }
 
-/* line 30, ../../../../../apps/kitchensink/sass/etc/all.scss */
+/* line 30, ../../../../../apps/KitchenSink/sass/etc/all.scss */
 #msg-div .msg p {
   margin: 0; }
 
