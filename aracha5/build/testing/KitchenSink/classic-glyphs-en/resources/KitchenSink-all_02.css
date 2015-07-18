@@ -4419,7 +4419,7 @@ input:-ms-input-placeholder {
     content: "\f176";
     padding-left: 3px; }
 
-/* line 21, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tab/Tab.scss */
+/* line 22, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tab/Tab.scss */
 .x-tab-default .x-tab-close-btn {
   background: none;
   text-align: center;
@@ -4433,9 +4433,13 @@ input:-ms-input-placeholder {
   /* line 66, ../../../../../packages/aracha-theme-glyphs-base/sass/etc/mixins/font-icon.scss */
   .x-tab-default .x-tab-close-btn:before {
     content: "\f00d"; }
-  /* line 34, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tab/Tab.scss */
+  /* line 35, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tab/Tab.scss */
   .x-tab-default .x-tab-close-btn:before {
     color: #416da3; }
+
+/* line 45, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tab/Tab.scss */
+.x-tab.x-tab-active.x-tab-default .x-tab-close-btn:before {
+  color: #15498b; }
 
 /* line 18, ../../../../../packages/aracha-theme-glyphs-base/sass/src/Ext/tab/Bar.scss */
 .x-panel-header .x-tab-bar-horizontal.x-tab-bar-default {
@@ -5056,24 +5060,24 @@ input:-ms-input-placeholder {
     content: "\f054"; }
 
 /* including package KitchenSink */
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/CodeContent.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/CodeContent.scss */
 .code-content pre.prettyprint {
   margin: 0;
   border: 0; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/ContentPanel.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/ContentPanel.scss */
 #content-panel-body {
   background-image: url(images/square.gif); }
 
-/* line 5, ../../../../../apps/KitchenSink/sass/src/view/ContentPanel.scss */
+/* line 5, ../../../../../apps/kitchensink/sass/src/view/ContentPanel.scss */
 #content-panel-innerCt {
   padding: 20px;
   vertical-align: middle; }
-  /* line 8, ../../../../../apps/KitchenSink/sass/src/view/ContentPanel.scss */
+  /* line 8, ../../../../../apps/kitchensink/sass/src/view/ContentPanel.scss */
   #content-panel-innerCt > * {
     margin: auto; }
 
-/* line 32, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
+/* line 32, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
 #app-header {
   background-color: #214674;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #275287), color-stop(100%, #1b3a60));
@@ -5084,58 +5088,58 @@ input:-ms-input-placeholder {
   background-image: linear-gradient(top, #275287, #1b3a60);
   border-bottom: 1px solid #102238; }
 
-/* line 46, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
+/* line 46, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
 #app-header-title {
   padding: 15px 0 10px 0;
   color: #fff;
   font-size: 18px;
   font-weight: bold; }
 
-/* line 57, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
+/* line 57, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
 #app-header-logo {
   width: 40px;
   height: 25px;
   background: url(images/logo.png) no-repeat center 4px; }
 
-/* line 64, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
+/* line 64, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
 #theme-switcher-combo-labelEl {
   color: white;
   font-weight: bold; }
 
-/* line 69, ../../../../../apps/KitchenSink/sass/src/view/Header.scss */
+/* line 69, ../../../../../apps/kitchensink/sass/src/view/Header.scss */
 .ks-theme-switcher {
   background-image: url(images/options.png);
   width: 22px;
   height: 22px; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/binding/Selection.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/binding/Selection.scss */
 .binding-selection-view .customer {
   float: left;
   width: 150px;
   padding: 8px;
   margin: 8px 8px 4px 8px; }
 
-/* line 8, ../../../../../apps/KitchenSink/sass/src/view/binding/Selection.scss */
+/* line 8, ../../../../../apps/kitchensink/sass/src/view/binding/Selection.scss */
 .x-rtl .binding-selection-view .customer {
   float: right; }
 
-/* line 12, ../../../../../apps/KitchenSink/sass/src/view/binding/Selection.scss */
+/* line 12, ../../../../../apps/kitchensink/sass/src/view/binding/Selection.scss */
 .binding-selection-view h1 {
   font-size: 14px;
   font-weight: bold;
   text-align: center; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
 .dataview-multisort-item {
   float: left;
   padding: 8px;
   margin: 8px 8px 4px 8px; }
 
-/* line 7, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
+/* line 7, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
 .x-rtl .dataview-multisort-item {
   float: right; }
 
-/* line 11, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
+/* line 11, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
 .dataview-multisort-item h3 {
   font-size: 12px;
   font-weight: normal;
@@ -5143,22 +5147,22 @@ input:-ms-input-placeholder {
   padding-top: 5px;
   margin: 0; }
 
-/* line 21, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
+/* line 21, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
 .x-btn .sort-direction-asc {
   background-image: url(images/grid/sort_asc.gif);
   background-position: 4px center; }
 
-/* line 26, ../../../../../apps/KitchenSink/sass/src/view/dataview/MultiSort.scss */
+/* line 26, ../../../../../apps/kitchensink/sass/src/view/dataview/MultiSort.scss */
 .x-btn .sort-direction-desc {
   background-image: url(images/grid/sort_desc.gif);
   background-position: 4px center; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/dd/FieldToGrid.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/dd/FieldToGrid.scss */
 .x-drop-target-active .x-grid-cell-inner {
   background-color: #D88; }
 
 /* Styling of global error indicator */
-/* line 2, ../../../../../apps/KitchenSink/sass/src/view/form/CustomErrorHandling.scss */
+/* line 2, ../../../../../apps/kitchensink/sass/src/view/form/CustomErrorHandling.scss */
 .form-error-state {
   height: 16px;
   line-height: 18px;
@@ -5169,25 +5173,25 @@ input:-ms-input-placeholder {
   font-size: 11px; }
 
 /* Error details tooltip */
-/* line 21, ../../../../../apps/KitchenSink/sass/src/view/form/CustomErrorHandling.scss */
+/* line 21, ../../../../../apps/kitchensink/sass/src/view/form/CustomErrorHandling.scss */
 .errors-tip .error {
   font-style: italic; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
 #search-results a {
   color: #385F95;
   font: bold 11px tahoma, arial, helvetica, sans-serif;
   text-decoration: none; }
 
-/* line 7, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
+/* line 7, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
 #search-results a:hover {
   text-decoration: underline; }
 
-/* line 11, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
+/* line 11, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
 #search-results p {
   margin: 3px !important; }
 
-/* line 15, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
+/* line 15, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
 .search-item {
   font: normal 11px tahoma, arial, helvetica, sans-serif;
   padding: 3px 10px 3px 10px;
@@ -5196,14 +5200,14 @@ input:-ms-input-placeholder {
   white-space: normal;
   color: #555; }
 
-/* line 23, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
+/* line 23, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
 .search-item h3 {
   display: block;
   font: inherit;
   font-weight: bold;
   color: #222; }
 
-/* line 30, ../../../../../apps/KitchenSink/sass/src/view/form/CustomFields.scss */
+/* line 30, ../../../../../apps/kitchensink/sass/src/view/form/CustomFields.scss */
 .search-item h3 span {
   float: right;
   font-weight: normal;
@@ -5212,11 +5216,11 @@ input:-ms-input-placeholder {
   display: block;
   clear: none; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/form/FileUploads.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/form/FileUploads.scss */
 .upload-icon {
   background: url("images/image_add.png") no-repeat 0 0 !important; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/form/ForumSearch.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/form/ForumSearch.scss */
 .search-item {
   padding: 5px 10px;
   white-space: normal;
@@ -5225,7 +5229,7 @@ input:-ms-input-placeholder {
   display: block;
   overflow: hidden; }
 
-/* line 10, ../../../../../apps/KitchenSink/sass/src/view/form/ForumSearch.scss */
+/* line 10, ../../../../../apps/kitchensink/sass/src/view/form/ForumSearch.scss */
 .search-item h3 {
   display: block;
   font-size: 13px;
@@ -5234,7 +5238,7 @@ input:-ms-input-placeholder {
   margin: 0;
   padding: 0; }
 
-/* line 19, ../../../../../apps/KitchenSink/sass/src/view/form/ForumSearch.scss */
+/* line 19, ../../../../../apps/kitchensink/sass/src/view/form/ForumSearch.scss */
 .search-item h3 span {
   float: right;
   font-weight: normal;
@@ -5242,39 +5246,39 @@ input:-ms-input-placeholder {
   width: 100px;
   clear: none; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/grid/ArrayGrid.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/grid/ArrayGrid.scss */
 .buy-col {
   background-image: url(images/icons/fam/accept.png); }
 
-/* line 4, ../../../../../apps/KitchenSink/sass/src/view/grid/ArrayGrid.scss */
+/* line 4, ../../../../../apps/kitchensink/sass/src/view/grid/ArrayGrid.scss */
 .sell-col {
   background-image: url(images/icons/fam/delete.gif); }
 
-/* line 7, ../../../../../apps/KitchenSink/sass/src/view/grid/ArrayGrid.scss */
+/* line 7, ../../../../../apps/kitchensink/sass/src/view/grid/ArrayGrid.scss */
 .alert-col {
   background-image: url(images/icons/fam/error.png); }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
 .add {
   background-image: url(images/icons/fam/add.gif); }
 
-/* line 4, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 4, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
 .option {
   background-image: url(images/icons/fam/plugin.gif); }
 
-/* line 7, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 7, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
 .remove {
   background-image: url(images/icons/fam/delete.gif); }
 
-/* line 10, ../../../../../apps/KitchenSink/sass/src/view/grid/ExpanderLockable.scss */
+/* line 10, ../../../../../apps/kitchensink/sass/src/view/grid/ExpanderLockable.scss */
 .x-grid-rowbody p {
   margin: .5em 0; }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/grid/GroupedGrid.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/grid/GroupedGrid.scss */
 .icon-grid {
   background-image: url(images/icons/fam/grid.png); }
 
-/* line 4, ../../../../../apps/KitchenSink/sass/src/view/grid/GroupedGrid.scss */
+/* line 4, ../../../../../apps/kitchensink/sass/src/view/grid/GroupedGrid.scss */
 .icon-clear-group {
   background-image: url(images/icons/fam/control_rewind.png); }
 
@@ -6548,11 +6552,11 @@ input:-ms-input-placeholder {
 /* */
 /* */
 /* */
-/* line 35, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 35, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnails {
   display: table; }
 
-/* line 39, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 39, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-item {
   float: left;
   width: 116px;
@@ -6561,11 +6565,11 @@ input:-ms-input-placeholder {
   cursor: pointer;
   overflow: hidden; }
 
-/* line 48, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 48, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-text {
   text-align: center; }
 
-/* line 52, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 52, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-icon-wrap {
   width: 96px;
   height: 96px;
@@ -6578,7 +6582,7 @@ input:-ms-input-placeholder {
   overflow: hidden;
   color: #275287; }
 
-/* line 65, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 65, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
 .thumbnail-icon {
   position: absolute;
   top: 0;
@@ -6591,61 +6595,61 @@ input:-ms-input-placeholder {
   color: white;
   overflow: hidden; }
 
-/* line 79, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 79, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
 .x-rtl.thumbnails .thumbnail-item {
   direction: ltr;
   float: right;
   margin-right: 0;
   margin-left: 20px; }
-/* line 85, ../../../../../apps/KitchenSink/sass/src/view/thumbnails/Thumbnails.scss */
+/* line 85, ../../../../../apps/kitchensink/sass/src/view/thumbnails/Thumbnails.scss */
 .x-rtl.thumbnails .thumbnail-text {
   direction: rtl; }
 
-/* line 2, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 2, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .paste {
   background-image: url(images/icons/fam/paste_plain.png); }
-/* line 6, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 6, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .cut {
   background-image: url(images/icons/fam/cut.png); }
-/* line 10, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 10, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .copy {
   background-image: url(images/icons/fam/page_copy.png); }
-/* line 14, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 14, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .format {
   background-image: url(images/icons/fam/paintbrush.png); }
-/* line 18, ../../../../../apps/KitchenSink/sass/src/view/toolbar/BasicToolbar.scss */
+/* line 18, ../../../../../apps/kitchensink/sass/src/view/toolbar/BasicToolbar.scss */
 #basic-toolbar .list {
   background-image: url(images/icons/fam/text_list_bullets.png); }
 
-/* line 2, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 2, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .list {
   background-image: url(images/icons/fam/text_list_bullets.png); }
-/* line 6, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 6, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .close {
   background-image: url(images/icons/fam/delete.png); }
-/* line 10, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 10, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .paste {
   background-image: url(images/icons/fam/paste_plain.png); }
-/* line 14, ../../../../../apps/KitchenSink/sass/src/view/toolbar/DockedToolbars.scss */
+/* line 14, ../../../../../apps/kitchensink/sass/src/view/toolbar/DockedToolbars.scss */
 #docked-toolbars .edit {
   background-image: url(images/icons/fam/page_white_edit.png); }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/tree/HeterogeneousTree.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/tree/HeterogeneousTree.scss */
 .area-info-icon {
   background-image: url(images/icons/fam/information.png); }
 
-/* line 1, ../../../../../apps/KitchenSink/sass/src/view/tree/TreeGrid.scss */
+/* line 1, ../../../../../apps/kitchensink/sass/src/view/tree/TreeGrid.scss */
 .task {
   background-image: url(images/icons/fam/cog.gif); }
 
-/* line 4, ../../../../../apps/KitchenSink/sass/src/view/tree/TreeGrid.scss */
+/* line 4, ../../../../../apps/kitchensink/sass/src/view/tree/TreeGrid.scss */
 .task-folder {
   background-image: url(images/icons/fam/folder_go.gif); }
 
 /**
  * Miscellaneous rules for Kitchen Sink application
  */
-/* line 4, ../../../../../apps/KitchenSink/sass/src/Application.scss */
+/* line 4, ../../../../../apps/kitchensink/sass/src/Application.scss */
 .binding-selection-view .x-item-selected {
   color: black;
   background-color: #dfe8f6; }
