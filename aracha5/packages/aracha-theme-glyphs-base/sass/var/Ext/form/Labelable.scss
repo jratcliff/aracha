@@ -1,1 +1,2 @@
-$form-invalid-glyph-color: #9e3039 !default;
+$form-invalid-glyph-color: $form-text-field-invalid-border-color !default;
+$form-invalid-font-size: round(($form-text-field-height - vertical($form-text-field-border-width)) * 0.8) !default;

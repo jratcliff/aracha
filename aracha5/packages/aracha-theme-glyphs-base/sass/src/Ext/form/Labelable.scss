@@ -10,6 +10,9 @@
     .#{$prefix}form-invalid-icon-#{$ui} {
         background: none;
         color: $form-invalid-glyph-color;
+        font-size: $form-invalid-font-size;
+        line-height: 1;
+        text-align: center;
         width: auto;
         height: auto;
         @include extjs-add-glyph($fa-var-exclamation-circle);
@@ -18,6 +21,8 @@
     .#{$prefix}form-invalid-under-#{$ui} {
         background: none;
         color: $form-invalid-glyph-color;
+        font-size: $form-invalid-font-size;
+        line-height: 1;
         width: auto;
         height: auto;
         @include extjs-add-glyph($fa-var-exclamation-circle);
