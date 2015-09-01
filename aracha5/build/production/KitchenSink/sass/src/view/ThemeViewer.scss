@@ -1,0 +1,7 @@
+
+.theme-viewer {
+    // this is needed since the KitchenSink adds a vertical-align: middle rule
+    // to the content-panel-innerCt css class
+    position: absolute;
+    top: 0;
+}
